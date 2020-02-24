@@ -1,8 +1,41 @@
 /lib
 bin
 .manager
-target
 .settings
+javaparser-core-generators/target/
+	javaparser-core-metamodel-generator/target/
+	javaparser-core-serialization/target/
+	javaparser-core-testing-bdd/target/
+	javaparser-core-testing/target/
+	javaparser-core/target/
+	javaparser-symbol-solver-logic/target/
+	target/classes/
+	target/clover/
+	target/site/clover/aui/
+	target/site/clover/cloud.js
+	target/site/clover/clover-descriptions.js
+	target/site/clover/clover-tree.js
+	target/site/clover/clover.js
+	target/site/clover/clover.xml
+	target/site/clover/com/
+	target/site/clover/dashboard.html
+	target/site/clover/default-pkg/
+	target/site/clover/img/
+	target/site/clover/index.html
+	target/site/clover/jit.js
+	target/site/clover/jquery-1.8.3.min.js
+	target/site/clover/package-nodes-tree.js
+	target/site/clover/pkg-summary.html
+	target/site/clover/project.js
+	target/site/clover/quick-wins.html
+	target/site/clover/style.css
+	target/site/clover/testsrc-agg-pkgs.html
+	target/site/clover/testsrc-pkg-summary.html
+	target/site/clover/top-risks.html
+	target/site/clover/tree.css
+	target/site/clover/treemap-dash-json.js
+	target/site/clover/treemap-json.js
+	target/site/clover/treemap.html
 *~
 .project
 .classpath
