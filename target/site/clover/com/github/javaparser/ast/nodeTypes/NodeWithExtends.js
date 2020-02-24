@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":96,"id":32191,"methods":[{"el":41,"sc":5,"sl":39},{"el":49,"sc":5,"sl":45},{"el":55,"sc":5,"sl":51},{"el":63,"sc":5,"sl":60},{"el":71,"sc":5,"sl":68},{"el":82,"sc":5,"sl":79},{"el":94,"sc":5,"sl":90}],"name":"NodeWithExtends","sl":33}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1292":{"methods":[{"sl":39}],"name":"classExtendingMoreThanOne","pass":true,"statements":[{"sl":40}]},"test_1520":{"methods":[{"sl":90}],"name":"addingExtendedTypes","pass":true,"statements":[{"sl":92},{"sl":93}]},"test_1738":{"methods":[{"sl":39},{"sl":79},{"sl":90}],"name":"testAddExtends","pass":true,"statements":[{"sl":40},{"sl":80},{"sl":81},{"sl":92},{"sl":93}]},"test_655":{"methods":[{"sl":39}],"name":"aClassInDefaultPackageCanBeAccessedFromOutsideTheDefaultPackageWithoutImportingIt","pass":true,"statements":[{"sl":40}]},"test_720":{"methods":[{"sl":39}],"name":"aClassInDefaultPackageCanBeAccessedFromTheDefaultPackage","pass":true,"statements":[{"sl":40}]},"test_856":{"methods":[{"sl":39}],"name":"testTypesWithSameNameInPackageAndNested_directExtends","pass":true,"statements":[{"sl":40}]},"test_95":{"methods":[{"sl":39}],"name":"aClassInDefaultPackageCanBeAccessedFromOutsideTheDefaultPackageImportingIt","pass":true,"statements":[{"sl":40}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [1292, 856, 1738, 95, 655, 720], [1292, 856, 1738, 95, 655, 720], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [1738], [1738], [1738], [], [], [], [], [], [], [], [], [1520, 1738], [], [1520, 1738], [1520, 1738], [], [], []]

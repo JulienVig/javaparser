@@ -1,0 +1,1889 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>javaparser-parent 3.15.13-SNAPSHOT (Aggregated)</title>
+    </head>
+
+<body  onload="onLoad('javaparser-parent 3.15.13-SNAPSHOT (Aggregated): com.github.javaparser.symbolsolver.AbstractSymbolResolutionTest.java')">
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                    <a href="https://github.com/javaparser" target="_top">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+                    </a>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                            <a href="https://github.com/javaparser" target="_top">
+                                        javaparser-parent 3.15.13-SNAPSHOT (Aggregated)
+                                        </a>
+                    </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="com.github.javaparser.symbolsolver">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="../../../../dashboard.html">Project Clover database Sun Feb 23 2020 18:16:51 CET</a></li> 
+        <li><a href="pkg-summary.html">        Package com.github.javaparser.symbolsolver</a></li> 
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            File AbstractSymbolResolutionTest.java
+    </h1>
+
+
+
+
+
+
+
+
+    
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+            <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-source">
+        <div>&#160;</div>
+
+        
+                <div style="display: table; width: 100%">
+                            <div class="clover-histogram-table-cell">
+                                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Coverage histogram</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div class="aui-item clover-aui-item-histogram">
+                    <img src="../../../../img/srcFileCovDistChart5.png" alt="../../../../img/srcFileCovDistChart5.png"
+                         usemap="#srcFileCovDistChart5.png" class="clover-histogram-img"/>
+                    <map id="srcFileCovDistChart5.png" name="srcFileCovDistChart5.png">
+<area shape="rect" coords="100,8,107,65" title="216 files have 91-100% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="91,50,98,66" title="62 files have 81-90% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="82,53,89,66" title="51 files have 71-80% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="73,56,80,66" title="38 files have 61-70% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="64,53,71,65" title="48 files have 51-60% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="56,50,63,66" title="61 files have 41-50% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="47,55,54,66" title="44 files have 31-40% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="38,62,45,66" title="18 files have 21-30% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="29,65,36,66" title="6 files have 11-20% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="20,63,27,65" title="11 files have 1-10% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="11,46,18,66" title="75 files have 0% coverage" alt="" nohref="nohref"/>
+</map><br />
+                    <span class="subtle"><strong>65% </strong>of files have more coverage</span>
+                </div>
+            </div>
+        </div>
+                    </div>
+                        <div style="display: table-cell; width: 67%;">
+                    <div class="dashboard-widget">
+        <header class="dashboard-widget-header">
+            <h3>Code metrics</h3>
+        </header>
+        <div class="dashboard-widget-content">
+                        
+
+<div id="td-header-stats" class="aui-item" style="display: ">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">4</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">7</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">2</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">47</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">21</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">4</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0,57</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">3,5</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">2</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">2</div>
+    </div>
+</div>
+
+</div>
+                        
+
+<div id="td-filtered-header-stats" class="aui-item" style="display: none">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">4</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">7</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">2</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">47</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">21</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">4</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0,57</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">3,5</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">2</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">2</div>
+    </div>
+</div>
+
+</div>        </div>
+    </div>
+            </div>
+        </div>
+
+        
+        
+
+
+    <h2>Classes</h2>
+
+        <table class="aui aui-table-sortable">
+        <thead>
+                        <tr>     <th>Class</th>
+    <th>Line #</th>
+
+            
+        <th class="">
+            <label  title="The total number of statements.">Total Statements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The percentage of elements that have been filtered from this report.">% Filtered</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label>
+        </th>
+        
+    
+            <th>Actions</th>
+    </tr>         </thead>
+        <tbody>
+                              <tr> <td id="AbstractSymbolResolutionTest">
+        <span><a href="#30" title="AbstractSymbolResolutionTest" onclick="closeDialogAndScrollTo('dialog-AbstractSymbolResolutionTest', '30');">AbstractSymbolResolutionTest</a></span>
+</td>
+<td>30<a name="sl-30"></a></td>
+    <td class="">7</td>
+    <td class="">0%</td>
+    <td class="">4</td>
+    <td class="">7</td>
+    <td class=""><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.46153846</span>46,2%</div><div style="display: table-cell">
+ <div title="46,2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:46.2%"></div></div></div></div></td>
+    <td><button data-dialog-id="dialog-AbstractSymbolResolutionTest" class="aui-button aui-button-link dialog-show-button">Show methods</button></td>
+</tr>                      </tbody>
+    </table>
+
+    
+     
+        <section role="dialog" id="dialog-AbstractSymbolResolutionTest" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+            
+            <header class="aui-dialog2-header">
+                <h1 class="aui-dialog2-header-main">Class AbstractSymbolResolutionTest</h1>
+                <div class="aui-dialog2-header-secondary">
+                    <input id="dialog-AbstractSymbolResolutionTest-method-filter" class="test-filter text" type="text" name="method-filter"
+                           placeholder="Type to filter methods..." autocomplete="off"
+                           onkeyup="filterMethods('dialog-AbstractSymbolResolutionTest-methods-body', 'dialog-AbstractSymbolResolutionTest-method-filter');"/>
+                </div>
+            </header>
+
+            
+            <div class="aui-dialog2-content">
+
+                
+
+                <table class="aui aui-table-sortable">
+                                                                                                                                                                                
+                    <thead>
+                                                 <tr> <th id="AbstractSymbolResolutionTest">
+    Class<br/>    <span><a href="#30" title="AbstractSymbolResolutionTest" onclick="closeDialogAndScrollTo('dialog-AbstractSymbolResolutionTest', '30');">AbstractSymbolResolutionTest</a></span>
+</th>
+<th>Line #<br/>30<a name="sl-30"></a></th>
+    <th class=""><label  title="The total number of statements.">Total Statements</label><br/>7</th>
+    <th class=""><label  title="The percentage of elements that have been filtered from this report.">% Filtered</label><br/>0%</th>
+    <th class=""><label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label><br/>4</th>
+    <th class=""><label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label><br/>7</th>
+    <th class=""><label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label><br/><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.46153846</span>46,2%</div><div style="display: table-cell">
+ <div title="46,2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:46.2%"></div></div></div></div></th>
+</tr>                     </thead>
+                    <tbody id="dialog-AbstractSymbolResolutionTest-methods-body">
+                                                                                                            <tr id="AbstractSymbolResolutionTest-1">
+<td id="summary-32-5">
+ <span class="sortValue">adaptPath(Path)&#160;:&#160;Path</span>
+&#160;&#160;<a href="?line=29#32" title="adaptPath(Path)&#160;:&#160;Path" name="sl-32" onclick="closeDialogAndScrollTo('dialog-AbstractSymbolResolutionTest', '32');">adaptPath(Path)&#160;:&#160;Path</a>
+</td>
+<td align="right"><span class="sortValue">32</span>32</td>
+<td class="" align="right"><span class="sortValue">6.0</span>6</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">3.0</span>3</td>
+<td class="" align="right"><span class="sortValue">7.0</span>7</td>
+<td class="" align="right"><span class="sortValue">0.3</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.3</span>30%</div><div style="display: table-cell">
+ <div title="30% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:30%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="AbstractSymbolResolutionTest-2">
+<td id="summary-44-5">
+ <span class="sortValue">adaptPath(String)&#160;:&#160;Path</span>
+&#160;&#160;<a href="?line=29#44" title="adaptPath(String)&#160;:&#160;Path" name="sl-44" onclick="closeDialogAndScrollTo('dialog-AbstractSymbolResolutionTest', '44');">adaptPath(String)&#160;:&#160;Path</a>
+</td>
+<td align="right"><span class="sortValue">44</span>44</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                         </tbody>
+                </table>
+
+                <div>&#160;</div>
+                
+
+            </div>
+
+            
+            <footer class="aui-dialog2-footer">
+                <div class="aui-dialog2-footer-actions">
+                    <button class="aui-button aui-button-primary dialog-close-button"
+                            data-dialog-id="dialog-AbstractSymbolResolutionTest">Close</button>
+                </div>
+                <div class="aui-dialog2-footer-hint">Click on a class or a method name to jump to source.</div>
+            </footer>
+        </section>
+
+     
+ 
+        
+        <div>&#160;</div>
+
+<h2>Contributing tests</h2>
+
+    <div>
+                This file is covered by 84 tests.
+        <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-link dialog-show-button">
+            Select tests to highlight the test coverage
+        </button>.
+    </div>
+
+<section role="dialog" id="contr-tests-dialog" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+    
+    <header class="aui-dialog2-header">
+        <h1 class="aui-dialog2-header-main">Contributing tests</h1>
+        <div class="aui-dialog2-header-secondary">
+            <input id="test-filter" class="test-filter text" type="text" name="test-filter"
+                   placeholder="Type to filter tests..." autocomplete="off"
+                   onkeyup="filterTests('tests-body', 'test-filter', 3);"/>
+        </div>
+    </header>
+
+    
+    <div class="aui-dialog2-content">
+    
+
+        <p class="aui-buttons">
+            <button title="Selects all tests for this file, highlighting their coverage."
+                    class="aui-button" id="selectalltests">Select all</button>
+        </p>
+
+        <table class="aui aui-table-sortable">
+            <thead id="tests-head">
+            <tr id="testHeaderRow">
+                <th class="aui-table-column-unsortable"></th>
+                <th>
+                    <label title="The percentage of coverage contributed by each single test.">Test contribution</label>
+                </th>
+                <th>
+                    <label title="The test (or test iteration) which was executed.">Test</label>
+                </th>
+                <th>
+                    <label>Result</label>
+                </th>
+                <th class="aui-table-column-unsortable">
+                    <label>Actions</label>
+                </th>
+            </tr>
+            </thead>
+            <tbody id="tests-body">
+
+<tr id="test-430">
+<td><a name="testA-430"></a><input type="checkbox" id="cb-430" value="430" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-430">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.typesolvers.ReflectionTypeSolverTest.testInvalidArgumentNumber</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.typesolvers.ReflectionTypeSolverTest.testInvalidArgumentNumber</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-371">
+<td><a name="testA-371"></a><input type="checkbox" id="cb-371" value="371" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-371">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.javaparser.contexts.CompilationUnitContextResolutionTest.solveTypeImported</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.javaparser.contexts.CompilationUnitContextResolutionTest.solveTypeImported</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-551">
+<td><a name="testA-551"></a><input type="checkbox" id="cb-551" value="551" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-551">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.ContextTest.resolveReferenceToLambdaParam</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.ContextTest.resolveReferenceToLambdaParam</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-448">
+<td><a name="testA-448"></a><input type="checkbox" id="cb-448" value="448" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-448">  <span class="sortValue">com.github.javaparser.symbolsolver.PullRequest2398Test.onlyInlucdeJarA</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.PullRequest2398Test.onlyInlucdeJarA</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-217">
+<td><a name="testA-217"></a><input type="checkbox" id="cb-217" value="217" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-217">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.ContextTest.resolveInheritedMethodFromInterface</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.ContextTest.resolveInheritedMethodFromInterface</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-633">
+<td><a name="testA-633"></a><input type="checkbox" id="cb-633" value="633" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-633">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.javaparser.contexts.MethodCallExprContextResolutionTest.solveGenericMethodCallMustUseProvidedTypeArgs</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.javaparser.contexts.MethodCallExprContextResolutionTest.solveGenericMethodCallMustUseProvidedTypeArgs</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-817">
+<td><a name="testA-817"></a><input type="checkbox" id="cb-817" value="817" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-817">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.VariadicResolutionTest.selectMostSpecificVariadic</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.VariadicResolutionTest.selectMostSpecificVariadic</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-515">
+<td><a name="testA-515"></a><input type="checkbox" id="cb-515" value="515" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-515">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.TypeResolutionWithSameNameTest.testTypesWithSameNameAsteriskImportAndJavaLang</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.TypeResolutionWithSameNameTest.testTypesWithSameNameAsteriskImportAndJavaLang</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-742">
+<td><a name="testA-742"></a><input type="checkbox" id="cb-742" value="742" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-742">  <span class="sortValue">com.github.javaparser.symbolsolver.Issue185Test.testIssue</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.Issue185Test.testIssue</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-114">
+<td><a name="testA-114"></a><input type="checkbox" id="cb-114" value="114" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-114">  <span class="sortValue">com.github.javaparser.symbolsolver.JavaParserAPIIntegrationTest.interfaceDeclarationResolve</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.JavaParserAPIIntegrationTest.interfaceDeclarationResolve</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-568">
+<td><a name="testA-568"></a><input type="checkbox" id="cb-568" value="568" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-568">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.TypeResolutionWithSameNameTest.testTypesWithSameNameStaticNonTypeAndNonStaticType</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.TypeResolutionWithSameNameTest.testTypesWithSameNameStaticNonTypeAndNonStaticType</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-402">
+<td><a name="testA-402"></a><input type="checkbox" id="cb-402" value="402" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-402">  <span class="sortValue">com.github.javaparser.symbolsolver.JavaParserAPIIntegrationTest.annotationDeclarationResolve</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.JavaParserAPIIntegrationTest.annotationDeclarationResolve</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-203">
+<td><a name="testA-203"></a><input type="checkbox" id="cb-203" value="203" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-203">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.ContextTest.resolveTypeUsageOfFirstMethodInGenericClass</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.ContextTest.resolveTypeUsageOfFirstMethodInGenericClass</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-261">
+<td><a name="testA-261"></a><input type="checkbox" id="cb-261" value="261" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-261">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.ContextTest.resolveCascadeOfReferencesToMethod</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.ContextTest.resolveCascadeOfReferencesToMethod</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-665">
+<td><a name="testA-665"></a><input type="checkbox" id="cb-665" value="665" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-665">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.javaparser.contexts.MethodCallExprContextResolutionTest.solveStaticGenericMethodCallCanInferFromArguments</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.javaparser.contexts.MethodCallExprContextResolutionTest.solveStaticGenericMethodCallCanInferFromArguments</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-376">
+<td><a name="testA-376"></a><input type="checkbox" id="cb-376" value="376" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-376">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.typesolvers.JarTypeSolverTest.initial</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.typesolvers.JarTypeSolverTest.initial</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-33">
+<td><a name="testA-33"></a><input type="checkbox" id="cb-33" value="33" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-33">  <span class="sortValue">com.github.javaparser.symbolsolver.javassistmodel.Issue257Test.issue257</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.javassistmodel.Issue257Test.issue257</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-126">
+<td><a name="testA-126"></a><input type="checkbox" id="cb-126" value="126" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-126">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.TypeResolutionWithSameNameTest.testTypesWithSameNameSingleTypeImportAndPackage</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.TypeResolutionWithSameNameTest.testTypesWithSameNameSingleTypeImportAndPackage</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-109">
+<td><a name="testA-109"></a><input type="checkbox" id="cb-109" value="109" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-109">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.ContextTest.resolveComplexGenericReturnType</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.ContextTest.resolveComplexGenericReturnType</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-521">
+<td><a name="testA-521"></a><input type="checkbox" id="cb-521" value="521" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-521">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.typesolvers.JarTypeSolverTest.dependenciesBetweenJarsNotTriggeringReferences</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.typesolvers.JarTypeSolverTest.dependenciesBetweenJarsNotTriggeringReferences</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-851">
+<td><a name="testA-851"></a><input type="checkbox" id="cb-851" value="851" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-851">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.javaparser.contexts.CompilationUnitContextResolutionTest.solveSymbolReferringToStaticallyImportedValue</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.javaparser.contexts.CompilationUnitContextResolutionTest.solveSymbolReferringToStaticallyImportedValue</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-192">
+<td><a name="testA-192"></a><input type="checkbox" id="cb-192" value="192" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-192">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.ContextTest.resolveCompoundGenericReturnTypeOfMethodInJar</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.ContextTest.resolveCompoundGenericReturnTypeOfMethodInJar</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-693">
+<td><a name="testA-693"></a><input type="checkbox" id="cb-693" value="693" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-693">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.javaparser.contexts.MethodCallExprContextResolutionTest.solveNestedMethodCallExprContextWithoutScope</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.javaparser.contexts.MethodCallExprContextResolutionTest.solveNestedMethodCallExprContextWithoutScope</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-180">
+<td><a name="testA-180"></a><input type="checkbox" id="cb-180" value="180" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-180">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.ContextTest.resolveGenericReturnTypeOfMethodInJar</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.ContextTest.resolveGenericReturnTypeOfMethodInJar</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-825">
+<td><a name="testA-825"></a><input type="checkbox" id="cb-825" value="825" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-825">  <span class="sortValue">com.github.javaparser.symbolsolver.SolveMethodDeclaredInEnumTest.methodDeclaredInEnum_enumFromJar</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.SolveMethodDeclaredInEnumTest.methodDeclaredInEnum_enumFromJar</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-663">
+<td><a name="testA-663"></a><input type="checkbox" id="cb-663" value="663" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-663">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.FieldsResolutionTest.accessClassFieldThroughThisWithCompetingSymbolInParentContext</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.FieldsResolutionTest.accessClassFieldThroughThisWithCompetingSymbolInParentContext</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-248">
+<td><a name="testA-248"></a><input type="checkbox" id="cb-248" value="248" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-248">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.ContextTest.resolveTypeUsageOfMethodInGenericClass</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.ContextTest.resolveTypeUsageOfMethodInGenericClass</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-313">
+<td><a name="testA-313"></a><input type="checkbox" id="cb-313" value="313" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-313">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.ContextTest.resolveReferenceToMethod</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.ContextTest.resolveReferenceToMethod</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-433">
+<td><a name="testA-433"></a><input type="checkbox" id="cb-433" value="433" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-433">  <span class="sortValue">com.github.javaparser.symbolsolver.javassistmodel.JavassistTypeParameterDeclarationTest.testGetComplexBounds</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.javassistmodel.JavassistTypeParameterDeclarationTest.testGetComplexBounds</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-499">
+<td><a name="testA-499"></a><input type="checkbox" id="cb-499" value="499" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-499">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.javaparser.contexts.MethodCallExprContextResolutionTest.solveStaticGenericMethodCallMustUseProvidedTypeArgs</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.javaparser.contexts.MethodCallExprContextResolutionTest.solveStaticGenericMethodCallMustUseProvidedTypeArgs</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-758">
+<td><a name="testA-758"></a><input type="checkbox" id="cb-758" value="758" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-758">  <span class="sortValue">com.github.javaparser.symbolsolver.Issue113Test.issue113providedCodeDoesNotCrash</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.Issue113Test.issue113providedCodeDoesNotCrash</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-185">
+<td><a name="testA-185"></a><input type="checkbox" id="cb-185" value="185" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-185">  <span class="sortValue">com.github.javaparser.symbolsolver.JavaParserAPIIntegrationTest.methodDeclarationResolve</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.JavaParserAPIIntegrationTest.methodDeclarationResolve</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-225">
+<td><a name="testA-225"></a><input type="checkbox" id="cb-225" value="225" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-225">  <span class="sortValue">com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserInterfaceDeclarationTest.getGetAncestorsWithTypeParameters</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserInterfaceDeclarationTest.getGetAncestorsWithTypeParameters</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-152">
+<td><a name="testA-152"></a><input type="checkbox" id="cb-152" value="152" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-152">  <span class="sortValue">com.github.javaparser.symbolsolver.JavaParserAPIIntegrationTest.enumConstantDeclarationResolve</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.JavaParserAPIIntegrationTest.enumConstantDeclarationResolve</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-284">
+<td><a name="testA-284"></a><input type="checkbox" id="cb-284" value="284" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-284">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.ContextTest.resolveLambdaType</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.ContextTest.resolveLambdaType</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-574">
+<td><a name="testA-574"></a><input type="checkbox" id="cb-574" value="574" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-574">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.javaparser.contexts.MethodCallExprContextResolutionTest.solveGenericMethodCallCanInferFromArguments</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.javaparser.contexts.MethodCallExprContextResolutionTest.solveGenericMethodCallCanInferFromArguments</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-459">
+<td><a name="testA-459"></a><input type="checkbox" id="cb-459" value="459" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-459">  <span class="sortValue">com.github.javaparser.symbolsolver.JavaParserAPIIntegrationTest.classDeclarationResolve</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.JavaParserAPIIntegrationTest.classDeclarationResolve</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-842">
+<td><a name="testA-842"></a><input type="checkbox" id="cb-842" value="842" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-842">  <span class="sortValue">com.github.javaparser.symbolsolver.JavaParserAPIIntegrationTest.enumDeclarationResolve</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.JavaParserAPIIntegrationTest.enumDeclarationResolve</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-488">
+<td><a name="testA-488"></a><input type="checkbox" id="cb-488" value="488" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-488">  <span class="sortValue">com.github.javaparser.symbolsolver.Issue1485Test.issue1485withoutSpecifyingJARs</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.Issue1485Test.issue1485withoutSpecifyingJARs</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-339">
+<td><a name="testA-339"></a><input type="checkbox" id="cb-339" value="339" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/github/javaparser/symbolsolver/resolution/typesolvers/JavaParserTypeSolverTest_givenJavaParserTypeSolver_tryToSolveInterface_expectSuccess_9f.html';">
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-339">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.typesolvers.JavaParserTypeSolverTest.givenJavaParserTypeSolver_tryToSolveInterface_expectSuccess</span><a href="../../../../com/github/javaparser/symbolsolver/resolution/typesolvers/JavaParserTypeSolverTest_givenJavaParserTypeSolver_tryToSolveInterface_expectSuccess_9f.html" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.typesolvers.JavaParserTypeSolverTest.givenJavaParserTypeSolver_tryToSolveInterface_expectSuccess</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/github/javaparser/symbolsolver/resolution/typesolvers/JavaParserTypeSolverTest.html?line=109#src-109" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/github/javaparser/symbolsolver/resolution/typesolvers/JavaParserTypeSolverTest_givenJavaParserTypeSolver_tryToSolveInterface_expectSuccess_9f.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-556">
+<td><a name="testA-556"></a><input type="checkbox" id="cb-556" value="556" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-556">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.javaparser.contexts.CompilationUnitContextResolutionTest.solveSymbolAsValueReferringToStaticallyImportedValue</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.javaparser.contexts.CompilationUnitContextResolutionTest.solveSymbolAsValueReferringToStaticallyImportedValue</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-177">
+<td><a name="testA-177"></a><input type="checkbox" id="cb-177" value="177" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-177">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.ConstructorsResolutionTest.testGenericParentContructorJavassist</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.ConstructorsResolutionTest.testGenericParentContructorJavassist</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-641">
+<td><a name="testA-641"></a><input type="checkbox" id="cb-641" value="641" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-641">  <span class="sortValue">com.github.javaparser.symbolsolver.JavaParserAPIIntegrationTest.constructorDeclarationResolve</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.JavaParserAPIIntegrationTest.constructorDeclarationResolve</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-110">
+<td><a name="testA-110"></a><input type="checkbox" id="cb-110" value="110" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/github/javaparser/symbolsolver/resolution/javaparser/contexts/MethodCallExprContextResolutionTest_test_32.html';">
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-110">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.javaparser.contexts.MethodCallExprContextResolutionTest.test</span><a href="../../../../com/github/javaparser/symbolsolver/resolution/javaparser/contexts/MethodCallExprContextResolutionTest_test_32.html" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.javaparser.contexts.MethodCallExprContextResolutionTest.test</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/github/javaparser/symbolsolver/resolution/javaparser/contexts/MethodCallExprContextResolutionTest.html?line=140#src-140" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/github/javaparser/symbolsolver/resolution/javaparser/contexts/MethodCallExprContextResolutionTest_test_32.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-20">
+<td><a name="testA-20"></a><input type="checkbox" id="cb-20" value="20" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-20">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.typesolvers.JarTypeSolverTest.dependenciesBetweenJarsTriggeringReferencesThatCannotBeResolved</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.typesolvers.JarTypeSolverTest.dependenciesBetweenJarsTriggeringReferencesThatCannotBeResolved</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-350">
+<td><a name="testA-350"></a><input type="checkbox" id="cb-350" value="350" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-350">  <span class="sortValue">com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserClassDeclarationTest.testHasDirectlyAnnotation</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserClassDeclarationTest.testHasDirectlyAnnotation</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-481">
+<td><a name="testA-481"></a><input type="checkbox" id="cb-481" value="481" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-481">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.typesolvers.AarTypeSolverTest.initial</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.typesolvers.AarTypeSolverTest.initial</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-105">
+<td><a name="testA-105"></a><input type="checkbox" id="cb-105" value="105" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-105">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.ContextTest.resolveGenericReturnTypeFromInputParam</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.ContextTest.resolveGenericReturnTypeFromInputParam</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-653">
+<td><a name="testA-653"></a><input type="checkbox" id="cb-653" value="653" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-653">  <span class="sortValue">com.github.javaparser.symbolsolver.JavaParserAPIIntegrationTest.fieldDeclarationResolve</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.JavaParserAPIIntegrationTest.fieldDeclarationResolve</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-526">
+<td><a name="testA-526"></a><input type="checkbox" id="cb-526" value="526" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-526">  <span class="sortValue">com.github.javaparser.symbolsolver.PullRequest2398Test.includeJarAAndB</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.PullRequest2398Test.includeJarAAndB</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-609">
+<td><a name="testA-609"></a><input type="checkbox" id="cb-609" value="609" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-609">  <span class="sortValue">com.github.javaparser.symbolsolver.Issue276Test.testSolveStaticallyImportedMemberType</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.Issue276Test.testSolveStaticallyImportedMemberType</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-337">
+<td><a name="testA-337"></a><input type="checkbox" id="cb-337" value="337" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-337">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.javaparser.contexts.CompilationUnitContextResolutionTest.solveMethodStaticallyImportedWithoutAsterisk</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.javaparser.contexts.CompilationUnitContextResolutionTest.solveMethodStaticallyImportedWithoutAsterisk</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-22">
+<td><a name="testA-22"></a><input type="checkbox" id="cb-22" value="22" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-22">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.javaparser.contexts.CompilationUnitContextResolutionTest.solveSymbolReferringToStaticallyImportedUsingAsteriskValue</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.javaparser.contexts.CompilationUnitContextResolutionTest.solveSymbolReferringToStaticallyImportedUsingAsteriskValue</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-856">
+<td><a name="testA-856"></a><input type="checkbox" id="cb-856" value="856" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-856">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.TypeResolutionWithSameNameTest.testTypesWithSameNameInPackageAndNested_directExtends</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.TypeResolutionWithSameNameTest.testTypesWithSameNameInPackageAndNested_directExtends</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-75">
+<td><a name="testA-75"></a><input type="checkbox" id="cb-75" value="75" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-75">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.ContextTest.resolveNestedGenericReturnTypeOfMethodInJar</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.ContextTest.resolveNestedGenericReturnTypeOfMethodInJar</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-581">
+<td><a name="testA-581"></a><input type="checkbox" id="cb-581" value="581" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-581">  <span class="sortValue">com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserEnumDeclarationTest.getGetAncestors</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserEnumDeclarationTest.getGetAncestors</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-349">
+<td><a name="testA-349"></a><input type="checkbox" id="cb-349" value="349" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-349">  <span class="sortValue">com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserClassDeclarationTest.testHasAnnotation</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserClassDeclarationTest.testHasAnnotation</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-610">
+<td><a name="testA-610"></a><input type="checkbox" id="cb-610" value="610" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-610">  <span class="sortValue">com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserClassDeclarationTest.testGetAllGenericFields</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserClassDeclarationTest.testGetAllGenericFields</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-310">
+<td><a name="testA-310"></a><input type="checkbox" id="cb-310" value="310" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-310">  <span class="sortValue">com.github.javaparser.symbolsolver.JavaParserAPIIntegrationTest.annotationMemberDeclarationResolve</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.JavaParserAPIIntegrationTest.annotationMemberDeclarationResolve</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-99">
+<td><a name="testA-99"></a><input type="checkbox" id="cb-99" value="99" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/github/javaparser/symbolsolver/resolution/MethodsResolutionWithJavassistTest_testOverloadedMethods_2r.html';">
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-99">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.MethodsResolutionWithJavassistTest.testOverloadedMethods</span><a href="../../../../com/github/javaparser/symbolsolver/resolution/MethodsResolutionWithJavassistTest_testOverloadedMethods_2r.html" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.MethodsResolutionWithJavassistTest.testOverloadedMethods</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/github/javaparser/symbolsolver/resolution/MethodsResolutionWithJavassistTest.html?line=54#src-54" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/github/javaparser/symbolsolver/resolution/MethodsResolutionWithJavassistTest_testOverloadedMethods_2r.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-104">
+<td><a name="testA-104"></a><input type="checkbox" id="cb-104" value="104" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-104">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.javaparser.contexts.CompilationUnitContextResolutionTest.solveTypeNotImported</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.javaparser.contexts.CompilationUnitContextResolutionTest.solveTypeNotImported</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-167">
+<td><a name="testA-167"></a><input type="checkbox" id="cb-167" value="167" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-167">  <span class="sortValue">com.github.javaparser.symbolsolver.Issue113Test.issue113superClassIsResolvedCorrectly</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.Issue113Test.issue113superClassIsResolvedCorrectly</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-645">
+<td><a name="testA-645"></a><input type="checkbox" id="cb-645" value="645" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/github/javaparser/symbolsolver/resolution/typesolvers/JavaParserTypeSolverTest_givenJavaParserTypeSolver_tryToSolveClassWithGeneric_expectSuccess_hx.html';">
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-645">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.typesolvers.JavaParserTypeSolverTest.givenJavaParserTypeSolver_tryToSolveClassWithGeneric_expectSuccess</span><a href="../../../../com/github/javaparser/symbolsolver/resolution/typesolvers/JavaParserTypeSolverTest_givenJavaParserTypeSolver_tryToSolveClassWithGeneric_expectSuccess_hx.html" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.typesolvers.JavaParserTypeSolverTest.givenJavaParserTypeSolver_tryToSolveClassWithGeneric_expectSuccess</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/github/javaparser/symbolsolver/resolution/typesolvers/JavaParserTypeSolverTest.html?line=85#src-85" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/github/javaparser/symbolsolver/resolution/typesolvers/JavaParserTypeSolverTest_givenJavaParserTypeSolver_tryToSolveClassWithGeneric_expectSuccess_hx.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-6">
+<td><a name="testA-6"></a><input type="checkbox" id="cb-6" value="6" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/github/javaparser/symbolsolver/resolution/typesolvers/JavaParserTypeSolverTest_givenJavaParserTypeSolver_tryToSolveInterfaceWithGeneric_expectSuccess_6.html';">
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-6">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.typesolvers.JavaParserTypeSolverTest.givenJavaParserTypeSolver_tryToSolveInterfaceWithGeneric_expectSuccess</span><a href="../../../../com/github/javaparser/symbolsolver/resolution/typesolvers/JavaParserTypeSolverTest_givenJavaParserTypeSolver_tryToSolveInterfaceWithGeneric_expectSuccess_6.html" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.typesolvers.JavaParserTypeSolverTest.givenJavaParserTypeSolver_tryToSolveInterfaceWithGeneric_expectSuccess</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/github/javaparser/symbolsolver/resolution/typesolvers/JavaParserTypeSolverTest.html?line=121#src-121" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/github/javaparser/symbolsolver/resolution/typesolvers/JavaParserTypeSolverTest_givenJavaParserTypeSolver_tryToSolveInterfaceWithGeneric_expectSuccess_6.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-449">
+<td><a name="testA-449"></a><input type="checkbox" id="cb-449" value="449" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-449">  <span class="sortValue">com.github.javaparser.symbolsolver.Issue300Test.fieldAccessIssue</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.Issue300Test.fieldAccessIssue</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-69">
+<td><a name="testA-69"></a><input type="checkbox" id="cb-69" value="69" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-69">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.ContextTest.resolveReferenceToCallOnLambdaParam</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.ContextTest.resolveReferenceToCallOnLambdaParam</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-76">
+<td><a name="testA-76"></a><input type="checkbox" id="cb-76" value="76" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-76">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.TypeResolutionWithSameNameTest.testTypesWithSameNameInPackageAndNested_directImplements</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.TypeResolutionWithSameNameTest.testTypesWithSameNameInPackageAndNested_directImplements</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-247">
+<td><a name="testA-247"></a><input type="checkbox" id="cb-247" value="247" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-247">  <span class="sortValue">com.github.javaparser.symbolsolver.Issue241Test.testSolveStaticallyImportedMemberType</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.Issue241Test.testSolveStaticallyImportedMemberType</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-708">
+<td><a name="testA-708"></a><input type="checkbox" id="cb-708" value="708" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-708">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.typesolvers.JarTypeSolverTest.dependenciesBetweenJarsTriggeringReferencesThatCanBeResolved</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.typesolvers.JarTypeSolverTest.dependenciesBetweenJarsTriggeringReferencesThatCanBeResolved</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-418">
+<td><a name="testA-418"></a><input type="checkbox" id="cb-418" value="418" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/github/javaparser/symbolsolver/Issue1511Test_test_bm.html';">
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-418">  <span class="sortValue">com.github.javaparser.symbolsolver.Issue1511Test.test</span><a href="../../../../com/github/javaparser/symbolsolver/Issue1511Test_test_bm.html" title="View Test Summary Page">com.github.javaparser.symbolsolver.Issue1511Test.test</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/github/javaparser/symbolsolver/Issue1511Test.html?line=49#src-49" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/github/javaparser/symbolsolver/Issue1511Test_test_bm.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-569">
+<td><a name="testA-569"></a><input type="checkbox" id="cb-569" value="569" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-569">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.ContextTest.resolveDoubleNestedClassType</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.ContextTest.resolveDoubleNestedClassType</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-83">
+<td><a name="testA-83"></a><input type="checkbox" id="cb-83" value="83" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-83">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.ContextTest.resolveReferenceToMethodCalledOnArrayAccess</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.ContextTest.resolveReferenceToMethodCalledOnArrayAccess</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-454">
+<td><a name="testA-454"></a><input type="checkbox" id="cb-454" value="454" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-454">  <span class="sortValue">com.github.javaparser.symbolsolver.JavaParserAPIIntegrationTest.parameterDeclarationResolve</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.JavaParserAPIIntegrationTest.parameterDeclarationResolve</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-172">
+<td><a name="testA-172"></a><input type="checkbox" id="cb-172" value="172" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/github/javaparser/symbolsolver/resolution/typesolvers/JavaParserTypeSolverTest_givenJavaParserTypeSolver_tryToSolveClass_expectSuccess_4s.html';">
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-172">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.typesolvers.JavaParserTypeSolverTest.givenJavaParserTypeSolver_tryToSolveClass_expectSuccess</span><a href="../../../../com/github/javaparser/symbolsolver/resolution/typesolvers/JavaParserTypeSolverTest_givenJavaParserTypeSolver_tryToSolveClass_expectSuccess_4s.html" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.typesolvers.JavaParserTypeSolverTest.givenJavaParserTypeSolver_tryToSolveClass_expectSuccess</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/github/javaparser/symbolsolver/resolution/typesolvers/JavaParserTypeSolverTest.html?line=73#src-73" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/github/javaparser/symbolsolver/resolution/typesolvers/JavaParserTypeSolverTest_givenJavaParserTypeSolver_tryToSolveClass_expectSuccess_4s.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-564">
+<td><a name="testA-564"></a><input type="checkbox" id="cb-564" value="564" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-564">  <span class="sortValue">com.github.javaparser.symbolsolver.Issue2362Test.issue2362</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.Issue2362Test.issue2362</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-141">
+<td><a name="testA-141"></a><input type="checkbox" id="cb-141" value="141" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-141">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.TypeResolutionWithSameNameTest.testTypesWithSameNamePackageAndAsteriskImport</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.TypeResolutionWithSameNameTest.testTypesWithSameNamePackageAndAsteriskImport</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-207">
+<td><a name="testA-207"></a><input type="checkbox" id="cb-207" value="207" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/github/javaparser/symbolsolver/resolution/typesolvers/JavaParserTypeSolverTest_givenJavaParserTypeSolver_tryToSolveEnum_expectSuccess_5r.html';">
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-207">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.typesolvers.JavaParserTypeSolverTest.givenJavaParserTypeSolver_tryToSolveEnum_expectSuccess</span><a href="../../../../com/github/javaparser/symbolsolver/resolution/typesolvers/JavaParserTypeSolverTest_givenJavaParserTypeSolver_tryToSolveEnum_expectSuccess_5r.html" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.typesolvers.JavaParserTypeSolverTest.givenJavaParserTypeSolver_tryToSolveEnum_expectSuccess</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/github/javaparser/symbolsolver/resolution/typesolvers/JavaParserTypeSolverTest.html?line=97#src-97" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/github/javaparser/symbolsolver/resolution/typesolvers/JavaParserTypeSolverTest_givenJavaParserTypeSolver_tryToSolveEnum_expectSuccess_5r.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-759">
+<td><a name="testA-759"></a><input type="checkbox" id="cb-759" value="759" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-759">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.javaparser.contexts.CompilationUnitContextResolutionTest.solveSymbolAsValueReferringToStaticallyImportedUsingAsteriskValue</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.javaparser.contexts.CompilationUnitContextResolutionTest.solveSymbolAsValueReferringToStaticallyImportedUsingAsteriskValue</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-594">
+<td><a name="testA-594"></a><input type="checkbox" id="cb-594" value="594" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-594">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.javaparser.contexts.LambdaExprContextResolutionTest.solveParameterOfLambdaInVarDecl</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.javaparser.contexts.LambdaExprContextResolutionTest.solveParameterOfLambdaInVarDecl</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-406">
+<td><a name="testA-406"></a><input type="checkbox" id="cb-406" value="406" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-406">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.ContextTest.resolveTypeUsageOfCascadeMethodInGenericClass</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.ContextTest.resolveTypeUsageOfCascadeMethodInGenericClass</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-573">
+<td><a name="testA-573"></a><input type="checkbox" id="cb-573" value="573" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-573">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.ContextTest.resolveSimpleGenericReturnTypeOfMethodInJar</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.ContextTest.resolveSimpleGenericReturnTypeOfMethodInJar</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-42">
+<td><a name="testA-42"></a><input type="checkbox" id="cb-42" value="42" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-42">  <span class="sortValue">com.github.javaparser.symbolsolver.Issue2367Test.issue2367</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.Issue2367Test.issue2367</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-281">
+<td><a name="testA-281"></a><input type="checkbox" id="cb-281" value="281" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.46153846</span>
+<div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.2%"></div></div></div></td>
+<td id="tc-281">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.javaparser.contexts.CompilationUnitContextResolutionTest.solveMethodStaticallyImportedWithAsterisk</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.javaparser.contexts.CompilationUnitContextResolutionTest.solveMethodStaticallyImportedWithAsterisk</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-38">
+<td><a name="testA-38"></a><input type="checkbox" id="cb-38" value="38" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.30769232</span>
+<div>
+<div title="30,8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:30.8%"></div></div></div></td>
+<td id="tc-38">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.javaparser.contexts.LambdaExprContextResolutionTest.solveParameterOfLambdaInFieldDecl</span><a href="../../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.javaparser.contexts.LambdaExprContextResolutionTest.solveParameterOfLambdaInFieldDecl</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+
+            </tbody>
+        </table>
+
+        
+        <div>&#160;</div>
+
+    
+    </div>
+
+    
+    <footer class="aui-dialog2-footer">
+        <div class="aui-dialog2-footer-actions">
+            <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-primary dialog-close-button">Apply</button>
+        </div>
+        <div class="aui-dialog2-footer-hint">Select tests to highlight code covered by them in the source view.</div>
+    </footer>
+</section>
+
+ 
+        
+        
+
+
+
+
+
+<h2>Source view</h2>
+
+
+<div style="display: table; width: 100%;">
+    <div style="display: table-cell">
+        <button class="aui-button aui-button-link"
+                title="Toggles all methods in the source to be either expanded or collapsed."
+                onclick="toggleAllInlineMethods(this); return false;" id="method-expander">
+            Collapse all methods
+        </button>
+    </div>
+    <div style="display: table-cell">
+        <div style="text-align: right; margin-bottom: 10px">
+            <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;Show legend
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function(content, trigger, showPopup) {
+                content.css({"padding":"20px"}).html(SRC_FILE_LEGEND_TEXT);
+                showPopup();
+                return false;
+            },
+            {
+                width: 700, hideDelay: 60000
+            }
+    );
+</script>        </div>
+    </div>
+</div>
+
+<table cellspacing="0" cellpadding="0" class="srcView" width="100%">
+
+    
+<tbody> <tr id="l1">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=1#src-1">1</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-1" class="srcLine"><span class="comment">/*</span></span></td>
+</tr>
+ <tr id="l2">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=2#src-2">2</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-2" class="srcLine"><span class="comment"> * Copyright (C) 2015-2016 Federico Tomassetti</span></span></td>
+</tr>
+ <tr id="l3">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=3#src-3">3</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-3" class="srcLine"><span class="comment"> * Copyright (C) 2017-2019 The JavaParser Team.</span></span></td>
+</tr>
+ <tr id="l4">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=4#src-4">4</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-4" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l5">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=5#src-5">5</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-5" class="srcLine"><span class="comment"> * This file is part of JavaParser.</span></span></td>
+</tr>
+ <tr id="l6">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=6#src-6">6</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-6" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l7">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=7#src-7">7</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-7" class="srcLine"><span class="comment"> * JavaParser can be used either under the terms of</span></span></td>
+</tr>
+ <tr id="l8">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=8#src-8">8</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-8" class="srcLine"><span class="comment"> * a) the GNU Lesser General Public License as published by</span></span></td>
+</tr>
+ <tr id="l9">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=9#src-9">9</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-9" class="srcLine"><span class="comment"> *     the Free Software Foundation, either version 3 of the License, or</span></span></td>
+</tr>
+ <tr id="l10">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=10#src-10">10</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-10" class="srcLine"><span class="comment"> *     (at your option) any later version.</span></span></td>
+</tr>
+ <tr id="l11">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=11#src-11">11</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-11" class="srcLine"><span class="comment"> * b) the terms of the Apache License</span></span></td>
+</tr>
+ <tr id="l12">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=12#src-12">12</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-12" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l13">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=13#src-13">13</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-13" class="srcLine"><span class="comment"> * You should have received a copy of both licenses in LICENCE.LGPL and</span></span></td>
+</tr>
+ <tr id="l14">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=14#src-14">14</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-14" class="srcLine"><span class="comment"> * LICENCE.APACHE. Please refer to those files for details.</span></span></td>
+</tr>
+ <tr id="l15">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=15#src-15">15</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-15" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l16">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=16#src-16">16</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-16" class="srcLine"><span class="comment"> * JavaParser is distributed in the hope that it will be useful,</span></span></td>
+</tr>
+ <tr id="l17">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=17#src-17">17</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-17" class="srcLine"><span class="comment"> * but WITHOUT ANY WARRANTY; without even the implied warranty of</span></span></td>
+</tr>
+ <tr id="l18">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=18#src-18">18</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-18" class="srcLine"><span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></span></td>
+</tr>
+ <tr id="l19">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=19#src-19">19</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-19" class="srcLine"><span class="comment"> * GNU Lesser General Public License for more details.</span></span></td>
+</tr>
+ <tr id="l20">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=20#src-20">20</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-20" class="srcLine"><span class="comment"> */</span></span></td>
+</tr>
+ <tr id="l21">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=21#src-21">21</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-21" class="srcLine"></span></td>
+</tr>
+ <tr id="l22">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=22#src-22">22</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-22" class="srcLine"><span class="keyword">package</span> com.github.<a href="../../javaparser/pkg-summary.html">javaparser</a>.<a href="../symbolsolver/pkg-summary.html">symbolsolver</a>;</span></td>
+</tr>
+ <tr id="l23">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=23#src-23">23</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-23" class="srcLine"></span></td>
+</tr>
+ <tr id="l24">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=24#src-24">24</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-24" class="srcLine"><span class="keyword">import</span> com.github.<a href="../../javaparser/pkg-summary.html">javaparser</a>.<a href="../utils/pkg-summary.html">utils</a>.<a href="../../../../com/github/javaparser/utils/CodeGenerationUtils.html#CodeGenerationUtils">CodeGenerationUtils</a>;</span></td>
+</tr>
+ <tr id="l25">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=25#src-25">25</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-25" class="srcLine"></span></td>
+</tr>
+ <tr id="l26">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=26#src-26">26</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-26" class="srcLine"><span class="keyword">import</span> java.nio.file.Files;</span></td>
+</tr>
+ <tr id="l27">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=27#src-27">27</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-27" class="srcLine"><span class="keyword">import</span> java.nio.file.Path;</span></td>
+</tr>
+ <tr id="l28">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=28#src-28">28</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-28" class="srcLine"><span class="keyword">import</span> java.nio.file.Paths;</span></td>
+</tr>
+ <tr id="l29">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=29#src-29">29</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-29" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="30" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-30' onclick="toggleInlineStats(this, 'inlinestats-30');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-30" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-30'), 'inlinestats-30');return true;">
+                <td><div>
+<div title="46,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:46.2%"></div></div></div></td><td>46,2%</td>
+                <td class="inlineStat">Uncovered Elements: 7 (13)</td>
+                <td class="inlineStat">Complexity: 4</td>
+                <td class="inlineStat">Complexity Density: 0,57</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l30">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=30#src-30">30</a></td>
+<td align="right" class="coverageCount NoHilight "   onclick="return showTestsForLine(this, 30, 'Tests that hit AbstractSymbolResolutionTest');" >&#160;&#160;</td>
+<td class=" srcCell" id="id-30"><span class="spacer"></span><span id="src-30" class="srcLine"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <a href="../../../../com/github/javaparser/symbolsolver/AbstractSymbolResolutionTest.html#AbstractSymbolResolutionTest">AbstractSymbolResolutionTest</a> {</span></td>
+</tr>
+ <tr id="l31">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=31#src-31">31</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-31" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="32" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-32' onclick="toggleInlineStats(this, 'inlinestats-32');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-32" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-32'), 'inlinestats-32');return true;">
+                <td><div>
+<div title="30% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:30%"></div></div></div></td><td>30%</td>
+                <td class="inlineStat">Uncovered Elements: 7 (10)</td>
+                <td class="inlineStat">Complexity: 3</td>
+                <td class="inlineStat">Complexity Density: 0,5</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l32">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=32#src-32">32</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 32, 'Tests that hit adaptPath(Path)&#160;:&#160;Path');" ><span title="Line 32, Col 5: method entered 658 times." class="nolink">&#160;658</span></td>
+<td class=" methodStart  srcCell" id="id-32"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 32,42);" id="img-32" src="../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-32" class="srcLine"><span class="nolink" title="Line 32, Col 5: method entered 658 times.">    <span class="keyword">protected</span> <span class="keyword">static</span> Path adaptPath(Path path) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-32'), 32,42);" id="e32" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l33">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=33#src-33">33</a></td>
+<td align="right" class="coverageCount Bad hitByTest"   onclick="return showTestsForLine(this, 33, 'Tests that hit line # 33');" ><span title="Line 33, Col 12: true branch executed 658 times, false branch executed 0 times." class="nolink">&#160;658</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-33" class="srcLineHilight"><span class="nolink" title="Line 33, Col 12: true branch executed 658 times, false branch executed 0 times.">        <span class="keyword">if</span> (Files.exists(path)) {</span></span></td>
+</tr>
+ <tr id="l34">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=34#src-34">34</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 34, 'Tests that hit line # 34');" ><span title="Line 34, Col 13: statement executed 658 times." class="nolink">&#160;658</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-34" class="srcLine"><span class="nolink" title="Line 34, Col 13: statement executed 658 times.">            <span class="keyword">return</span> path.toAbsolutePath();</span></span></td>
+</tr>
+ <tr id="l35">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=35#src-35">35</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-35" class="srcLine">        }</span></td>
+</tr>
+ <tr id="l36">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=36#src-36">36</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 36, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-36" class="srcLineHilight"><span class="nolink" title="Line 36, Col 9: statement not executed.">        Path underSymbolSolver = <a href="../../../../com/github/javaparser/utils/CodeGenerationUtils.html#CodeGenerationUtils">CodeGenerationUtils</a>.mavenModuleRoot(<a href="../../../../com/github/javaparser/symbolsolver/AbstractSymbolResolutionTest.html#AbstractSymbolResolutionTest">AbstractSymbolResolutionTest</a>.<span class="keyword">class</span>).resolve(<span class="string">&quot;javaparser-symbol-solver-testing&quot;</span>).resolve(path);</span></span></td>
+</tr>
+ <tr id="l37">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=37#src-37">37</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 37, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-37" class="srcLineHilight"><span class="nolink" title="Line 37, Col 9: statement not executed.">        <span class="keyword">if</span> (Files.exists(underSymbolSolver)) {</span></span></td>
+</tr>
+ <tr id="l38">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=38#src-38">38</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 38, Col 13: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-38" class="srcLineHilight"><span class="nolink" title="Line 38, Col 13: statement not executed.">            <span class="keyword">return</span> underSymbolSolver;</span></span></td>
+</tr>
+ <tr id="l39">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=39#src-39">39</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-39" class="srcLine">        } <span class="keyword">else</span> {</span></td>
+</tr>
+ <tr id="l40">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=40#src-40">40</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 40, Col 13: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-40" class="srcLineHilight"><span class="nolink" title="Line 40, Col 13: statement not executed.">            <span class="keyword">throw</span> <span class="keyword">new</span> IllegalArgumentException(<span class="string">&quot;I cannot adapt the path &quot;</span> + path);</span></span></td>
+</tr>
+ <tr id="l41">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=41#src-41">41</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-41" class="srcLine">        }</span></td>
+</tr>
+ <tr id="l42">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=42#src-42">42</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-42" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l43">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=43#src-43">43</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-43" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="44" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-44' onclick="toggleInlineStats(this, 'inlinestats-44');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-44" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-44'), 'inlinestats-44');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l44">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=44#src-44">44</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 44, 'Tests that hit adaptPath(String)&#160;:&#160;Path');" ><span title="Line 44, Col 5: method entered 657 times." class="nolink">&#160;657</span></td>
+<td class=" methodStart  srcCell" id="id-44"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 44,46);" id="img-44" src="../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-44" class="srcLine"><span class="nolink" title="Line 44, Col 5: method entered 657 times.">    <span class="keyword">protected</span> <span class="keyword">static</span> Path adaptPath(String path) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-44'), 44,46);" id="e44" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l45">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=45#src-45">45</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 45, 'Tests that hit line # 45');" ><span title="Line 45, Col 9: statement executed 657 times." class="nolink">&#160;657</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-45" class="srcLine"><span class="nolink" title="Line 45, Col 9: statement executed 657 times.">        <span class="keyword">return</span> adaptPath(Paths.get(path));</span></span></td>
+</tr>
+ <tr id="l46">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=46#src-46">46</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-46" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l47">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=47#src-47">47</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-47" class="srcLine">}</span></td>
+</tr>
+ 
+    </tbody></table>    </div>
+</div><!-- .aui-tabs -->
+
+<script type="text/javascript"> 
+    var ol_bgclass = "overBG";
+    var ol_fgclass = "overFG";
+    var ol_cgclass = "overCaption";
+    var ol_captionfontclass= "overCaption";
+    var ol_closefontclass = "closeFont";
+    var ol_closeclick = 1;
+    var ol_close = 'X';
+    var ol_wrap = 1;
+    var rootRelPath = '../../../../';
+    var testsPerFile = -1;
+</script>
+<script src="AbstractSymbolResolutionTest.js" type="text/javascript"></script>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Sun Feb 23 2020 18:17:02 CET using coverage data from Sun Feb 23 2020 18:16:51 CET.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

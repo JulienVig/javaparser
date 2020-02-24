@@ -1,0 +1,2855 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="img/clover.ico" />
+
+    <link rel="stylesheet" href="aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('style.css');
+        @import url('tree.css');
+        
+    </style>
+
+    <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="package-nodes-tree.js" type="text/javascript"></script>
+    <script src="clover-tree.js" type="text/javascript"></script>
+    <script src="clover.js" type="text/javascript"></script>
+    <script src="clover-descriptions.js" type="text/javascript"></script>
+    <script src="cloud.js" type="text/javascript"></script>
+
+            <title>javaparser-parent 3.15.13-SNAPSHOT (Aggregated)</title>
+    </head>
+
+<body  >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                    <a href="https://github.com/javaparser" target="_top">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+                    </a>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                            <a href="https://github.com/javaparser" target="_top">
+                                        javaparser-parent 3.15.13-SNAPSHOT (Aggregated)
+                                        </a>
+                    </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="aui-nav-selected">
+                    <a href="dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                  <div class="packages-tree-wrapper" data-root-relative="" data-package-name="">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="dashboard.html">Project Clover database Sun Feb 23 2020 18:16:51 CET</a></li>
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Project overview
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+            <ul class="tabs-menu">
+            <li class="menu-item ">
+            <a href="dashboard.html">Dashboard</a>
+        </li>
+                <li class="menu-item ">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="testsrc-pkg-summary.html"><strong>Test code</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="test-pkg-summary.html"><strong>Test results</strong></a>
+        </li>
+                <li class="menu-item active-tab">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                                                <li class="menu-item ">
+                <a href="treemap.html"><strong>Coverage tree map</strong></a>
+            </li>
+            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+        
+
+
+                        <div style="text-align: right; margin-bottom: 10px">
+            
+            
+                                    <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;How to read this chart
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function (content, trigger, showPopup) {
+                var description = topRisksDescription();
+                var title = 'Top Risks';
+                content.css({"padding": "20px"}).html(
+                        '<h2>' + title + '</h2>' + description);
+                showPopup();
+                return false;
+            },
+            {
+                width: 600
+            }
+    );
+</script>
+        </div>
+
+        
+
+<div style="padding: 20px; border: 1px solid #cccccc; background-color: #f5f5f5; border-radius: 3px">
+          <div id="deepPackageCloud"  >
+                          
+    
+        
+    
+            <a href="com/github/javaparser/symbolsolver/resolution/typesolvers/AarTypeSolver.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,167 , Coverage - 55,6% ">AarTypeSolver</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/logic/AbstractClassDeclaration.html" class="tag"
+            style="font-size: 13px;color:#14892c"
+            title="Average Method Complexity - 1,75 , Coverage - 89,3% ">AbstractClassDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/contexts/AbstractJavaParserContext.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 4,333 , Coverage - 78,8% ">AbstractJavaParserContext</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/contexts/AbstractMethodLikeDeclarationContext.html" class="tag"
+            style="font-size: 14px;color:#e7a19b"
+            title="Average Method Complexity - 2,167 , Coverage - 57,1% ">AbstractMethodLikeDeclarationContext</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/declarators/AbstractSymbolDeclarator.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AbstractSymbolDeclarator</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/logic/AbstractTypeDeclaration.html" class="tag"
+            style="font-size: 13px;color:#14892c"
+            title="Average Method Complexity - 1,5 , Coverage - 88,2% ">AbstractTypeDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/ast/AccessSpecifier.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AccessSpecifier</a>
+            
+    
+            <a href="com/github/javaparser/printer/lexicalpreservation/Added.html" class="tag"
+            style="font-size: 13px;color:#f6c342"
+            title="Average Method Complexity - 1,5 , Coverage - 67,6% ">Added</a>
+            
+    
+            <a href="com/github/javaparser/ast/body/AnnotationDeclaration.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,125 , Coverage - 56,1% ">AnnotationDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/contexts/AnnotationDeclarationContext.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,4 , Coverage - 36,8% ">AnnotationDeclarationContext</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/AnnotationDeclarationMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AnnotationDeclarationMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/AnnotationExpr.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,357 , Coverage - 32,7% ">AnnotationExpr</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/AnnotationExprMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AnnotationExprMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/body/AnnotationMemberDeclaration.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,833 , Coverage - 59,3% ">AnnotationMemberDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/AnnotationMemberDeclarationMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AnnotationMemberDeclarationMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/contexts/AnonymousClassDeclarationContext.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 4,5 , Coverage - 71,6% ">AnonymousClassDeclarationContext</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/ArrayAccessExpr.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,471 , Coverage - 44,3% ">ArrayAccessExpr</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/ArrayAccessExprMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ArrayAccessExprMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/ArrayCreationExpr.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,75 , Coverage - 43,5% ">ArrayCreationExpr</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/ArrayCreationExprMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ArrayCreationExprMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/ArrayCreationLevel.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,875 , Coverage - 41,8% ">ArrayCreationLevel</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/ArrayCreationLevelMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ArrayCreationLevelMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/ArrayInitializerExpr.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,533 , Coverage - 38,2% ">ArrayInitializerExpr</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/ArrayInitializerExprMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ArrayInitializerExprMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/type/ArrayType.html" class="tag"
+            style="font-size: 13px;color:#14892c"
+            title="Average Method Complexity - 1,591 , Coverage - 84,1% ">ArrayType</a>
+            
+    
+            <a href="com/github/javaparser/ast/type/ArrayType.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ArrayType.ArrayBracketPair</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/ArrayTypeMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ArrayTypeMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/stmt/AssertStmt.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,579 , Coverage - 38,7% ">AssertStmt</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/AssertStmtMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AssertStmtMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/AssignExpr.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,474 , Coverage - 60,4% ">AssignExpr</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/AssignExpr.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="Average Method Complexity - 4,667 , Coverage - 26,7% ">AssignExpr.Operator</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/AssignExprMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AssignExprMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/observer/AstObserverAdapter.html" class="tag"
+            style="font-size: 12px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 75% ">AstObserverAdapter</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/declarations/AstResolutionUtils.html" class="tag"
+            style="font-size: 15px;color:#14892c"
+            title="Average Method Complexity - 4 , Coverage - 92% ">AstResolutionUtils</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/BaseNodeMetaModel.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,619 , Coverage - 46,9% ">BaseNodeMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/BinaryExpr.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,474 , Coverage - 56% ">BinaryExpr</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/BinaryExpr.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="Average Method Complexity - 4,667 , Coverage - 26,7% ">BinaryExpr.Operator</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/BinaryExprMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">BinaryExprMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/comments/BlockComment.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,154 , Coverage - 42,9% ">BlockComment</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/BlockCommentMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">BlockCommentMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/stmt/BlockStmt.html" class="tag"
+            style="font-size: 13px;color:#f6c342"
+            title="Average Method Complexity - 1,533 , Coverage - 64,7% ">BlockStmt</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/contexts/BlockStmtContext.html" class="tag"
+            style="font-size: 14px;color:#14892c"
+            title="Average Method Complexity - 3 , Coverage - 91,2% ">BlockStmtContext</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/BlockStmtMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">BlockStmtMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/body/BodyDeclaration.html" class="tag"
+            style="font-size: 13px;color:#d9695f"
+            title="Average Method Complexity - 1,148 , Coverage - 25,9% ">BodyDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/BodyDeclarationMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">BodyDeclarationMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/BooleanLiteralExpr.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,188 , Coverage - 54,2% ">BooleanLiteralExpr</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/BooleanLiteralExprMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">BooleanLiteralExprMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/resolution/typeinference/BoundSet.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="Average Method Complexity - 3,781 , Coverage - 1,2% ">BoundSet</a>
+            
+    
+            <a href="com/github/javaparser/ast/stmt/BreakStmt.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,471 , Coverage - 35,2% ">BreakStmt</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/BreakStmtMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">BreakStmtMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/body/CallableDeclaration.html" class="tag"
+            style="font-size: 14px;color:#e7a19b"
+            title="Average Method Complexity - 2,429 , Coverage - 60,5% ">CallableDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/ast/body/CallableDeclaration.html" class="tag"
+            style="font-size: 13px;color:#f6c342"
+            title="Average Method Complexity - 1,714 , Coverage - 64,7% ">CallableDeclaration.Signature</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/CallableDeclarationMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">CallableDeclarationMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/CastExpr.html" class="tag"
+            style="font-size: 13px;color:#f6c342"
+            title="Average Method Complexity - 1,471 , Coverage - 65,8% ">CastExpr</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/CastExprMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">CastExprMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/stmt/CatchClause.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,571 , Coverage - 47,9% ">CatchClause</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/contexts/CatchClauseContext.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,5 , Coverage - 57,1% ">CatchClauseContext</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/CatchClauseMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">CatchClauseMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/CharLiteralExpr.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,118 , Coverage - 34,1% ">CharLiteralExpr</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/CharLiteralExprMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">CharLiteralExprMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/printer/lexicalpreservation/ChildTextElement.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,167 , Coverage - 48,9% ">ChildTextElement</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/reflectionmodel/comparators/ClassComparator.html" class="tag"
+            style="font-size: 17px;color:#d9695f"
+            title="Average Method Complexity - 6 , Coverage - 21,4% ">ClassComparator</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/ClassExpr.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,333 , Coverage - 42,1% ">ClassExpr</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/ClassExprMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ClassExprMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/resolution/typesolvers/ClassLoaderTypeSolver.html" class="tag"
+            style="font-size: 14px;color:#fae1a0"
+            title="Average Method Complexity - 2,6 , Coverage - 81,8% ">ClassLoaderTypeSolver</a>
+            
+    
+            <a href="com/github/javaparser/ast/body/ClassOrInterfaceDeclaration.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,846 , Coverage - 61% ">ClassOrInterfaceDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/contexts/ClassOrInterfaceDeclarationContext.html" class="tag"
+            style="font-size: 13px;color:#14892c"
+            title="Average Method Complexity - 1,778 , Coverage - 88,9% ">ClassOrInterfaceDeclarationContext</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/ClassOrInterfaceDeclarationMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ClassOrInterfaceDeclarationMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/type/ClassOrInterfaceType.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,714 , Coverage - 59,5% ">ClassOrInterfaceType</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/ClassOrInterfaceTypeMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ClassOrInterfaceTypeMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/utils/ClassUtils.html" class="tag"
+            style="font-size: 13px;color:#14892c"
+            title="Average Method Complexity - 1,5 , Coverage - 92% ">ClassUtils</a>
+            
+    
+            <a href="com/github/javaparser/ast/visitor/CloneVisitor.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,06 , Coverage - 38,4% ">CloneVisitor</a>
+            
+    
+            <a href="com/github/javaparser/utils/CodeGenerationUtils.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,733 , Coverage - 62% ">CodeGenerationUtils</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/resolution/typesolvers/CombinedTypeSolver.html" class="tag"
+            style="font-size: 13px;color:#fae1a0"
+            title="Average Method Complexity - 1,75 , Coverage - 75% ">CombinedTypeSolver</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/resolution/typesolvers/CombinedTypeSolver.html" class="tag"
+            style="font-size: 13px;color:#89c495"
+            title="Average Method Complexity - 2 , Coverage - 100% ">CombinedTypeSolver.ExceptionHandlers</a>
+            
+    
+            <a href="com/github/javaparser/ast/comments/Comment.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,385 , Coverage - 56,6% ">Comment</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/CommentMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">CommentMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/comments/CommentsCollection.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,455 , Coverage - 44,7% ">CommentsCollection</a>
+            
+    
+            <a href="com/github/javaparser/CommentsInserter.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 5 , Coverage - 93,3% ">CommentsInserter</a>
+            
+    
+            <a href="com/github/javaparser/ast/validator/chunks/CommonValidators.html" class="tag"
+            style="font-size: 21px;color:#89c495"
+            title="Average Method Complexity - 10 , Coverage - 100% ">CommonValidators</a>
+            
+    
+            <a href="com/github/javaparser/ast/CompilationUnit.html" class="tag"
+            style="font-size: 13px;color:#fae1a0"
+            title="Average Method Complexity - 1,885 , Coverage - 78,3% ">CompilationUnit</a>
+            
+    
+            <a href="com/github/javaparser/ast/CompilationUnit.html" class="tag"
+            style="font-size: 13px;color:#fae1a0"
+            title="Average Method Complexity - 1,167 , Coverage - 74,3% ">CompilationUnit.Storage</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/contexts/CompilationUnitContext.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 5,917 , Coverage - 87,2% ">CompilationUnitContext</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/CompilationUnitMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">CompilationUnitMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/printer/ConcreteSyntaxModel.html" class="tag"
+            style="font-size: 13px;color:#89c495"
+            title="Average Method Complexity - 1,182 , Coverage - 95,2% ">ConcreteSyntaxModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/ConditionalExpr.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,579 , Coverage - 51,5% ">ConditionalExpr</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/ConditionalExprMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ConditionalExprMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/resolution/typeinference/ConstraintFormula.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,294 , Coverage - 37,9% ">ConstraintFormula.ReductionResult</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/contexts/ConstructorContext.html" class="tag"
+            style="font-size: 13px;color:#89c495"
+            title="Average Method Complexity - 1,5 , Coverage - 100% ">ConstructorContext</a>
+            
+    
+            <a href="com/github/javaparser/ast/body/ConstructorDeclaration.html" class="tag"
+            style="font-size: 13px;color:#f6c342"
+            title="Average Method Complexity - 1,32 , Coverage - 66,7% ">ConstructorDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/ConstructorDeclarationMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ConstructorDeclarationMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/resolution/ConstructorResolutionLogic.html" class="tag"
+            style="font-size: 18px;color:#de7b72"
+            title="Average Method Complexity - 7,286 , Coverage - 30,4% ">ConstructorResolutionLogic</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/contexts/ContextHelper.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,5 , Coverage - 57,1% ">ContextHelper</a>
+            
+    
+            <a href="com/github/javaparser/ast/stmt/ContinueStmt.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,471 , Coverage - 29,6% ">ContinueStmt</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/ContinueStmtMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ContinueStmtMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/printer/concretesyntaxmodel/CsmAttribute.html" class="tag"
+            style="font-size: 15px;color:#f6c342"
+            title="Average Method Complexity - 3,75 , Coverage - 62,5% ">CsmAttribute</a>
+            
+    
+            <a href="com/github/javaparser/printer/concretesyntaxmodel/CsmChar.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">CsmChar</a>
+            
+    
+            <a href="com/github/javaparser/printer/concretesyntaxmodel/CsmComment.html" class="tag"
+            style="font-size: 14px;color:#14892c"
+            title="Average Method Complexity - 2,5 , Coverage - 91,3% ">CsmComment</a>
+            
+    
+            <a href="com/github/javaparser/printer/concretesyntaxmodel/CsmConditional.html" class="tag"
+            style="font-size: 13px;color:#14892c"
+            title="Average Method Complexity - 1,333 , Coverage - 89,7% ">CsmConditional</a>
+            
+    
+            <a href="com/github/javaparser/printer/concretesyntaxmodel/CsmConditional.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 5 , Coverage - 90% ">CsmConditional.Condition</a>
+            
+    
+            <a href="com/github/javaparser/printer/concretesyntaxmodel/CsmIndent.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">CsmIndent</a>
+            
+    
+            <a href="com/github/javaparser/printer/concretesyntaxmodel/CsmList.html" class="tag"
+            style="font-size: 15px;color:#f6c342"
+            title="Average Method Complexity - 3,333 , Coverage - 62,2% ">CsmList</a>
+            
+    
+            <a href="com/github/javaparser/printer/concretesyntaxmodel/CsmMix.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="Average Method Complexity - 2,167 , Coverage - 30,3% ">CsmMix</a>
+            
+    
+            <a href="com/github/javaparser/printer/concretesyntaxmodel/CsmNone.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">CsmNone</a>
+            
+    
+            <a href="com/github/javaparser/printer/concretesyntaxmodel/CsmOrphanCommentsEnding.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 6 , Coverage - 100% ">CsmOrphanCommentsEnding</a>
+            
+    
+            <a href="com/github/javaparser/printer/concretesyntaxmodel/CsmSequence.html" class="tag"
+            style="font-size: 13px;color:#f6c342"
+            title="Average Method Complexity - 1,667 , Coverage - 71,4% ">CsmSequence</a>
+            
+    
+            <a href="com/github/javaparser/printer/concretesyntaxmodel/CsmSingleReference.html" class="tag"
+            style="font-size: 13px;color:#89c495"
+            title="Average Method Complexity - 1,333 , Coverage - 100% ">CsmSingleReference</a>
+            
+    
+            <a href="com/github/javaparser/printer/concretesyntaxmodel/CsmString.html" class="tag"
+            style="font-size: 12px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 75% ">CsmString</a>
+            
+    
+            <a href="com/github/javaparser/printer/concretesyntaxmodel/CsmToken.html" class="tag"
+            style="font-size: 14px;color:#fae1a0"
+            title="Average Method Complexity - 2,273 , Coverage - 76,7% ">CsmToken</a>
+            
+    
+            <a href="com/github/javaparser/printer/concretesyntaxmodel/CsmUnindent.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">CsmUnindent</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/declarations/DefaultConstructorDeclaration.html" class="tag"
+            style="font-size: 12px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 30% ">DefaultConstructorDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/printer/lexicalpreservation/Difference.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 6,781 , Coverage - 91,2% ">Difference</a>
+            
+    
+            <a href="com/github/javaparser/printer/lexicalpreservation/Difference.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Difference.MatchClassification</a>
+            
+    
+            <a href="com/github/javaparser/printer/lexicalpreservation/DifferenceElementCalculator.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 6,556 , Coverage - 94% ">DifferenceElementCalculator</a>
+            
+    
+            <a href="com/github/javaparser/ast/stmt/DoStmt.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,471 , Coverage - 44,3% ">DoStmt</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/DoStmtMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">DoStmtMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/printer/DotPrinter.html" class="tag"
+            style="font-size: 13px;color:#89c495"
+            title="Average Method Complexity - 2 , Coverage - 100% ">DotPrinter</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/DoubleLiteralExpr.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,125 , Coverage - 37,2% ">DoubleLiteralExpr</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/DoubleLiteralExprMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">DoubleLiteralExprMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/stmt/EmptyStmt.html" class="tag"
+            style="font-size: 13px;color:#d9695f"
+            title="Average Method Complexity - 1,167 , Coverage - 27,3% ">EmptyStmt</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/EmptyStmtMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">EmptyStmtMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/EnclosedExpr.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,312 , Coverage - 37,3% ">EnclosedExpr</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/EnclosedExprMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">EnclosedExprMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/body/EnumConstantDeclaration.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,81 , Coverage - 44,1% ">EnumConstantDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/EnumConstantDeclarationMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">EnumConstantDeclarationMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/body/EnumDeclaration.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,609 , Coverage - 44,1% ">EnumDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/contexts/EnumDeclarationContext.html" class="tag"
+            style="font-size: 13px;color:#fae1a0"
+            title="Average Method Complexity - 1,6 , Coverage - 83,3% ">EnumDeclarationContext</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/EnumDeclarationMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">EnumDeclarationMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/visitor/EqualsVisitor.html" class="tag"
+            style="font-size: 16px;color:#de7b72"
+            title="Average Method Complexity - 4,21 , Coverage - 29,4% ">EqualsVisitor</a>
+            
+    
+            <a href="com/github/javaparser/ast/stmt/ExplicitConstructorInvocationStmt.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,958 , Coverage - 40,6% ">ExplicitConstructorInvocationStmt</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/ExplicitConstructorInvocationStmtMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ExplicitConstructorInvocationStmtMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/Expression.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="Average Method Complexity - 1,013 , Coverage - 3,3% ">Expression</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/resolution/typeinference/constraintformulas/ExpressionCompatibleWithType.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="Average Method Complexity - 4,889 , Coverage - 6,4% ">ExpressionCompatibleWithType</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/resolution/typeinference/ExpressionHelper.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 3 , Coverage - 18,6% ">ExpressionHelper</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/ExpressionMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ExpressionMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/stmt/ExpressionStmt.html" class="tag"
+            style="font-size: 13px;color:#f6c342"
+            title="Average Method Complexity - 1,333 , Coverage - 66,7% ">ExpressionStmt</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/ExpressionStmtMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ExpressionStmtMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/contexts/FieldAccessContext.html" class="tag"
+            style="font-size: 14px;color:#fae1a0"
+            title="Average Method Complexity - 2,833 , Coverage - 78,2% ">FieldAccessContext</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/FieldAccessExpr.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,696 , Coverage - 45,6% ">FieldAccessExpr</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/FieldAccessExprMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">FieldAccessExprMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/body/FieldDeclaration.html" class="tag"
+            style="font-size: 13px;color:#f6c342"
+            title="Average Method Complexity - 1,889 , Coverage - 66,3% ">FieldDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/FieldDeclarationMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">FieldDeclarationMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/contexts/ForEachStatementContext.html" class="tag"
+            style="font-size: 13px;color:#fae1a0"
+            title="Average Method Complexity - 2 , Coverage - 76% ">ForEachStatementContext</a>
+            
+    
+            <a href="com/github/javaparser/ast/stmt/ForEachStmt.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,5 , Coverage - 48,6% ">ForEachStmt</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/ForEachStmtMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ForEachStmtMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/contexts/ForStatementContext.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="Average Method Complexity - 2,5 , Coverage - 30,3% ">ForStatementContext</a>
+            
+    
+            <a href="com/github/javaparser/ast/stmt/ForStmt.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 2,045 , Coverage - 40,8% ">ForStmt</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/ForStmtMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ForStmtMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/logic/FunctionalInterfaceLogic.html" class="tag"
+            style="font-size: 13px;color:#14892c"
+            title="Average Method Complexity - 1,714 , Coverage - 88,5% ">FunctionalInterfaceLogic</a>
+            
+    
+            <a href="com/github/javaparser/ast/visitor/GenericVisitorAdapter.html" class="tag"
+            style="font-size: 17px;color:#d5584c"
+            title="Average Method Complexity - 5,344 , Coverage - 7,6% ">GenericVisitorAdapter</a>
+            
+    
+            <a href="com/github/javaparser/ast/visitor/HashCodeVisitor.html" class="tag"
+            style="font-size: 14px;color:#e7a19b"
+            title="Average Method Complexity - 2,388 , Coverage - 50,4% ">HashCodeVisitor</a>
+            
+    
+            <a href="com/github/javaparser/ast/stmt/IfStmt.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,583 , Coverage - 53,7% ">IfStmt</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/IfStmtMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">IfStmtMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/ImportDeclaration.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,438 , Coverage - 60,3% ">ImportDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/ImportDeclarationMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ImportDeclarationMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/logic/InferenceContext.html" class="tag"
+            style="font-size: 20px;color:#14892c"
+            title="Average Method Complexity - 9,429 , Coverage - 88,7% ">InferenceContext</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/resolution/typeinference/InferenceVariable.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="Average Method Complexity - 1,8 , Coverage - 13,7% ">InferenceVariable</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/logic/InferenceVariableType.html" class="tag"
+            style="font-size: 14px;color:#f6c342"
+            title="Average Method Complexity - 2,333 , Coverage - 64,9% ">InferenceVariableType</a>
+            
+    
+            <a href="com/github/javaparser/ast/body/InitializerDeclaration.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,353 , Coverage - 57,4% ">InitializerDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/InitializerDeclarationMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">InitializerDeclarationMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/InstanceOfExpr.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,471 , Coverage - 41,8% ">InstanceOfExpr</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/InstanceOfExprMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">InstanceOfExprMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/resolution/typeinference/Instantiation.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,667 , Coverage - 42,9% ">Instantiation</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/IntegerLiteralExpr.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,588 , Coverage - 55,7% ">IntegerLiteralExpr</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/IntegerLiteralExprMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">IntegerLiteralExprMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/type/IntersectionType.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,471 , Coverage - 38,9% ">IntersectionType</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/IntersectionTypeMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">IntersectionTypeMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/resolution/typesolvers/JarTypeSolver.html" class="tag"
+            style="font-size: 14px;color:#fae1a0"
+            title="Average Method Complexity - 2,154 , Coverage - 77,4% ">JarTypeSolver</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/resolution/typesolvers/JarTypeSolver.html" class="tag"
+            style="font-size: 13px;color:#89c495"
+            title="Average Method Complexity - 2 , Coverage - 100% ">JarTypeSolver.ClasspathElement</a>
+            
+    
+            <a href="com/github/javaparser/version/Java10PostProcessor.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Java10PostProcessor</a>
+            
+    
+            <a href="com/github/javaparser/ast/validator/Java10Validator.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Java10Validator</a>
+            
+    
+            <a href="com/github/javaparser/ast/validator/Java11Validator.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Java11Validator</a>
+            
+    
+            <a href="com/github/javaparser/ast/validator/Java12Validator.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Java12Validator</a>
+            
+    
+            <a href="com/github/javaparser/ast/validator/Java13Validator.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Java13Validator</a>
+            
+    
+            <a href="com/github/javaparser/ast/validator/Java14Validator.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Java14Validator</a>
+            
+    
+            <a href="com/github/javaparser/ast/validator/Java1_0Validator.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Java1_0Validator</a>
+            
+    
+            <a href="com/github/javaparser/ast/validator/Java1_1Validator.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Java1_1Validator</a>
+            
+    
+            <a href="com/github/javaparser/ast/validator/Java1_2Validator.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Java1_2Validator</a>
+            
+    
+            <a href="com/github/javaparser/ast/validator/Java1_3Validator.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Java1_3Validator</a>
+            
+    
+            <a href="com/github/javaparser/ast/validator/Java1_4Validator.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Java1_4Validator</a>
+            
+    
+            <a href="com/github/javaparser/ast/validator/Java5Validator.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Java5Validator</a>
+            
+    
+            <a href="com/github/javaparser/ast/validator/Java6Validator.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Java6Validator</a>
+            
+    
+            <a href="com/github/javaparser/ast/validator/Java7Validator.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Java7Validator</a>
+            
+    
+            <a href="com/github/javaparser/ast/validator/Java8Validator.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Java8Validator</a>
+            
+    
+            <a href="com/github/javaparser/ast/validator/Java9Validator.html" class="tag"
+            style="font-size: 12px;color:#14892c"
+            title="Average Method Complexity - 1 , Coverage - 87,5% ">Java9Validator</a>
+            
+    
+            <a href="com/github/javaparser/JavaParser.html" class="tag"
+            style="font-size: 13px;color:#fae1a0"
+            title="Average Method Complexity - 1,194 , Coverage - 82,9% ">JavaParser</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserAnnotationDeclaration.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,062 , Coverage - 55% ">JavaParserAnnotationDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserAnnotationMemberDeclaration.html" class="tag"
+            style="font-size: 12px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 69,2% ">JavaParserAnnotationMemberDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserAnonymousClassDeclaration.html" class="tag"
+            style="font-size: 13px;color:#f6c342"
+            title="Average Method Complexity - 1,2 , Coverage - 64,6% ">JavaParserAnonymousClassDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserClassDeclaration.html" class="tag"
+            style="font-size: 13px;color:#14892c"
+            title="Average Method Complexity - 1,795 , Coverage - 85,5% ">JavaParserClassDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserConstructorDeclaration.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,364 , Coverage - 50% ">JavaParserConstructorDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserEnumConstantDeclaration.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">JavaParserEnumConstantDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserEnumDeclaration.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,636 , Coverage - 53,1% ">JavaParserEnumDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFacade.html" class="tag"
+            style="font-size: 14px;color:#fae1a0"
+            title="Average Method Complexity - 3,143 , Coverage - 80% ">JavaParserFacade</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFactory.html" class="tag"
+            style="font-size: 27px;color:#14892c"
+            title="Average Method Complexity - 16 , Coverage - 91,9% ">JavaParserFactory</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserFieldDeclaration.html" class="tag"
+            style="font-size: 13px;color:#f6c342"
+            title="Average Method Complexity - 1,3 , Coverage - 71,4% ">JavaParserFieldDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserInterfaceDeclaration.html" class="tag"
+            style="font-size: 13px;color:#f6c342"
+            title="Average Method Complexity - 1,784 , Coverage - 67,2% ">JavaParserInterfaceDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/serialization/JavaParserJsonDeserializer.html" class="tag"
+            style="font-size: 14px;color:#14892c"
+            title="Average Method Complexity - 2,75 , Coverage - 92,3% ">JavaParserJsonDeserializer</a>
+            
+    
+            <a href="com/github/javaparser/serialization/JavaParserJsonSerializer.html" class="tag"
+            style="font-size: 13px;color:#89c495"
+            title="Average Method Complexity - 2 , Coverage - 96,9% ">JavaParserJsonSerializer</a>
+            
+    
+            <a href="com/github/javaparser/serialization/JavaParserJsonSerializer.html" class="tag"
+            style="font-size: 12px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">JavaParserJsonSerializer.JsonNode</a>
+            
+    
+            <a href="com/github/javaparser/serialization/JavaParserJsonSerializer.html" class="tag"
+            style="font-size: 12px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">JavaParserJsonSerializer.JsonRange</a>
+            
+    
+            <a href="com/github/javaparser/serialization/JavaParserJsonSerializer.html" class="tag"
+            style="font-size: 12px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">JavaParserJsonSerializer.JsonToken</a>
+            
+    
+            <a href="com/github/javaparser/serialization/JavaParserJsonSerializer.html" class="tag"
+            style="font-size: 12px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">JavaParserJsonSerializer.JsonTokenRange</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/JavaParserMetaModel.html" class="tag"
+            style="font-size: 13px;color:#89c495"
+            title="Average Method Complexity - 1,143 , Coverage - 99,7% ">JavaParserMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserMethodDeclaration.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,227 , Coverage - 58,6% ">JavaParserMethodDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserParameterDeclaration.html" class="tag"
+            style="font-size: 13px;color:#fae1a0"
+            title="Average Method Complexity - 1,444 , Coverage - 78,1% ">JavaParserParameterDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserSymbolDeclaration.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,857 , Coverage - 34,1% ">JavaParserSymbolDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserTypeAdapter.html" class="tag"
+            style="font-size: 14px;color:#e7a19b"
+            title="Average Method Complexity - 3 , Coverage - 60,2% ">JavaParserTypeAdapter</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/contexts/JavaParserTypeDeclarationAdapter.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 5,6 , Coverage - 84,9% ">JavaParserTypeDeclarationAdapter</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserTypeParameter.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,556 , Coverage - 48,8% ">JavaParserTypeParameter</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/resolution/typesolvers/JavaParserTypeSolver.html" class="tag"
+            style="font-size: 14px;color:#14892c"
+            title="Average Method Complexity - 2,6 , Coverage - 84,3% ">JavaParserTypeSolver</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserVariableDeclaration.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,286 , Coverage - 41,7% ">JavaParserVariableDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/JavaSymbolSolver.html" class="tag"
+            style="font-size: 23px;color:#fae1a0"
+            title="Average Method Complexity - 12 , Coverage - 76,5% ">JavaSymbolSolver</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/JavaSymbolSolver.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">JavaSymbolSolver.ArrayLengthValueDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/JavaToken.html" class="tag"
+            style="font-size: 13px;color:#f6c342"
+            title="Average Method Complexity - 1,481 , Coverage - 65,7% ">JavaToken</a>
+            
+    
+            <a href="com/github/javaparser/JavaToken.html" class="tag"
+            style="font-size: 12px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 70% ">JavaToken.Category</a>
+            
+    
+            <a href="com/github/javaparser/JavaToken.html" class="tag"
+            style="font-size: 48px;color:#d5584c"
+            title="Average Method Complexity - 37,75 , Coverage - 6,6% ">JavaToken.Kind</a>
+            
+    
+            <a href="com/github/javaparser/javadoc/Javadoc.html" class="tag"
+            style="font-size: 13px;color:#fae1a0"
+            title="Average Method Complexity - 1,538 , Coverage - 74,3% ">Javadoc</a>
+            
+    
+            <a href="com/github/javaparser/javadoc/JavadocBlockTag.html" class="tag"
+            style="font-size: 13px;color:#f6c342"
+            title="Average Method Complexity - 1,636 , Coverage - 69,5% ">JavadocBlockTag</a>
+            
+    
+            <a href="com/github/javaparser/javadoc/JavadocBlockTag.html" class="tag"
+            style="font-size: 13px;color:#89c495"
+            title="Average Method Complexity - 1,333 , Coverage - 100% ">JavadocBlockTag.Type</a>
+            
+    
+            <a href="com/github/javaparser/ast/comments/JavadocComment.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,143 , Coverage - 40,5% ">JavadocComment</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/JavadocCommentMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">JavadocCommentMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/javadoc/description/JavadocDescription.html" class="tag"
+            style="font-size: 13px;color:#fae1a0"
+            title="Average Method Complexity - 1,727 , Coverage - 75% ">JavadocDescription</a>
+            
+    
+            <a href="com/github/javaparser/javadoc/description/JavadocInlineTag.html" class="tag"
+            style="font-size: 14px;color:#e7a19b"
+            title="Average Method Complexity - 2,333 , Coverage - 59,7% ">JavadocInlineTag</a>
+            
+    
+            <a href="com/github/javaparser/javadoc/description/JavadocInlineTag.html" class="tag"
+            style="font-size: 13px;color:#89c495"
+            title="Average Method Complexity - 1,5 , Coverage - 100% ">JavadocInlineTag.Type</a>
+            
+    
+            <a href="com/github/javaparser/JavadocParser.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 4 , Coverage - 96,4% ">JavadocParser</a>
+            
+    
+            <a href="com/github/javaparser/javadoc/description/JavadocSnippet.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,8 , Coverage - 56,5% ">JavadocSnippet</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javassistmodel/JavassistAnnotationDeclaration.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,118 , Coverage - 42,2% ">JavassistAnnotationDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javassistmodel/JavassistClassDeclaration.html" class="tag"
+            style="font-size: 13px;color:#f6c342"
+            title="Average Method Complexity - 2,026 , Coverage - 65,2% ">JavassistClassDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javassistmodel/JavassistConstructorDeclaration.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,786 , Coverage - 47,5% ">JavassistConstructorDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javassistmodel/JavassistEnumConstantDeclaration.html" class="tag"
+            style="font-size: 13px;color:#f6c342"
+            title="Average Method Complexity - 1,75 , Coverage - 66,7% ">JavassistEnumConstantDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javassistmodel/JavassistEnumDeclaration.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,704 , Coverage - 57,4% ">JavassistEnumDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javassistmodel/JavassistFactory.html" class="tag"
+            style="font-size: 17px;color:#f6c342"
+            title="Average Method Complexity - 5,333 , Coverage - 66,1% ">JavassistFactory</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javassistmodel/JavassistFieldDeclaration.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,333 , Coverage - 57,7% ">JavassistFieldDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javassistmodel/JavassistInterfaceDeclaration.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,667 , Coverage - 50,4% ">JavassistInterfaceDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javassistmodel/JavassistMethodDeclaration.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,952 , Coverage - 60,7% ">JavassistMethodDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javassistmodel/JavassistParameterDeclaration.html" class="tag"
+            style="font-size: 12px;color:#14892c"
+            title="Average Method Complexity - 1 , Coverage - 91,3% ">JavassistParameterDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javassistmodel/JavassistTypeDeclarationAdapter.html" class="tag"
+            style="font-size: 13px;color:#fae1a0"
+            title="Average Method Complexity - 1,857 , Coverage - 78,8% ">JavassistTypeDeclarationAdapter</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javassistmodel/JavassistTypeParameter.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 2 , Coverage - 54,1% ">JavassistTypeParameter</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javassistmodel/JavassistUtils.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 4,333 , Coverage - 88,1% ">JavassistUtils</a>
+            
+    
+            <a href="com/github/javaparser/printer/lexicalpreservation/Kept.html" class="tag"
+            style="font-size: 13px;color:#fae1a0"
+            title="Average Method Complexity - 1,5 , Coverage - 75,8% ">Kept</a>
+            
+    
+            <a href="com/github/javaparser/ast/stmt/LabeledStmt.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,444 , Coverage - 45,7% ">LabeledStmt</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/LabeledStmtMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">LabeledStmtMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/LambdaArgumentTypePlaceholder.html" class="tag"
+            style="font-size: 12px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 37,5% ">LambdaArgumentTypePlaceholder</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/LambdaExpr.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,542 , Coverage - 59,1% ">LambdaExpr</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/contexts/LambdaExprContext.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 4,25 , Coverage - 55,6% ">LambdaExprContext</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/LambdaExprMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">LambdaExprMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/model/typesystem/LazyType.html" class="tag"
+            style="font-size: 12px;color:#e7a19b"
+            title="Average Method Complexity - 1,048 , Coverage - 52,2% ">LazyType</a>
+            
+    
+            <a href="com/github/javaparser/printer/lexicalpreservation/LexicalDifferenceCalculator.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 4,4 , Coverage - 78,4% ">LexicalDifferenceCalculator</a>
+            
+    
+            <a href="com/github/javaparser/printer/lexicalpreservation/LexicalDifferenceCalculator.html" class="tag"
+            style="font-size: 12px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 80% ">LexicalDifferenceCalculator.CalculatedSyntaxModel</a>
+            
+    
+            <a href="com/github/javaparser/printer/lexicalpreservation/LexicalDifferenceCalculator.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,5 , Coverage - 61,9% ">LexicalDifferenceCalculator.CsmChild</a>
+            
+    
+            <a href="com/github/javaparser/printer/lexicalpreservation/LexicalPreservingPrinter.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 5,467 , Coverage - 84,1% ">LexicalPreservingPrinter</a>
+            
+    
+            <a href="com/github/javaparser/printer/lexicalpreservation/LexicalPreservingPrinter.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 4,444 , Coverage - 74,2% ">LexicalPreservingPrinter.Observer</a>
+            
+    
+            <a href="com/github/javaparser/ast/comments/LineComment.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,154 , Coverage - 48,6% ">LineComment</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/LineCommentMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">LineCommentMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/printer/lexicalpreservation/changes/ListAdditionChange.html" class="tag"
+            style="font-size: 13px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 90% ">ListAdditionChange</a>
+            
+    
+            <a href="com/github/javaparser/printer/lexicalpreservation/changes/ListRemovalChange.html" class="tag"
+            style="font-size: 13px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 89,5% ">ListRemovalChange</a>
+            
+    
+            <a href="com/github/javaparser/printer/lexicalpreservation/changes/ListReplacementChange.html" class="tag"
+            style="font-size: 14px;color:#fae1a0"
+            title="Average Method Complexity - 2,5 , Coverage - 79,2% ">ListReplacementChange</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/LiteralExpr.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="Average Method Complexity - 1,2 , Coverage - 10,3% ">LiteralExpr</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/LiteralExprMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">LiteralExprMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/LiteralStringValueExpr.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,25 , Coverage - 31,7% ">LiteralStringValueExpr</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/LiteralStringValueExprMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">LiteralStringValueExprMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/stmt/LocalClassDeclarationStmt.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,333 , Coverage - 35,1% ">LocalClassDeclarationStmt</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/LocalClassDeclarationStmtMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">LocalClassDeclarationStmtMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/utils/Log.html" class="tag"
+            style="font-size: 13px;color:#14892c"
+            title="Average Method Complexity - 1,143 , Coverage - 90% ">Log</a>
+            
+    
+            <a href="com/github/javaparser/utils/Log.html" class="tag"
+            style="font-size: 12px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 66,7% ">Log.SilentAdapter</a>
+            
+    
+            <a href="com/github/javaparser/utils/Log.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="Average Method Complexity - 2,75 , Coverage - 16% ">Log.StandardOutStandardErrorAdapter</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/LongLiteralExpr.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,706 , Coverage - 59,1% ">LongLiteralExpr</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/LongLiteralExprMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">LongLiteralExprMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/MarkerAnnotationExpr.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,143 , Coverage - 35,1% ">MarkerAnnotationExpr</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/MarkerAnnotationExprMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">MarkerAnnotationExprMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/MemberValuePair.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,571 , Coverage - 47,9% ">MemberValuePair</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/MemberValuePairMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">MemberValuePairMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/resolution/typesolvers/MemoryTypeSolver.html" class="tag"
+            style="font-size: 14px;color:#e28e87"
+            title="Average Method Complexity - 2,429 , Coverage - 46% ">MemoryTypeSolver</a>
+            
+    
+            <a href="com/github/javaparser/resolution/MethodAmbiguityException.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">MethodAmbiguityException</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/MethodCallExpr.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,862 , Coverage - 51,1% ">MethodCallExpr</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/contexts/MethodCallExprContext.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 6,562 , Coverage - 82% ">MethodCallExprContext</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/MethodCallExprMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">MethodCallExprMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/reflectionmodel/comparators/MethodComparator.html" class="tag"
+            style="font-size: 17px;color:#fae1a0"
+            title="Average Method Complexity - 6 , Coverage - 80% ">MethodComparator</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/contexts/MethodContext.html" class="tag"
+            style="font-size: 13px;color:#89c495"
+            title="Average Method Complexity - 2 , Coverage - 100% ">MethodContext</a>
+            
+    
+            <a href="com/github/javaparser/ast/body/MethodDeclaration.html" class="tag"
+            style="font-size: 13px;color:#f6c342"
+            title="Average Method Complexity - 1,588 , Coverage - 69,6% ">MethodDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/declarations/common/MethodDeclarationCommonLogic.html" class="tag"
+            style="font-size: 14px;color:#14892c"
+            title="Average Method Complexity - 2,4 , Coverage - 90,9% ">MethodDeclarationCommonLogic</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/MethodDeclarationMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">MethodDeclarationMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/MethodReferenceExpr.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,7 , Coverage - 45,9% ">MethodReferenceExpr</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/contexts/MethodReferenceExprContext.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 6,75 , Coverage - 73,2% ">MethodReferenceExprContext</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/MethodReferenceExprMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">MethodReferenceExprMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/resolution/MethodResolutionLogic.html" class="tag"
+            style="font-size: 19px;color:#fae1a0"
+            title="Average Method Complexity - 8,318 , Coverage - 78,1% ">MethodResolutionLogic</a>
+            
+    
+            <a href="com/github/javaparser/resolution/MethodUsage.html" class="tag"
+            style="font-size: 13px;color:#fae1a0"
+            title="Average Method Complexity - 1,632 , Coverage - 73,2% ">MethodUsage</a>
+            
+    
+            <a href="com/github/javaparser/ast/Modifier.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,125 , Coverage - 53,8% ">Modifier</a>
+            
+    
+            <a href="com/github/javaparser/ast/Modifier.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Modifier.Keyword</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/ModifierMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ModifierMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/validator/chunks/ModifierValidator.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 2,167 , Coverage - 100% ">ModifierValidator</a>
+            
+    
+            <a href="com/github/javaparser/ast/visitor/ModifierVisitor.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,918 , Coverage - 29,1% ">ModifierVisitor</a>
+            
+    
+            <a href="com/github/javaparser/ast/modules/ModuleDeclaration.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,9 , Coverage - 48,1% ">ModuleDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/ModuleDeclarationMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ModuleDeclarationMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/modules/ModuleDirective.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="Average Method Complexity - 1,043 , Coverage - 3,3% ">ModuleDirective</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/ModuleDirectiveMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ModuleDirectiveMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/modules/ModuleExportsDirective.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,5 , Coverage - 41,6% ">ModuleExportsDirective</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/ModuleExportsDirectiveMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ModuleExportsDirectiveMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/modules/ModuleOpensDirective.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,524 , Coverage - 35,7% ">ModuleOpensDirective</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/ModuleOpensDirectiveMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ModuleOpensDirectiveMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/modules/ModuleProvidesDirective.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,524 , Coverage - 35,7% ">ModuleProvidesDirective</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/ModuleProvidesDirectiveMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ModuleProvidesDirectiveMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/modules/ModuleRequiresDirective.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,478 , Coverage - 34,3% ">ModuleRequiresDirective</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/ModuleRequiresDirectiveMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ModuleRequiresDirectiveMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/modules/ModuleUsesDirective.html" class="tag"
+            style="font-size: 13px;color:#d9695f"
+            title="Average Method Complexity - 1,35 , Coverage - 27,8% ">ModuleUsesDirective</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/ModuleUsesDirectiveMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ModuleUsesDirectiveMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/reflectionmodel/MyObjectProvider.html" class="tag"
+            style="font-size: 13px;color:#f6c342"
+            title="Average Method Complexity - 1,333 , Coverage - 63,6% ">MyObjectProvider</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/Name.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,556 , Coverage - 57,6% ">Name</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/resolution/naming/NameCategory.html" class="tag"
+            style="font-size: 12px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">NameCategory</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/NameExpr.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,294 , Coverage - 59,7% ">NameExpr</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/NameExprMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">NameExprMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/resolution/naming/NameLogic.html" class="tag"
+            style="font-size: 23px;color:#14892c"
+            title="Average Method Complexity - 11,591 , Coverage - 84,9% ">NameLogic</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/NameMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">NameMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparser/Navigator.html" class="tag"
+            style="font-size: 13px;color:#fae1a0"
+            title="Average Method Complexity - 1,88 , Coverage - 79,3% ">Navigator</a>
+            
+    
+            <a href="com/github/javaparser/ast/validator/chunks/NoBinaryIntegerLiteralsValidator.html" class="tag"
+            style="font-size: 13px;color:#f6c342"
+            title="Average Method Complexity - 1,333 , Coverage - 72,7% ">NoBinaryIntegerLiteralsValidator</a>
+            
+    
+            <a href="com/github/javaparser/printer/lexicalpreservation/changes/NoChange.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">NoChange</a>
+            
+    
+            <a href="com/github/javaparser/ast/visitor/NoCommentEqualsVisitor.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="Average Method Complexity - 3,275 , Coverage - 6,5% ">NoCommentEqualsVisitor</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/declarators/NoSymbolDeclarator.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">NoSymbolDeclarator</a>
+            
+    
+            <a href="com/github/javaparser/ast/validator/chunks/NoUnderscoresInIntegerLiteralsValidator.html" class="tag"
+            style="font-size: 13px;color:#f6c342"
+            title="Average Method Complexity - 1,333 , Coverage - 72,7% ">NoUnderscoresInIntegerLiteralsValidator</a>
+            
+    
+            <a href="com/github/javaparser/ast/Node.html" class="tag"
+            style="font-size: 13px;color:#fae1a0"
+            title="Average Method Complexity - 1,803 , Coverage - 83% ">Node</a>
+            
+    
+            <a href="com/github/javaparser/ast/Node.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Node.ParentsVisitor</a>
+            
+    
+            <a href="com/github/javaparser/ast/Node.html" class="tag"
+            style="font-size: 13px;color:#89c495"
+            title="Average Method Complexity - 1,333 , Coverage - 100% ">Node.PreOrderIterator</a>
+            
+    
+            <a href="com/github/javaparser/ast/NodeList.html" class="tag"
+            style="font-size: 13px;color:#14892c"
+            title="Average Method Complexity - 1,262 , Coverage - 84,8% ">NodeList</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/NodeMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">NodeMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/printer/lexicalpreservation/NodeText.html" class="tag"
+            style="font-size: 13px;color:#f6c342"
+            title="Average Method Complexity - 1,304 , Coverage - 67,9% ">NodeText</a>
+            
+    
+            <a href="com/github/javaparser/ast/nodeTypes/NodeWithVariables.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 4 , Coverage - 100% ">NodeWithVariables.Helper</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/NormalAnnotationExpr.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,471 , Coverage - 32,4% ">NormalAnnotationExpr</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/NormalAnnotationExprMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">NormalAnnotationExprMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/NullLiteralExpr.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,167 , Coverage - 33,3% ">NullLiteralExpr</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/NullLiteralExprMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">NullLiteralExprMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/model/typesystem/NullType.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">NullType</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/contexts/ObjectCreationContext.html" class="tag"
+            style="font-size: 13px;color:#fae1a0"
+            title="Average Method Complexity - 2 , Coverage - 75% ">ObjectCreationContext</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/ObjectCreationExpr.html" class="tag"
+            style="font-size: 14px;color:#e28e87"
+            title="Average Method Complexity - 2,259 , Coverage - 40,5% ">ObjectCreationExpr</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/ObjectCreationExprMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ObjectCreationExprMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/visitor/ObjectIdentityEqualsVisitor.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="Average Method Complexity - 1 , Coverage - 1% ">ObjectIdentityEqualsVisitor</a>
+            
+    
+            <a href="com/github/javaparser/ast/visitor/ObjectIdentityHashCodeVisitor.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="Average Method Complexity - 1 , Coverage - 1% ">ObjectIdentityHashCodeVisitor</a>
+            
+    
+            <a href="com/github/javaparser/ast/observer/ObservableProperty.html" class="tag"
+            style="font-size: 13px;color:#f6c342"
+            title="Average Method Complexity - 1,8 , Coverage - 71,4% ">ObservableProperty</a>
+            
+    
+            <a href="com/github/javaparser/ast/observer/ObservableProperty.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ObservableProperty.Type</a>
+            
+    
+            <a href="com/github/javaparser/ast/PackageDeclaration.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,786 , Coverage - 45,2% ">PackageDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/PackageDeclarationMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">PackageDeclarationMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/utils/Pair.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="Average Method Complexity - 2,75 , Coverage - 16,1% ">Pair</a>
+            
+    
+            <a href="com/github/javaparser/ast/body/Parameter.html" class="tag"
+            style="font-size: 13px;color:#f6c342"
+            title="Average Method Complexity - 2,08 , Coverage - 63,5% ">Parameter</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/reflectionmodel/comparators/ParameterComparator.html" class="tag"
+            style="font-size: 14px;color:#f6c342"
+            title="Average Method Complexity - 3 , Coverage - 66,7% ">ParameterComparator</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/ParameterMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ParameterMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/declarators/ParameterSymbolDeclarator.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ParameterSymbolDeclarator</a>
+            
+    
+            <a href="com/github/javaparser/ParseProblemException.html" class="tag"
+            style="font-size: 12px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 83,3% ">ParseProblemException</a>
+            
+    
+            <a href="com/github/javaparser/ParseResult.html" class="tag"
+            style="font-size: 13px;color:#89c495"
+            title="Average Method Complexity - 1,25 , Coverage - 100% ">ParseResult</a>
+            
+    
+            <a href="com/github/javaparser/utils/ParserCollectionStrategy.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 2,333 , Coverage - 97% ">ParserCollectionStrategy</a>
+            
+    
+            <a href="com/github/javaparser/ParserConfiguration.html" class="tag"
+            style="font-size: 13px;color:#14892c"
+            title="Average Method Complexity - 1,304 , Coverage - 87,8% ">ParserConfiguration</a>
+            
+    
+            <a href="com/github/javaparser/ParserConfiguration.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ParserConfiguration.LanguageLevel</a>
+            
+    
+            <a href="com/github/javaparser/ParserConfiguration.html" class="tag"
+            style="font-size: 14px;color:#14892c"
+            title="Average Method Complexity - 2,5 , Coverage - 94,1% ">ParserConfiguration.UnicodeEscapeProcessor</a>
+            
+    
+            <a href="com/github/javaparser/printer/lexicalpreservation/PhantomNodeLogic.html" class="tag"
+            style="font-size: 13px;color:#14892c"
+            title="Average Method Complexity - 1,5 , Coverage - 89,5% ">PhantomNodeLogic</a>
+            
+    
+            <a href="com/github/javaparser/Position.html" class="tag"
+            style="font-size: 13px;color:#f6c342"
+            title="Average Method Complexity - 2 , Coverage - 71,6% ">Position</a>
+            
+    
+            <a href="com/github/javaparser/utils/PositionUtils.html" class="tag"
+            style="font-size: 14px;color:#fae1a0"
+            title="Average Method Complexity - 2,833 , Coverage - 79,8% ">PositionUtils</a>
+            
+    
+            <a href="com/github/javaparser/version/PostProcessors.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,167 , Coverage - 36,8% ">PostProcessors</a>
+            
+    
+            <a href="com/github/javaparser/printer/PrettyPrintVisitor.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 2,768 , Coverage - 96,7% ">PrettyPrintVisitor</a>
+            
+    
+            <a href="com/github/javaparser/printer/PrettyPrinter.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">PrettyPrinter</a>
+            
+    
+            <a href="com/github/javaparser/printer/PrettyPrinterConfiguration.html" class="tag"
+            style="font-size: 13px;color:#fae1a0"
+            title="Average Method Complexity - 1,167 , Coverage - 82,7% ">PrettyPrinterConfiguration</a>
+            
+    
+            <a href="com/github/javaparser/ast/type/PrimitiveType.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,103 , Coverage - 52,6% ">PrimitiveType</a>
+            
+    
+            <a href="com/github/javaparser/ast/type/PrimitiveType.html" class="tag"
+            style="font-size: 12px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 71,4% ">PrimitiveType.Primitive</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/PrimitiveTypeMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">PrimitiveTypeMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/printer/concretesyntaxmodel/PrintingHelper.html" class="tag"
+            style="font-size: 15px;color:#14892c"
+            title="Average Method Complexity - 4 , Coverage - 85,7% ">PrintingHelper</a>
+            
+    
+            <a href="com/github/javaparser/Problem.html" class="tag"
+            style="font-size: 13px;color:#14892c"
+            title="Average Method Complexity - 1,5 , Coverage - 86,8% ">Problem</a>
+            
+    
+            <a href="com/github/javaparser/ast/validator/ProblemReporter.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ProblemReporter</a>
+            
+    
+            <a href="com/github/javaparser/utils/ProjectRoot.html" class="tag"
+            style="font-size: 12px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 60% ">ProjectRoot</a>
+            
+    
+            <a href="com/github/javaparser/ast/observer/PropagatingAstObserver.html" class="tag"
+            style="font-size: 13px;color:#14892c"
+            title="Average Method Complexity - 1,615 , Coverage - 87,3% ">PropagatingAstObserver</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/resolution/typeinference/ProperLowerBound.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,667 , Coverage - 42,9% ">ProperLowerBound</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/resolution/typeinference/ProperUpperBound.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,667 , Coverage - 42,9% ">ProperUpperBound</a>
+            
+    
+            <a href="com/github/javaparser/printer/lexicalpreservation/changes/PropertyChange.html" class="tag"
+            style="font-size: 13px;color:#14892c"
+            title="Average Method Complexity - 1,2 , Coverage - 87,5% ">PropertyChange</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/PropertyMetaModel.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,423 , Coverage - 58,8% ">PropertyMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/Providers.html" class="tag"
+            style="font-size: 13px;color:#fae1a0"
+            title="Average Method Complexity - 1,167 , Coverage - 75,8% ">Providers</a>
+            
+    
+            <a href="com/github/javaparser/Range.html" class="tag"
+            style="font-size: 13px;color:#f6c342"
+            title="Average Method Complexity - 1,3 , Coverage - 65,1% ">Range</a>
+            
+    
+            <a href="com/github/javaparser/ast/body/ReceiverParameter.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,824 , Coverage - 42,6% ">ReceiverParameter</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/ReceiverParameterMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ReceiverParameterMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/type/ReferenceType.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="Average Method Complexity - 1,182 , Coverage - 9,7% ">ReferenceType</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/model/typesystem/ReferenceTypeImpl.html" class="tag"
+            style="font-size: 14px;color:#14892c"
+            title="Average Method Complexity - 2,4 , Coverage - 84,2% ">ReferenceTypeImpl</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/ReferenceTypeMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ReferenceTypeMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/reflectionmodel/ReflectionAnnotationDeclaration.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,364 , Coverage - 29,2% ">ReflectionAnnotationDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/reflectionmodel/ReflectionClassAdapter.html" class="tag"
+            style="font-size: 14px;color:#fae1a0"
+            title="Average Method Complexity - 2,357 , Coverage - 73,8% ">ReflectionClassAdapter</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/reflectionmodel/ReflectionClassDeclaration.html" class="tag"
+            style="font-size: 13px;color:#fae1a0"
+            title="Average Method Complexity - 1,972 , Coverage - 81,5% ">ReflectionClassDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/reflectionmodel/ReflectionConstructorDeclaration.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,5 , Coverage - 52,9% ">ReflectionConstructorDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/reflectionmodel/ReflectionEnumConstantDeclaration.html" class="tag"
+            style="font-size: 13px;color:#14892c"
+            title="Average Method Complexity - 1,333 , Coverage - 84,6% ">ReflectionEnumConstantDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/reflectionmodel/ReflectionEnumDeclaration.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,524 , Coverage - 37,2% ">ReflectionEnumDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/reflectionmodel/ReflectionFactory.html" class="tag"
+            style="font-size: 20px;color:#14892c"
+            title="Average Method Complexity - 9 , Coverage - 87,4% ">ReflectionFactory</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/reflectionmodel/ReflectionFieldDeclaration.html" class="tag"
+            style="font-size: 12px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 71,4% ">ReflectionFieldDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/reflectionmodel/ReflectionInterfaceDeclaration.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,774 , Coverage - 53,3% ">ReflectionInterfaceDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/reflectionmodel/ReflectionMethodDeclaration.html" class="tag"
+            style="font-size: 13px;color:#f6c342"
+            title="Average Method Complexity - 1,368 , Coverage - 70% ">ReflectionMethodDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/reflectionmodel/ReflectionMethodResolutionLogic.html" class="tag"
+            style="font-size: 18px;color:#89c495"
+            title="Average Method Complexity - 6,667 , Coverage - 96,4% ">ReflectionMethodResolutionLogic</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/reflectionmodel/ReflectionParameterDeclaration.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,273 , Coverage - 34,3% ">ReflectionParameterDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/reflectionmodel/ReflectionTypeParameter.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 2,1 , Coverage - 60,9% ">ReflectionTypeParameter</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/resolution/typesolvers/ReflectionTypeSolver.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ReflectionTypeSolver</a>
+            
+    
+            <a href="com/github/javaparser/printer/lexicalpreservation/Removed.html" class="tag"
+            style="font-size: 13px;color:#f6c342"
+            title="Average Method Complexity - 1,571 , Coverage - 66,1% ">Removed</a>
+            
+    
+            <a href="com/github/javaparser/printer/lexicalpreservation/RemovedGroup.html" class="tag"
+            style="font-size: 14px;color:#14892c"
+            title="Average Method Complexity - 2,133 , Coverage - 91,2% ">RemovedGroup</a>
+            
+    
+            <a href="com/github/javaparser/ast/validator/ReservedKeywordValidator.html" class="tag"
+            style="font-size: 13px;color:#14892c"
+            title="Average Method Complexity - 1,667 , Coverage - 86,7% ">ReservedKeywordValidator</a>
+            
+    
+            <a href="com/github/javaparser/printer/lexicalpreservation/Reshuffled.html" class="tag"
+            style="font-size: 13px;color:#d9695f"
+            title="Average Method Complexity - 1,444 , Coverage - 20,6% ">Reshuffled</a>
+            
+    
+            <a href="com/github/javaparser/resolution/types/ResolvedArrayType.html" class="tag"
+            style="font-size: 13px;color:#14892c"
+            title="Average Method Complexity - 1,9 , Coverage - 88% ">ResolvedArrayType</a>
+            
+    
+            <a href="com/github/javaparser/resolution/types/ResolvedLambdaConstraintType.html" class="tag"
+            style="font-size: 12px;color:#14892c"
+            title="Average Method Complexity - 1 , Coverage - 87,5% ">ResolvedLambdaConstraintType</a>
+            
+    
+            <a href="com/github/javaparser/resolution/types/ResolvedPrimitiveType.html" class="tag"
+            style="font-size: 13px;color:#89c495"
+            title="Average Method Complexity - 1,417 , Coverage - 100% ">ResolvedPrimitiveType</a>
+            
+    
+            <a href="com/github/javaparser/resolution/types/ResolvedReferenceType.html" class="tag"
+            style="font-size: 14px;color:#14892c"
+            title="Average Method Complexity - 2,862 , Coverage - 89,1% ">ResolvedReferenceType</a>
+            
+    
+            <a href="com/github/javaparser/resolution/declarations/ResolvedTypeParameterDeclaration.html" class="tag"
+            style="font-size: 13px;color:#d9695f"
+            title="Average Method Complexity - 1,778 , Coverage - 22,5% ">ResolvedTypeParameterDeclaration.Bound</a>
+            
+    
+            <a href="com/github/javaparser/resolution/types/parametrization/ResolvedTypeParametersMap.html" class="tag"
+            style="font-size: 13px;color:#14892c"
+            title="Average Method Complexity - 1,333 , Coverage - 87,5% ">ResolvedTypeParametersMap</a>
+            
+    
+            <a href="com/github/javaparser/resolution/types/parametrization/ResolvedTypeParametersMap.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ResolvedTypeParametersMap.Builder</a>
+            
+    
+            <a href="com/github/javaparser/resolution/types/ResolvedTypeVariable.html" class="tag"
+            style="font-size: 13px;color:#14892c"
+            title="Average Method Complexity - 1,533 , Coverage - 86,7% ">ResolvedTypeVariable</a>
+            
+    
+            <a href="com/github/javaparser/resolution/types/ResolvedUnionType.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,5 , Coverage - 36,4% ">ResolvedUnionType</a>
+            
+    
+            <a href="com/github/javaparser/resolution/types/ResolvedVoidType.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ResolvedVoidType</a>
+            
+    
+            <a href="com/github/javaparser/resolution/types/ResolvedWildcard.html" class="tag"
+            style="font-size: 14px;color:#fae1a0"
+            title="Average Method Complexity - 2,222 , Coverage - 80% ">ResolvedWildcard</a>
+            
+    
+            <a href="com/github/javaparser/ast/stmt/ReturnStmt.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,471 , Coverage - 46,5% ">ReturnStmt</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/ReturnStmtMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ReturnStmtMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/resolution/typeinference/bounds/SameAsBound.html" class="tag"
+            style="font-size: 13px;color:#d9695f"
+            title="Average Method Complexity - 2 , Coverage - 25,5% ">SameAsBound</a>
+            
+    
+            <a href="com/github/javaparser/utils/SeparatedItemStringBuilder.html" class="tag"
+            style="font-size: 13px;color:#89c495"
+            title="Average Method Complexity - 1,25 , Coverage - 100% ">SeparatedItemStringBuilder</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/SimpleName.html" class="tag"
+            style="font-size: 13px;color:#f6c342"
+            title="Average Method Complexity - 1,25 , Coverage - 65,9% ">SimpleName</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/SimpleNameMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">SimpleNameMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/validator/SimpleValidator.html" class="tag"
+            style="font-size: 13px;color:#89c495"
+            title="Average Method Complexity - 2 , Coverage - 100% ">SimpleValidator</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/SingleMemberAnnotationExpr.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,333 , Coverage - 45,6% ">SingleMemberAnnotationExpr</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/SingleMemberAnnotationExprMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">SingleMemberAnnotationExprMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/validator/SingleNodeTypeValidator.html" class="tag"
+            style="font-size: 13px;color:#89c495"
+            title="Average Method Complexity - 1,5 , Coverage - 100% ">SingleNodeTypeValidator</a>
+            
+    
+            <a href="com/github/javaparser/printer/SourcePrinter.html" class="tag"
+            style="font-size: 13px;color:#14892c"
+            title="Average Method Complexity - 1,941 , Coverage - 86,8% ">SourcePrinter</a>
+            
+    
+            <a href="com/github/javaparser/utils/SourceRoot.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,667 , Coverage - 53,9% ">SourceRoot</a>
+            
+    
+            <a href="com/github/javaparser/utils/SourceRoot.html" class="tag"
+            style="font-size: 13px;color:#89c495"
+            title="Average Method Complexity - 1,75 , Coverage - 96% ">SourceRoot.ParallelParse</a>
+            
+    
+            <a href="com/github/javaparser/utils/SourceZip.html" class="tag"
+            style="font-size: 13px;color:#fae1a0"
+            title="Average Method Complexity - 1,571 , Coverage - 76,5% ">SourceZip</a>
+            
+    
+            <a href="com/github/javaparser/ast/stmt/Statement.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="Average Method Complexity - 1,022 , Coverage - 11,3% ">Statement</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/contexts/StatementContext.html" class="tag"
+            style="font-size: 17px;color:#f6c342"
+            title="Average Method Complexity - 5,571 , Coverage - 63,2% ">StatementContext</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/StatementMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">StatementMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/StaticJavaParser.html" class="tag"
+            style="font-size: 12px;color:#fae1a0"
+            title="Average Method Complexity - 1,027 , Coverage - 77,9% ">StaticJavaParser</a>
+            
+    
+            <a href="com/github/javaparser/utils/StringEscapeUtils.html" class="tag"
+            style="font-size: 12px;color:#14892c"
+            title="Average Method Complexity - 1 , Coverage - 85,7% ">StringEscapeUtils</a>
+            
+    
+            <a href="com/github/javaparser/utils/StringEscapeUtils.html" class="tag"
+            style="font-size: 13px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 91,7% ">StringEscapeUtils.AggregateTranslator</a>
+            
+    
+            <a href="com/github/javaparser/utils/StringEscapeUtils.html" class="tag"
+            style="font-size: 17px;color:#f6c342"
+            title="Average Method Complexity - 6 , Coverage - 68,9% ">StringEscapeUtils.CharSequenceTranslator</a>
+            
+    
+            <a href="com/github/javaparser/utils/StringEscapeUtils.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 4,5 , Coverage - 92,9% ">StringEscapeUtils.LookupTranslator</a>
+            
+    
+            <a href="com/github/javaparser/utils/StringEscapeUtils.html" class="tag"
+            style="font-size: 15px;color:#14892c"
+            title="Average Method Complexity - 3,667 , Coverage - 92% ">StringEscapeUtils.OctalUnescaper</a>
+            
+    
+            <a href="com/github/javaparser/utils/StringEscapeUtils.html" class="tag"
+            style="font-size: 21px;color:#f6c342"
+            title="Average Method Complexity - 10 , Coverage - 70,8% ">StringEscapeUtils.UnicodeUnescaper</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/StringLiteralExpr.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,125 , Coverage - 37,2% ">StringLiteralExpr</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/StringLiteralExprMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">StringLiteralExprMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/resolution/typeinference/bounds/SubtypeOfBound.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,909 , Coverage - 35,8% ">SubtypeOfBound</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/SuperExpr.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,471 , Coverage - 35,2% ">SuperExpr</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/SuperExprMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">SuperExprMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/stmt/SwitchEntry.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 2 , Coverage - 42,9% ">SwitchEntry</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/contexts/SwitchEntryContext.html" class="tag"
+            style="font-size: 15px;color:#e7a19b"
+            title="Average Method Complexity - 3,333 , Coverage - 58,3% ">SwitchEntryContext</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/SwitchEntryMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">SwitchEntryMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/SwitchExpr.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,611 , Coverage - 38% ">SwitchExpr</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/SwitchExprMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">SwitchExprMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/stmt/SwitchStmt.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,611 , Coverage - 42,4% ">SwitchStmt</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/SwitchStmtMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">SwitchStmtMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/model/resolution/SymbolReference.html" class="tag"
+            style="font-size: 13px;color:#89c495"
+            title="Average Method Complexity - 1,286 , Coverage - 100% ">SymbolReference</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/resolution/SymbolSolver.html" class="tag"
+            style="font-size: 14px;color:#f6c342"
+            title="Average Method Complexity - 2,154 , Coverage - 65,3% ">SymbolSolver</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/utils/SymbolSolverCollectionStrategy.html" class="tag"
+            style="font-size: 14px;color:#14892c"
+            title="Average Method Complexity - 2,333 , Coverage - 86,5% ">SymbolSolverCollectionStrategy</a>
+            
+    
+            <a href="com/github/javaparser/ast/stmt/SynchronizedStmt.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,471 , Coverage - 41,8% ">SynchronizedStmt</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/SynchronizedStmtMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">SynchronizedStmtMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/TextBlockLiteralExpr.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,286 , Coverage - 54,5% ">TextBlockLiteralExpr</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/TextBlockLiteralExprMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">TextBlockLiteralExprMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/printer/lexicalpreservation/TextElement.html" class="tag"
+            style="font-size: 12px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 60% ">TextElement</a>
+            
+    
+            <a href="com/github/javaparser/printer/lexicalpreservation/TextElementIteratorsFactory.html" class="tag"
+            style="font-size: 13px;color:#fae1a0"
+            title="Average Method Complexity - 1,75 , Coverage - 83,3% ">TextElementIteratorsFactory</a>
+            
+    
+            <a href="com/github/javaparser/printer/lexicalpreservation/TextElementIteratorsFactory.html" class="tag"
+            style="font-size: 14px;color:#f6c342"
+            title="Average Method Complexity - 2,5 , Coverage - 64,1% ">TextElementIteratorsFactory.CascadingIterator</a>
+            
+    
+            <a href="com/github/javaparser/printer/lexicalpreservation/TextElementIteratorsFactory.html" class="tag"
+            style="font-size: 13px;color:#fae1a0"
+            title="Average Method Complexity - 1,75 , Coverage - 81,8% ">TextElementIteratorsFactory.ComposedIterator</a>
+            
+    
+            <a href="com/github/javaparser/printer/lexicalpreservation/TextElementIteratorsFactory.html" class="tag"
+            style="font-size: 12px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">TextElementIteratorsFactory.EmptyIterator</a>
+            
+    
+            <a href="com/github/javaparser/printer/lexicalpreservation/TextElementIteratorsFactory.html" class="tag"
+            style="font-size: 12px;color:#14892c"
+            title="Average Method Complexity - 1 , Coverage - 87,5% ">TextElementIteratorsFactory.SingleElementIterator</a>
+            
+    
+            <a href="com/github/javaparser/printer/lexicalpreservation/TextElementMatchers.html" class="tag"
+            style="font-size: 12px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">TextElementMatchers</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/ThisExpr.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,444 , Coverage - 39,7% ">ThisExpr</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/ThisExprMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ThisExprMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/stmt/ThrowStmt.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,333 , Coverage - 38,6% ">ThrowStmt</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/ThrowStmtMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ThrowStmtMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/TokenRange.html" class="tag"
+            style="font-size: 13px;color:#14892c"
+            title="Average Method Complexity - 1,6 , Coverage - 85,7% ">TokenRange</a>
+            
+    
+            <a href="com/github/javaparser/printer/lexicalpreservation/TokenTextElement.html" class="tag"
+            style="font-size: 13px;color:#14892c"
+            title="Average Method Complexity - 1,143 , Coverage - 88,2% ">TokenTextElement</a>
+            
+    
+            <a href="com/github/javaparser/TokenTypes.html" class="tag"
+            style="font-size: 30px;color:#fae1a0"
+            title="Average Method Complexity - 19,75 , Coverage - 81,6% ">TokenTypes</a>
+            
+    
+            <a href="com/github/javaparser/ast/visitor/TreeVisitor.html" class="tag"
+            style="font-size: 13px;color:#fae1a0"
+            title="Average Method Complexity - 1,2 , Coverage - 81,8% ">TreeVisitor</a>
+            
+    
+            <a href="com/github/javaparser/ast/validator/TreeVisitorValidator.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">TreeVisitorValidator</a>
+            
+    
+            <a href="com/github/javaparser/ast/stmt/TryStmt.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,958 , Coverage - 42,2% ">TryStmt</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/TryStmtMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">TryStmtMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/contexts/TryWithResourceContext.html" class="tag"
+            style="font-size: 15px;color:#e7a19b"
+            title="Average Method Complexity - 3,2 , Coverage - 61,4% ">TryWithResourceContext</a>
+            
+    
+            <a href="com/github/javaparser/ast/type/Type.html" class="tag"
+            style="font-size: 13px;color:#d9695f"
+            title="Average Method Complexity - 1,179 , Coverage - 27,2% ">Type</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/resolution/typeinference/constraintformulas/TypeCompatibleWithType.html" class="tag"
+            style="font-size: 15px;color:#e28e87"
+            title="Average Method Complexity - 3,8 , Coverage - 41% ">TypeCompatibleWithType</a>
+            
+    
+            <a href="com/github/javaparser/ast/body/TypeDeclaration.html" class="tag"
+            style="font-size: 13px;color:#f6c342"
+            title="Average Method Complexity - 1,783 , Coverage - 62% ">TypeDeclaration</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/TypeDeclarationMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">TypeDeclarationMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/TypeExpr.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,333 , Coverage - 38,6% ">TypeExpr</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/TypeExprMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">TypeExprMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/TypeExtractor.html" class="tag"
+            style="font-size: 15px;color:#f6c342"
+            title="Average Method Complexity - 3,303 , Coverage - 64,8% ">TypeExtractor</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/resolution/typeinference/TypeHelper.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="Average Method Complexity - 4,062 , Coverage - 10% ">TypeHelper</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/TypeMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">TypeMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/type/TypeParameter.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,5 , Coverage - 38,8% ">TypeParameter</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/TypeParameterMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">TypeParameterMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/resolution/typeinference/constraintformulas/TypeSubtypeOfType.html" class="tag"
+            style="font-size: 15px;color:#d9695f"
+            title="Average Method Complexity - 3,8 , Coverage - 20,6% ">TypeSubtypeOfType</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/UnaryExpr.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,316 , Coverage - 54,8% ">UnaryExpr</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/UnaryExpr.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">UnaryExpr.Operator</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/UnaryExprMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">UnaryExprMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/validator/chunks/UnderscoreKeywordValidator.html" class="tag"
+            style="font-size: 13px;color:#89c495"
+            title="Average Method Complexity - 1,333 , Coverage - 100% ">UnderscoreKeywordValidator</a>
+            
+    
+            <a href="com/github/javaparser/UnicodeEscapeProcessingProvider.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 2,474 , Coverage - 99,4% ">UnicodeEscapeProcessingProvider</a>
+            
+    
+            <a href="com/github/javaparser/UnicodeEscapeProcessingProvider.html" class="tag"
+            style="font-size: 13px;color:#14892c"
+            title="Average Method Complexity - 1,667 , Coverage - 93,3% ">UnicodeEscapeProcessingProvider.LineCounter</a>
+            
+    
+            <a href="com/github/javaparser/UnicodeEscapeProcessingProvider.html" class="tag"
+            style="font-size: 13px;color:#89c495"
+            title="Average Method Complexity - 1,667 , Coverage - 100% ">UnicodeEscapeProcessingProvider.PositionMapping</a>
+            
+    
+            <a href="com/github/javaparser/UnicodeEscapeProcessingProvider.html" class="tag"
+            style="font-size: 12px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 80% ">UnicodeEscapeProcessingProvider.PositionMapping.DeltaInfo</a>
+            
+    
+            <a href="com/github/javaparser/UnicodeEscapeProcessingProvider.html" class="tag"
+            style="font-size: 13px;color:#89c495"
+            title="Average Method Complexity - 1,667 , Coverage - 100% ">UnicodeEscapeProcessingProvider.PositionMappingBuilder</a>
+            
+    
+            <a href="com/github/javaparser/ast/type/UnionType.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,444 , Coverage - 35,1% ">UnionType</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/UnionTypeMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">UnionTypeMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/type/UnknownType.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,2 , Coverage - 34,9% ">UnknownType</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/UnknownTypeMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">UnknownTypeMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/stmt/UnparsableStmt.html" class="tag"
+            style="font-size: 13px;color:#d9695f"
+            title="Average Method Complexity - 1,154 , Coverage - 25,7% ">UnparsableStmt</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/UnparsableStmtMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">UnparsableStmtMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/resolution/UnsolvedSymbolException.html" class="tag"
+            style="font-size: 13px;color:#f6c342"
+            title="Average Method Complexity - 1,167 , Coverage - 64,7% ">UnsolvedSymbolException</a>
+            
+    
+            <a href="com/github/javaparser/utils/Utils.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 2,24 , Coverage - 97,7% ">Utils</a>
+            
+    
+            <a href="com/github/javaparser/ast/validator/Validators.html" class="tag"
+            style="font-size: 13px;color:#fae1a0"
+            title="Average Method Complexity - 1,167 , Coverage - 78,9% ">Validators</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/model/resolution/Value.html" class="tag"
+            style="font-size: 12px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 83,3% ">Value</a>
+            
+    
+            <a href="com/github/javaparser/ast/type/VarType.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,133 , Coverage - 28,2% ">VarType</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/VarTypeMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">VarTypeMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/validator/chunks/VarValidator.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 5,333 , Coverage - 87% ">VarValidator</a>
+            
+    
+            <a href="com/github/javaparser/ast/expr/VariableDeclarationExpr.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,8 , Coverage - 42,5% ">VariableDeclarationExpr</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/contexts/VariableDeclarationExprContext.html" class="tag"
+            style="font-size: 13px;color:#fae1a0"
+            title="Average Method Complexity - 2 , Coverage - 81,8% ">VariableDeclarationExprContext</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/VariableDeclarationExprMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">VariableDeclarationExprMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/body/VariableDeclarator.html" class="tag"
+            style="font-size: 13px;color:#fae1a0"
+            title="Average Method Complexity - 1,826 , Coverage - 76,3% ">VariableDeclarator</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/contexts/VariableDeclaratorContext.html" class="tag"
+            style="font-size: 13px;color:#fae1a0"
+            title="Average Method Complexity - 2 , Coverage - 75% ">VariableDeclaratorContext</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/VariableDeclaratorMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">VariableDeclaratorMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/symbolsolver/javaparsermodel/declarators/VariableSymbolDeclarator.html" class="tag"
+            style="font-size: 13px;color:#fae1a0"
+            title="Average Method Complexity - 1,5 , Coverage - 77,8% ">VariableSymbolDeclarator</a>
+            
+    
+            <a href="com/github/javaparser/utils/VisitorList.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,158 , Coverage - 57,8% ">VisitorList</a>
+            
+    
+            <a href="com/github/javaparser/utils/VisitorList.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,4 , Coverage - 42,9% ">VisitorList.EqualsHashcodeOverridingFacade</a>
+            
+    
+            <a href="com/github/javaparser/utils/VisitorMap.html" class="tag"
+            style="font-size: 12px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 55,6% ">VisitorMap</a>
+            
+    
+            <a href="com/github/javaparser/utils/VisitorMap.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,4 , Coverage - 57,1% ">VisitorMap.EqualsHashcodeOverridingFacade</a>
+            
+    
+            <a href="com/github/javaparser/utils/VisitorSet.html" class="tag"
+            style="font-size: 13px;color:#f6c342"
+            title="Average Method Complexity - 1,222 , Coverage - 70,3% ">VisitorSet</a>
+            
+    
+            <a href="com/github/javaparser/utils/VisitorSet.html" class="tag"
+            style="font-size: 13px;color:#e7a19b"
+            title="Average Method Complexity - 1,4 , Coverage - 57,1% ">VisitorSet.EqualsHashcodeOverridingFacade</a>
+            
+    
+            <a href="com/github/javaparser/ast/validator/VisitorValidator.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">VisitorValidator</a>
+            
+    
+            <a href="com/github/javaparser/ast/type/VoidType.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,133 , Coverage - 38,5% ">VoidType</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/VoidTypeMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">VoidTypeMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/visitor/VoidVisitorAdapter.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 99,2% ">VoidVisitorAdapter</a>
+            
+    
+            <a href="com/github/javaparser/ast/stmt/WhileStmt.html" class="tag"
+            style="font-size: 13px;color:#e28e87"
+            title="Average Method Complexity - 1,471 , Coverage - 44,3% ">WhileStmt</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/WhileStmtMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">WhileStmtMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/ast/type/WildcardType.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,583 , Coverage - 37% ">WildcardType</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/WildcardTypeMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">WildcardTypeMetaModel</a>
+            
+    
+            <a href="com/github/javaparser/printer/lexicalpreservation/WrappingRangeIterator.html" class="tag"
+            style="font-size: 13px;color:#fae1a0"
+            title="Average Method Complexity - 1,333 , Coverage - 83,3% ">WrappingRangeIterator</a>
+            
+    
+            <a href="com/github/javaparser/printer/XmlPrinter.html" class="tag"
+            style="font-size: 13px;color:#89c495"
+            title="Average Method Complexity - 1,667 , Coverage - 95,6% ">XmlPrinter</a>
+            
+    
+            <a href="com/github/javaparser/printer/YamlPrinter.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 2,167 , Coverage - 98,2% ">YamlPrinter</a>
+            
+    
+            <a href="com/github/javaparser/ast/stmt/YieldStmt.html" class="tag"
+            style="font-size: 13px;color:#de7b72"
+            title="Average Method Complexity - 1,333 , Coverage - 38,6% ">YieldStmt</a>
+            
+    
+            <a href="com/github/javaparser/metamodel/YieldStmtMetaModel.html" class="tag"
+            style="font-size: 12px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">YieldStmtMetaModel</a>
+           </div>
+   
+   </div>
+    </div> <!-- tabs-pane active-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Sun Feb 23 2020 18:17:02 CET using coverage data from Sun Feb 23 2020 18:16:51 CET.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

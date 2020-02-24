@@ -1,0 +1,2123 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../../style.css');
+        @import url('../../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../../cloud.js" type="text/javascript"></script>
+
+            <title>javaparser-parent 3.15.13-SNAPSHOT (Aggregated)</title>
+    </head>
+
+<body  onload="onLoad('javaparser-parent 3.15.13-SNAPSHOT (Aggregated): com.github.javaparser.printer.concretesyntaxmodel.CsmElement.java')">
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                    <a href="https://github.com/javaparser" target="_top">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+                    </a>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                            <a href="https://github.com/javaparser" target="_top">
+                                        javaparser-parent 3.15.13-SNAPSHOT (Aggregated)
+                                        </a>
+                    </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../../" data-package-name="com.github.javaparser.printer.concretesyntaxmodel">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="../../../../../dashboard.html">Project Clover database Sun Feb 23 2020 18:16:51 CET</a></li> 
+        <li><a href="pkg-summary.html">        Package com.github.javaparser.printer.concretesyntaxmodel</a></li> 
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            File CsmElement.java
+    </h1>
+
+
+
+
+
+
+
+
+    
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+            <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-source">
+        <div>&#160;</div>
+
+        
+                <div style="display: table; width: 100%">
+                            <div class="clover-histogram-table-cell">
+                                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Coverage histogram</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div class="aui-item clover-aui-item-histogram">
+                    <img src="../../../../../img/srcFileCovDistChart10.png" alt="../../../../../img/srcFileCovDistChart10.png"
+                         usemap="#srcFileCovDistChart10.png" class="clover-histogram-img"/>
+                    <map id="srcFileCovDistChart10.png" name="srcFileCovDistChart10.png">
+<area shape="rect" coords="100,8,107,65" title="216 files have 91-100% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="91,50,98,66" title="62 files have 81-90% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="82,53,89,66" title="51 files have 71-80% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="73,56,80,66" title="38 files have 61-70% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="64,53,71,65" title="48 files have 51-60% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="56,50,63,66" title="61 files have 41-50% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="47,55,54,66" title="44 files have 31-40% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="38,62,45,66" title="18 files have 21-30% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="29,65,36,66" title="6 files have 11-20% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="20,63,27,65" title="11 files have 1-10% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="11,46,18,66" title="75 files have 0% coverage" alt="" nohref="nohref"/>
+</map><br />
+                    <span class="subtle"><strong>0% </strong>of files have more coverage</span>
+                </div>
+            </div>
+        </div>
+                    </div>
+                        <div style="display: table-cell; width: 67%;">
+                    <div class="dashboard-widget">
+        <header class="dashboard-widget-header">
+            <h3>Code metrics</h3>
+        </header>
+        <div class="dashboard-widget-content">
+                        
+
+<div id="td-header-stats" class="aui-item" style="display: ">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">0</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">28</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">28</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">149</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">94</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">28</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">1</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">28</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+</div>
+
+</div>
+                        
+
+<div id="td-filtered-header-stats" class="aui-item" style="display: none">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">0</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">28</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">28</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">149</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">94</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">28</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">1</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">28</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+</div>
+
+</div>        </div>
+    </div>
+            </div>
+        </div>
+
+        
+        
+
+
+    <h2>Classes</h2>
+
+        <table class="aui aui-table-sortable">
+        <thead>
+                        <tr>     <th>Class</th>
+    <th>Line #</th>
+
+            
+        <th class="">
+            <label  title="The total number of statements.">Total Statements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The percentage of elements that have been filtered from this report.">% Filtered</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label>
+        </th>
+        
+    
+            <th>Actions</th>
+    </tr>         </thead>
+        <tbody>
+                              <tr> <td id="CsmElement">
+        <span><a href="#35" title="CsmElement" onclick="closeDialogAndScrollTo('dialog-CsmElement', '35');">CsmElement</a></span>
+</td>
+<td>35<a name="sl-35"></a></td>
+    <td class="">28</td>
+    <td class="">0%</td>
+    <td class="">28</td>
+    <td class="">2</td>
+    <td class=""><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.96428573</span>96,4%</div><div style="display: table-cell">
+ <div title="96,4% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:96.4%"></div></div></div></div></td>
+    <td><button data-dialog-id="dialog-CsmElement" class="aui-button aui-button-link dialog-show-button">Show methods</button></td>
+</tr>                      </tbody>
+    </table>
+
+    
+     
+        <section role="dialog" id="dialog-CsmElement" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+            
+            <header class="aui-dialog2-header">
+                <h1 class="aui-dialog2-header-main">Class CsmElement</h1>
+                <div class="aui-dialog2-header-secondary">
+                    <input id="dialog-CsmElement-method-filter" class="test-filter text" type="text" name="method-filter"
+                           placeholder="Type to filter methods..." autocomplete="off"
+                           onkeyup="filterMethods('dialog-CsmElement-methods-body', 'dialog-CsmElement-method-filter');"/>
+                </div>
+            </header>
+
+            
+            <div class="aui-dialog2-content">
+
+                
+
+                <table class="aui aui-table-sortable">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                    <thead>
+                                                 <tr> <th id="CsmElement">
+    Class<br/>    <span><a href="#35" title="CsmElement" onclick="closeDialogAndScrollTo('dialog-CsmElement', '35');">CsmElement</a></span>
+</th>
+<th>Line #<br/>35<a name="sl-35"></a></th>
+    <th class=""><label  title="The total number of statements.">Total Statements</label><br/>28</th>
+    <th class=""><label  title="The percentage of elements that have been filtered from this report.">% Filtered</label><br/>0%</th>
+    <th class=""><label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label><br/>28</th>
+    <th class=""><label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label><br/>2</th>
+    <th class=""><label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label><br/><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.96428573</span>96,4%</div><div style="display: table-cell">
+ <div title="96,4% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:96.4%"></div></div></div></div></th>
+</tr>                     </thead>
+                    <tbody id="dialog-CsmElement-methods-body">
+                                                                                                            <tr id="CsmElement-1">
+<td id="summary-39-5">
+ <span class="sortValue">child(ObservableProperty)&#160;:&#160;CsmElement</span>
+&#160;&#160;<a href="?line=29#39" title="child(ObservableProperty)&#160;:&#160;CsmElement" name="sl-39" onclick="closeDialogAndScrollTo('dialog-CsmElement', '39');">child(ObservableProperty)&#160;:&#160;CsmElement</a>
+</td>
+<td align="right"><span class="sortValue">39</span>39</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="CsmElement-2">
+<td id="summary-43-5">
+ <span class="sortValue">attribute(ObservableProperty)&#160;:&#160;CsmElement</span>
+&#160;&#160;<a href="?line=29#43" title="attribute(ObservableProperty)&#160;:&#160;CsmElement" name="sl-43" onclick="closeDialogAndScrollTo('dialog-CsmElement', '43');">attribute(ObservableProperty)&#160;:&#160;CsmElement</a>
+</td>
+<td align="right"><span class="sortValue">43</span>43</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="CsmElement-3">
+<td id="summary-47-5">
+ <span class="sortValue">sequence(CsmElement)&#160;:&#160;CsmElement</span>
+&#160;&#160;<a href="?line=29#47" title="sequence(CsmElement)&#160;:&#160;CsmElement" name="sl-47" onclick="closeDialogAndScrollTo('dialog-CsmElement', '47');">sequence(CsmElement)&#160;:&#160;CsmElement</a>
+</td>
+<td align="right"><span class="sortValue">47</span>47</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="CsmElement-4">
+<td id="summary-51-5">
+ <span class="sortValue">string(int,String)&#160;:&#160;CsmElement</span>
+&#160;&#160;<a href="?line=29#51" title="string(int,String)&#160;:&#160;CsmElement" name="sl-51" onclick="closeDialogAndScrollTo('dialog-CsmElement', '51');">string(int,String)&#160;:&#160;CsmElement</a>
+</td>
+<td align="right"><span class="sortValue">51</span>51</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="CsmElement-5">
+<td id="summary-55-5">
+ <span class="sortValue">string(int)&#160;:&#160;CsmElement</span>
+&#160;&#160;<a href="?line=29#55" title="string(int)&#160;:&#160;CsmElement" name="sl-55" onclick="closeDialogAndScrollTo('dialog-CsmElement', '55');">string(int)&#160;:&#160;CsmElement</a>
+</td>
+<td align="right"><span class="sortValue">55</span>55</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="CsmElement-6">
+<td id="summary-59-5">
+ <span class="sortValue">stringToken(ObservableProperty)&#160;:&#160;CsmElement</span>
+&#160;&#160;<a href="?line=29#59" title="stringToken(ObservableProperty)&#160;:&#160;CsmElement" name="sl-59" onclick="closeDialogAndScrollTo('dialog-CsmElement', '59');">stringToken(ObservableProperty)&#160;:&#160;CsmElement</a>
+</td>
+<td align="right"><span class="sortValue">59</span>59</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="CsmElement-7">
+<td id="summary-63-5">
+ <span class="sortValue">textBlockToken(ObservableProperty)&#160;:&#160;CsmElement</span>
+&#160;&#160;<a href="?line=29#63" title="textBlockToken(ObservableProperty)&#160;:&#160;CsmElement" name="sl-63" onclick="closeDialogAndScrollTo('dialog-CsmElement', '63');">textBlockToken(ObservableProperty)&#160;:&#160;CsmElement</a>
+</td>
+<td align="right"><span class="sortValue">63</span>63</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="CsmElement-8">
+<td id="summary-67-5">
+ <span class="sortValue">charToken(ObservableProperty)&#160;:&#160;CsmElement</span>
+&#160;&#160;<a href="?line=29#67" title="charToken(ObservableProperty)&#160;:&#160;CsmElement" name="sl-67" onclick="closeDialogAndScrollTo('dialog-CsmElement', '67');">charToken(ObservableProperty)&#160;:&#160;CsmElement</a>
+</td>
+<td align="right"><span class="sortValue">67</span>67</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="CsmElement-9">
+<td id="summary-71-5">
+ <span class="sortValue">token(int)&#160;:&#160;CsmElement</span>
+&#160;&#160;<a href="?line=29#71" title="token(int)&#160;:&#160;CsmElement" name="sl-71" onclick="closeDialogAndScrollTo('dialog-CsmElement', '71');">token(int)&#160;:&#160;CsmElement</a>
+</td>
+<td align="right"><span class="sortValue">71</span>71</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="CsmElement-10">
+<td id="summary-75-5">
+ <span class="sortValue">token(int,CsmToken.TokenContentCalculator)&#160;:&#160;CsmElement</span>
+&#160;&#160;<a href="?line=29#75" title="token(int,CsmToken.TokenContentCalculator)&#160;:&#160;CsmElement" name="sl-75" onclick="closeDialogAndScrollTo('dialog-CsmElement', '75');">token(int,CsmToken.TokenContentCalculator)&#160;:&#160;CsmElement</a>
+</td>
+<td align="right"><span class="sortValue">75</span>75</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="CsmElement-11">
+<td id="summary-79-5">
+ <span class="sortValue">conditional(ObservableProperty,CsmConditional.Condition,CsmElement)&#160;:&#160;CsmElement</span>
+&#160;&#160;<a href="?line=29#79" title="conditional(ObservableProperty,CsmConditional.Condition,CsmElement)&#160;:&#160;CsmElement" name="sl-79" onclick="closeDialogAndScrollTo('dialog-CsmElement', '79');">conditional(ObservableProperty,CsmConditional.Condition,CsmElement)&#160;:&#160;CsmElement</a>
+</td>
+<td align="right"><span class="sortValue">79</span>79</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="CsmElement-12">
+<td id="summary-83-5">
+ <span class="sortValue">conditional(ObservableProperty,CsmConditional.Condition,CsmElement,CsmElement)&#160;:&#160;CsmElement</span>
+&#160;&#160;<a href="?line=29#83" title="conditional(ObservableProperty,CsmConditional.Condition,CsmElement,CsmElement)&#160;:&#160;CsmElement" name="sl-83" onclick="closeDialogAndScrollTo('dialog-CsmElement', '83');">conditional(ObservableProperty,CsmConditional.Condition,CsmElement,CsmElement)&#160;:&#160;CsmElement</a>
+</td>
+<td align="right"><span class="sortValue">83</span>83</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="CsmElement-13">
+<td id="summary-87-5">
+ <span class="sortValue">conditional(List&lt;ObservableProperty&gt;,CsmConditional.Condition,CsmElement,CsmElement)&#160;:&#160;CsmElement</span>
+&#160;&#160;<a href="?line=29#87" title="conditional(List&lt;ObservableProperty&gt;,CsmConditional.Condition,CsmElement,CsmElement)&#160;:&#160;CsmElement" name="sl-87" onclick="closeDialogAndScrollTo('dialog-CsmElement', '87');">conditional(List&lt;ObservableProperty&gt;,CsmConditional.Condition,CsmElement,CsmElement)&#160;:&#160;CsmElement</a>
+</td>
+<td align="right"><span class="sortValue">87</span>87</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="CsmElement-14">
+<td id="summary-91-5">
+ <span class="sortValue">space()&#160;:&#160;CsmElement</span>
+&#160;&#160;<a href="?line=29#91" title="space()&#160;:&#160;CsmElement" name="sl-91" onclick="closeDialogAndScrollTo('dialog-CsmElement', '91');">space()&#160;:&#160;CsmElement</a>
+</td>
+<td align="right"><span class="sortValue">91</span>91</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="CsmElement-15">
+<td id="summary-95-5">
+ <span class="sortValue">semicolon()&#160;:&#160;CsmElement</span>
+&#160;&#160;<a href="?line=29#95" title="semicolon()&#160;:&#160;CsmElement" name="sl-95" onclick="closeDialogAndScrollTo('dialog-CsmElement', '95');">semicolon()&#160;:&#160;CsmElement</a>
+</td>
+<td align="right"><span class="sortValue">95</span>95</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="CsmElement-16">
+<td id="summary-99-5">
+ <span class="sortValue">comment()&#160;:&#160;CsmElement</span>
+&#160;&#160;<a href="?line=29#99" title="comment()&#160;:&#160;CsmElement" name="sl-99" onclick="closeDialogAndScrollTo('dialog-CsmElement', '99');">comment()&#160;:&#160;CsmElement</a>
+</td>
+<td align="right"><span class="sortValue">99</span>99</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="CsmElement-17">
+<td id="summary-101-5">
+ <span class="sortValue">newline()&#160;:&#160;CsmElement</span>
+&#160;&#160;<a href="?line=29#101" title="newline()&#160;:&#160;CsmElement" name="sl-101" onclick="closeDialogAndScrollTo('dialog-CsmElement', '101');">newline()&#160;:&#160;CsmElement</a>
+</td>
+<td align="right"><span class="sortValue">101</span>101</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="CsmElement-18">
+<td id="summary-105-5">
+ <span class="sortValue">none()&#160;:&#160;CsmElement</span>
+&#160;&#160;<a href="?line=29#105" title="none()&#160;:&#160;CsmElement" name="sl-105" onclick="closeDialogAndScrollTo('dialog-CsmElement', '105');">none()&#160;:&#160;CsmElement</a>
+</td>
+<td align="right"><span class="sortValue">105</span>105</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="CsmElement-19">
+<td id="summary-109-5">
+ <span class="sortValue">comma()&#160;:&#160;CsmElement</span>
+&#160;&#160;<a href="?line=29#109" title="comma()&#160;:&#160;CsmElement" name="sl-109" onclick="closeDialogAndScrollTo('dialog-CsmElement', '109');">comma()&#160;:&#160;CsmElement</a>
+</td>
+<td align="right"><span class="sortValue">109</span>109</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="CsmElement-20">
+<td id="summary-113-5">
+ <span class="sortValue">list(ObservableProperty)&#160;:&#160;CsmElement</span>
+&#160;&#160;<a href="?line=29#113" title="list(ObservableProperty)&#160;:&#160;CsmElement" name="sl-113" onclick="closeDialogAndScrollTo('dialog-CsmElement', '113');">list(ObservableProperty)&#160;:&#160;CsmElement</a>
+</td>
+<td align="right"><span class="sortValue">113</span>113</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="CsmElement-21">
+<td id="summary-117-5">
+ <span class="sortValue">list(ObservableProperty,CsmElement)&#160;:&#160;CsmElement</span>
+&#160;&#160;<a href="?line=29#117" title="list(ObservableProperty,CsmElement)&#160;:&#160;CsmElement" name="sl-117" onclick="closeDialogAndScrollTo('dialog-CsmElement', '117');">list(ObservableProperty,CsmElement)&#160;:&#160;CsmElement</a>
+</td>
+<td align="right"><span class="sortValue">117</span>117</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="CsmElement-22">
+<td id="summary-121-5">
+ <span class="sortValue">list(ObservableProperty,CsmElement,CsmElement,CsmElement)&#160;:&#160;CsmElement</span>
+&#160;&#160;<a href="?line=29#121" title="list(ObservableProperty,CsmElement,CsmElement,CsmElement)&#160;:&#160;CsmElement" name="sl-121" onclick="closeDialogAndScrollTo('dialog-CsmElement', '121');">list(ObservableProperty,CsmElement,CsmElement,CsmElement)&#160;:&#160;CsmElement</a>
+</td>
+<td align="right"><span class="sortValue">121</span>121</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="CsmElement-23">
+<td id="summary-125-5">
+ <span class="sortValue">list(ObservableProperty,CsmElement,CsmElement,CsmElement,CsmElement)&#160;:&#160;CsmElement</span>
+&#160;&#160;<a href="?line=29#125" title="list(ObservableProperty,CsmElement,CsmElement,CsmElement,CsmElement)&#160;:&#160;CsmElement" name="sl-125" onclick="closeDialogAndScrollTo('dialog-CsmElement', '125');">list(ObservableProperty,CsmElement,CsmElement,CsmElement,CsmElement)&#160;:&#160;CsmElement</a>
+</td>
+<td align="right"><span class="sortValue">125</span>125</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="CsmElement-24">
+<td id="summary-129-5">
+ <span class="sortValue">orphanCommentsEnding()&#160;:&#160;CsmElement</span>
+&#160;&#160;<a href="?line=29#129" title="orphanCommentsEnding()&#160;:&#160;CsmElement" name="sl-129" onclick="closeDialogAndScrollTo('dialog-CsmElement', '129');">orphanCommentsEnding()&#160;:&#160;CsmElement</a>
+</td>
+<td align="right"><span class="sortValue">129</span>129</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="CsmElement-25">
+<td id="summary-133-5">
+ <span class="sortValue">orphanCommentsBeforeThis()&#160;:&#160;CsmElement</span>
+&#160;&#160;<a href="?line=29#133" title="orphanCommentsBeforeThis()&#160;:&#160;CsmElement" name="sl-133" onclick="closeDialogAndScrollTo('dialog-CsmElement', '133');">orphanCommentsBeforeThis()&#160;:&#160;CsmElement</a>
+</td>
+<td align="right"><span class="sortValue">133</span>133</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="CsmElement-26">
+<td id="summary-138-5">
+ <span class="sortValue">indent()&#160;:&#160;CsmElement</span>
+&#160;&#160;<a href="?line=29#138" title="indent()&#160;:&#160;CsmElement" name="sl-138" onclick="closeDialogAndScrollTo('dialog-CsmElement', '138');">indent()&#160;:&#160;CsmElement</a>
+</td>
+<td align="right"><span class="sortValue">138</span>138</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="CsmElement-27">
+<td id="summary-142-5">
+ <span class="sortValue">unindent()&#160;:&#160;CsmElement</span>
+&#160;&#160;<a href="?line=29#142" title="unindent()&#160;:&#160;CsmElement" name="sl-142" onclick="closeDialogAndScrollTo('dialog-CsmElement', '142');">unindent()&#160;:&#160;CsmElement</a>
+</td>
+<td align="right"><span class="sortValue">142</span>142</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="CsmElement-28">
+<td id="summary-146-5">
+ <span class="sortValue">block(CsmElement)&#160;:&#160;CsmElement</span>
+&#160;&#160;<a href="?line=29#146" title="block(CsmElement)&#160;:&#160;CsmElement" name="sl-146" onclick="closeDialogAndScrollTo('dialog-CsmElement', '146');">block(CsmElement)&#160;:&#160;CsmElement</a>
+</td>
+<td align="right"><span class="sortValue">146</span>146</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                         </tbody>
+                </table>
+
+                <div>&#160;</div>
+                
+
+            </div>
+
+            
+            <footer class="aui-dialog2-footer">
+                <div class="aui-dialog2-footer-actions">
+                    <button class="aui-button aui-button-primary dialog-close-button"
+                            data-dialog-id="dialog-CsmElement">Close</button>
+                </div>
+                <div class="aui-dialog2-footer-hint">Click on a class or a method name to jump to source.</div>
+            </footer>
+        </section>
+
+     
+ 
+        
+        <div>&#160;</div>
+
+<h2>Contributing tests</h2>
+
+    <div>
+                This file is covered by 3 tests.
+        <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-link dialog-show-button">
+            Select tests to highlight the test coverage
+        </button>.
+    </div>
+
+<section role="dialog" id="contr-tests-dialog" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+    
+    <header class="aui-dialog2-header">
+        <h1 class="aui-dialog2-header-main">Contributing tests</h1>
+        <div class="aui-dialog2-header-secondary">
+            <input id="test-filter" class="test-filter text" type="text" name="test-filter"
+                   placeholder="Type to filter tests..." autocomplete="off"
+                   onkeyup="filterTests('tests-body', 'test-filter', 3);"/>
+        </div>
+    </header>
+
+    
+    <div class="aui-dialog2-content">
+    
+
+        <p class="aui-buttons">
+            <button title="Selects all tests for this file, highlighting their coverage."
+                    class="aui-button" id="selectalltests">Select all</button>
+        </p>
+
+        <table class="aui aui-table-sortable">
+            <thead id="tests-head">
+            <tr id="testHeaderRow">
+                <th class="aui-table-column-unsortable"></th>
+                <th>
+                    <label title="The percentage of coverage contributed by each single test.">Test contribution</label>
+                </th>
+                <th>
+                    <label title="The test (or test iteration) which was executed.">Test</label>
+                </th>
+                <th>
+                    <label>Result</label>
+                </th>
+                <th class="aui-table-column-unsortable">
+                    <label>Actions</label>
+                </th>
+            </tr>
+            </thead>
+            <tbody id="tests-body">
+
+<tr id="test-1029">
+<td><a name="testA-1029"></a><input type="checkbox" id="cb-1029" value="1029" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.96428573</span>
+<div>
+<div title="96,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:96.4%"></div></div></div></td>
+<td id="tc-1029">  <span class="sortValue">com.github.javaparser.remove.NodeRemovalTest.testRemoveStatementFromMethodBodyWithLexicalPreservingPrinter</span><a href="../../../../../" title="View Test Summary Page">com.github.javaparser.remove.NodeRemovalTest.testRemoveStatementFromMethodBodyWithLexicalPreservingPrinter</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1434">
+<td><a name="testA-1434"></a><input type="checkbox" id="cb-1434" value="1434" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.14285715</span>
+<div>
+<div title="14,3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:14.3%"></div></div></div></td>
+<td id="tc-1434">  <span class="sortValue">com.github.javaparser.printer.lexicalpreservation.LexicalDifferenceCalculatorTest.csmModelAfterAddingStatementToEmptyBlock</span><a href="../../../../../" title="View Test Summary Page">com.github.javaparser.printer.lexicalpreservation.LexicalDifferenceCalculatorTest.csmModelAfterAddingStatementToEmptyBlock</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1645">
+<td><a name="testA-1645"></a><input type="checkbox" id="cb-1645" value="1645" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.14285715</span>
+<div>
+<div title="14,3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:14.3%"></div></div></div></td>
+<td id="tc-1645">  <span class="sortValue">com.github.javaparser.printer.lexicalpreservation.LexicalDifferenceCalculatorTest.differenceAfterddingStatementToEmptyBlock</span><a href="../../../../../" title="View Test Summary Page">com.github.javaparser.printer.lexicalpreservation.LexicalDifferenceCalculatorTest.differenceAfterddingStatementToEmptyBlock</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+
+            </tbody>
+        </table>
+
+        
+        <div>&#160;</div>
+
+    
+    </div>
+
+    
+    <footer class="aui-dialog2-footer">
+        <div class="aui-dialog2-footer-actions">
+            <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-primary dialog-close-button">Apply</button>
+        </div>
+        <div class="aui-dialog2-footer-hint">Select tests to highlight code covered by them in the source view.</div>
+    </footer>
+</section>
+
+ 
+        
+        
+
+
+
+
+
+<h2>Source view</h2>
+
+
+<div style="display: table; width: 100%;">
+    <div style="display: table-cell">
+        <button class="aui-button aui-button-link"
+                title="Toggles all methods in the source to be either expanded or collapsed."
+                onclick="toggleAllInlineMethods(this); return false;" id="method-expander">
+            Collapse all methods
+        </button>
+    </div>
+    <div style="display: table-cell">
+        <div style="text-align: right; margin-bottom: 10px">
+            <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;Show legend
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function(content, trigger, showPopup) {
+                content.css({"padding":"20px"}).html(SRC_FILE_LEGEND_TEXT);
+                showPopup();
+                return false;
+            },
+            {
+                width: 700, hideDelay: 60000
+            }
+    );
+</script>        </div>
+    </div>
+</div>
+
+<table cellspacing="0" cellpadding="0" class="srcView" width="100%">
+
+    
+<tbody> <tr id="l1">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=1#src-1">1</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-1" class="srcLine"><span class="comment">/*</span></span></td>
+</tr>
+ <tr id="l2">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=2#src-2">2</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-2" class="srcLine"><span class="comment"> * Copyright (C) 2007-2010 Júlio Vilmar Gesser.</span></span></td>
+</tr>
+ <tr id="l3">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=3#src-3">3</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-3" class="srcLine"><span class="comment"> * Copyright (C) 2011, 2013-2020 The JavaParser Team.</span></span></td>
+</tr>
+ <tr id="l4">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=4#src-4">4</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-4" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l5">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=5#src-5">5</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-5" class="srcLine"><span class="comment"> * This file is part of JavaParser.</span></span></td>
+</tr>
+ <tr id="l6">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=6#src-6">6</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-6" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l7">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=7#src-7">7</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-7" class="srcLine"><span class="comment"> * JavaParser can be used either under the terms of</span></span></td>
+</tr>
+ <tr id="l8">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=8#src-8">8</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-8" class="srcLine"><span class="comment"> * a) the GNU Lesser General Public License as published by</span></span></td>
+</tr>
+ <tr id="l9">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=9#src-9">9</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-9" class="srcLine"><span class="comment"> *     the Free Software Foundation, either version 3 of the License, or</span></span></td>
+</tr>
+ <tr id="l10">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=10#src-10">10</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-10" class="srcLine"><span class="comment"> *     (at your option) any later version.</span></span></td>
+</tr>
+ <tr id="l11">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=11#src-11">11</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-11" class="srcLine"><span class="comment"> * b) the terms of the Apache License</span></span></td>
+</tr>
+ <tr id="l12">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=12#src-12">12</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-12" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l13">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=13#src-13">13</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-13" class="srcLine"><span class="comment"> * You should have received a copy of both licenses in LICENCE.LGPL and</span></span></td>
+</tr>
+ <tr id="l14">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=14#src-14">14</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-14" class="srcLine"><span class="comment"> * LICENCE.APACHE. Please refer to those files for details.</span></span></td>
+</tr>
+ <tr id="l15">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=15#src-15">15</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-15" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l16">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=16#src-16">16</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-16" class="srcLine"><span class="comment"> * JavaParser is distributed in the hope that it will be useful,</span></span></td>
+</tr>
+ <tr id="l17">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=17#src-17">17</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-17" class="srcLine"><span class="comment"> * but WITHOUT ANY WARRANTY; without even the implied warranty of</span></span></td>
+</tr>
+ <tr id="l18">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=18#src-18">18</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-18" class="srcLine"><span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></span></td>
+</tr>
+ <tr id="l19">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=19#src-19">19</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-19" class="srcLine"><span class="comment"> * GNU Lesser General Public License for more details.</span></span></td>
+</tr>
+ <tr id="l20">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=20#src-20">20</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-20" class="srcLine"><span class="comment"> */</span></span></td>
+</tr>
+ <tr id="l21">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=21#src-21">21</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-21" class="srcLine"></span></td>
+</tr>
+ <tr id="l22">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=22#src-22">22</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-22" class="srcLine"><span class="keyword">package</span> com.github.<a href="../../../javaparser/pkg-summary.html">javaparser</a>.<a href="../../printer/pkg-summary.html">printer</a>.<a href="../concretesyntaxmodel/pkg-summary.html">concretesyntaxmodel</a>;</span></td>
+</tr>
+ <tr id="l23">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=23#src-23">23</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-23" class="srcLine"></span></td>
+</tr>
+ <tr id="l24">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=24#src-24">24</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-24" class="srcLine"><span class="keyword">import</span> com.github.<a href="../../../javaparser/pkg-summary.html">javaparser</a>.GeneratedJavaParserConstants;</span></td>
+</tr>
+ <tr id="l25">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=25#src-25">25</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-25" class="srcLine"><span class="keyword">import</span> com.github.<a href="../../../javaparser/pkg-summary.html">javaparser</a>.<a href="../../ast/pkg-summary.html">ast</a>.<a href="../../../../../com/github/javaparser/ast/Node.html#Node">Node</a>;</span></td>
+</tr>
+ <tr id="l26">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=26#src-26">26</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-26" class="srcLine"><span class="keyword">import</span> com.github.<a href="../../../javaparser/pkg-summary.html">javaparser</a>.<a href="../../ast/pkg-summary.html">ast</a>.<a href="../../ast/observer/pkg-summary.html">observer</a>.<a href="../../../../../com/github/javaparser/ast/observer/ObservableProperty.html#ObservableProperty">ObservableProperty</a>;</span></td>
+</tr>
+ <tr id="l27">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=27#src-27">27</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-27" class="srcLine"><span class="keyword">import</span> com.github.<a href="../../../javaparser/pkg-summary.html">javaparser</a>.<a href="../../printer/pkg-summary.html">printer</a>.<a href="../../../../../com/github/javaparser/printer/SourcePrinter.html#SourcePrinter">SourcePrinter</a>;</span></td>
+</tr>
+ <tr id="l28">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=28#src-28">28</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-28" class="srcLine"></span></td>
+</tr>
+ <tr id="l29">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=29#src-29">29</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-29" class="srcLine"><span class="keyword">import</span> java.util.Arrays;</span></td>
+</tr>
+ <tr id="l30">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=30#src-30">30</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-30" class="srcLine"><span class="keyword">import</span> java.util.List;</span></td>
+</tr>
+ <tr id="l31">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=31#src-31">31</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-31" class="srcLine"></span></td>
+</tr>
+ <tr id="l32">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=32#src-32">32</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-32" class="srcLine"><span class="keyword">import</span> <span class="keyword">static</span> com.github.javaparser.TokenTypes.*;</span></td>
+</tr>
+ <tr id="l33">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=33#src-33">33</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-33" class="srcLine"><span class="keyword">import</span> <span class="keyword">static</span> com.github.javaparser.utils.Utils.EOL;</span></td>
+</tr>
+ <tr id="l34">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=34#src-34">34</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-34" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="35" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-35' onclick="toggleInlineStats(this, 'inlinestats-35');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-35" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-35'), 'inlinestats-35');return true;">
+                <td><div>
+<div title="96,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:96.4%"></div></div></div></td><td>96,4%</td>
+                <td class="inlineStat">Uncovered Elements: 2 (56)</td>
+                <td class="inlineStat">Complexity: 28</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l35">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=35#src-35">35</a></td>
+<td align="right" class="coverageCount NoHilight "   onclick="return showTestsForLine(this, 35, 'Tests that hit CsmElement');" >&#160;&#160;</td>
+<td class=" srcCell" id="id-35"><span class="spacer"></span><span id="src-35" class="srcLine"><span class="keyword">public</span> <span class="keyword">interface</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> {</span></td>
+</tr>
+ <tr id="l36">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=36#src-36">36</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-36" class="srcLine"></span></td>
+</tr>
+ <tr id="l37">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=37#src-37">37</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-37" class="srcLine">    <span class="keyword">void</span> prettyPrint(<a href="../../../../../com/github/javaparser/ast/Node.html#Node">Node</a> node, <a href="../../../../../com/github/javaparser/printer/SourcePrinter.html#SourcePrinter">SourcePrinter</a> printer);</span></td>
+</tr>
+ <tr id="l38">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=38#src-38">38</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-38" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="39" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-39' onclick="toggleInlineStats(this, 'inlinestats-39');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-39" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-39'), 'inlinestats-39');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l39">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=39#src-39">39</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 39, 'Tests that hit child(ObservableProperty)&#160;:&#160;CsmElement');" ><span title="Line 39, Col 5: method entered 110 times." class="nolink">&#160;110</span></td>
+<td class=" methodStart  srcCell" id="id-39"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 39,41);" id="img-39" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-39" class="srcLine"><span class="nolink" title="Line 39, Col 5: method entered 110 times.">    <span class="keyword">static</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> child(<a href="../../../../../com/github/javaparser/ast/observer/ObservableProperty.html#ObservableProperty">ObservableProperty</a> property) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-39'), 39,41);" id="e39" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l40">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=40#src-40">40</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 40, 'Tests that hit line # 40');" ><span title="Line 40, Col 9: statement executed 110 times." class="nolink">&#160;110</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-40" class="srcLine"><span class="nolink" title="Line 40, Col 9: statement executed 110 times.">        <span class="keyword">return</span> <span class="keyword">new</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmSingleReference.html#CsmSingleReference">CsmSingleReference</a>(property);</span></span></td>
+</tr>
+ <tr id="l41">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=41#src-41">41</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-41" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l42">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=42#src-42">42</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-42" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="43" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-43' onclick="toggleInlineStats(this, 'inlinestats-43');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-43" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-43'), 'inlinestats-43');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l43">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=43#src-43">43</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 43, 'Tests that hit attribute(ObservableProperty)&#160;:&#160;CsmElement');" ><span title="Line 43, Col 5: method entered 14 times." class="nolink">&#160;14</span></td>
+<td class=" methodStart  srcCell" id="id-43"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 43,45);" id="img-43" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-43" class="srcLine"><span class="nolink" title="Line 43, Col 5: method entered 14 times.">    <span class="keyword">static</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> attribute(<a href="../../../../../com/github/javaparser/ast/observer/ObservableProperty.html#ObservableProperty">ObservableProperty</a> property) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-43'), 43,45);" id="e43" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l44">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=44#src-44">44</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 44, 'Tests that hit line # 44');" ><span title="Line 44, Col 9: statement executed 14 times." class="nolink">&#160;14</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-44" class="srcLine"><span class="nolink" title="Line 44, Col 9: statement executed 14 times.">        <span class="keyword">return</span> <span class="keyword">new</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmAttribute.html#CsmAttribute">CsmAttribute</a>(property);</span></span></td>
+</tr>
+ <tr id="l45">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=45#src-45">45</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-45" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l46">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=46#src-46">46</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-46" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="47" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-47' onclick="toggleInlineStats(this, 'inlinestats-47');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-47" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-47'), 'inlinestats-47');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l47">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=47#src-47">47</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 47, 'Tests that hit sequence(CsmElement)&#160;:&#160;CsmElement');" ><span title="Line 47, Col 5: method entered 183 times." class="nolink">&#160;183</span></td>
+<td class=" methodStart  srcCell" id="id-47"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 47,49);" id="img-47" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-47" class="srcLine"><span class="nolink" title="Line 47, Col 5: method entered 183 times.">    <span class="keyword">static</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> sequence(<a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a>... elements) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-47'), 47,49);" id="e47" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l48">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=48#src-48">48</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 48, 'Tests that hit line # 48');" ><span title="Line 48, Col 9: statement executed 183 times." class="nolink">&#160;183</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-48" class="srcLine"><span class="nolink" title="Line 48, Col 9: statement executed 183 times.">        <span class="keyword">return</span> <span class="keyword">new</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmSequence.html#CsmSequence">CsmSequence</a>(Arrays.asList(elements));</span></span></td>
+</tr>
+ <tr id="l49">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=49#src-49">49</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-49" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l50">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=50#src-50">50</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-50" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="51" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-51' onclick="toggleInlineStats(this, 'inlinestats-51');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-51" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-51'), 'inlinestats-51');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l51">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=51#src-51">51</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 51, 'Tests that hit string(int,String)&#160;:&#160;CsmElement');" ><span title="Line 51, Col 5: method entered 1 time." class="nolink">&#160;1</span></td>
+<td class=" methodStart  srcCell" id="id-51"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 51,53);" id="img-51" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-51" class="srcLine"><span class="nolink" title="Line 51, Col 5: method entered 1 time.">    <span class="keyword">static</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> string(<span class="keyword">int</span> tokenType, String content) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-51'), 51,53);" id="e51" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l52">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=52#src-52">52</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 52, 'Tests that hit line # 52');" ><span title="Line 52, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-52" class="srcLine"><span class="nolink" title="Line 52, Col 9: statement executed 1 time.">        <span class="keyword">return</span> <span class="keyword">new</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmToken.html#CsmToken">CsmToken</a>(tokenType, content);</span></span></td>
+</tr>
+ <tr id="l53">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=53#src-53">53</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-53" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l54">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=54#src-54">54</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-54" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="55" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-55' onclick="toggleInlineStats(this, 'inlinestats-55');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-55" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-55'), 'inlinestats-55');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l55">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=55#src-55">55</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 55, 'Tests that hit string(int)&#160;:&#160;CsmElement');" ><span title="Line 55, Col 5: method entered 11 times." class="nolink">&#160;11</span></td>
+<td class=" methodStart  srcCell" id="id-55"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 55,57);" id="img-55" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-55" class="srcLine"><span class="nolink" title="Line 55, Col 5: method entered 11 times.">    <span class="keyword">static</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> string(<span class="keyword">int</span> tokenType) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-55'), 55,57);" id="e55" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l56">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=56#src-56">56</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 56, 'Tests that hit line # 56');" ><span title="Line 56, Col 9: statement executed 11 times." class="nolink">&#160;11</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-56" class="srcLine"><span class="nolink" title="Line 56, Col 9: statement executed 11 times.">        <span class="keyword">return</span> <span class="keyword">new</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmToken.html#CsmToken">CsmToken</a>(tokenType);</span></span></td>
+</tr>
+ <tr id="l57">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=57#src-57">57</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-57" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l58">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=58#src-58">58</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-58" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="59" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-59' onclick="toggleInlineStats(this, 'inlinestats-59');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-59" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-59'), 'inlinestats-59');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l59">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=59#src-59">59</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 59, 'Tests that hit stringToken(ObservableProperty)&#160;:&#160;CsmElement');" ><span title="Line 59, Col 5: method entered 1 time." class="nolink">&#160;1</span></td>
+<td class=" methodStart  srcCell" id="id-59"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 59,61);" id="img-59" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-59" class="srcLine"><span class="nolink" title="Line 59, Col 5: method entered 1 time.">    <span class="keyword">static</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> stringToken(<a href="../../../../../com/github/javaparser/ast/observer/ObservableProperty.html#ObservableProperty">ObservableProperty</a> property) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-59'), 59,61);" id="e59" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l60">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=60#src-60">60</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 60, 'Tests that hit line # 60');" ><span title="Line 60, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-60" class="srcLine"><span class="nolink" title="Line 60, Col 9: statement executed 1 time.">        <span class="keyword">return</span> <span class="keyword">new</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmString.html#CsmString">CsmString</a>(property);</span></span></td>
+</tr>
+ <tr id="l61">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=61#src-61">61</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-61" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l62">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=62#src-62">62</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-62" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="63" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-63' onclick="toggleInlineStats(this, 'inlinestats-63');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-63" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-63'), 'inlinestats-63');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l63">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=63#src-63">63</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 63, 'Tests that hit textBlockToken(ObservableProperty)&#160;:&#160;CsmElement');" ><span title="Line 63, Col 5: method entered 1 time." class="nolink">&#160;1</span></td>
+<td class=" methodStart  srcCell" id="id-63"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 63,65);" id="img-63" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-63" class="srcLine"><span class="nolink" title="Line 63, Col 5: method entered 1 time.">    <span class="keyword">static</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> textBlockToken(<a href="../../../../../com/github/javaparser/ast/observer/ObservableProperty.html#ObservableProperty">ObservableProperty</a> property) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-63'), 63,65);" id="e63" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l64">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=64#src-64">64</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 64, 'Tests that hit line # 64');" ><span title="Line 64, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-64" class="srcLine"><span class="nolink" title="Line 64, Col 9: statement executed 1 time.">        <span class="keyword">return</span> <span class="keyword">new</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmString.html#CsmString">CsmString</a>(property);</span></span></td>
+</tr>
+ <tr id="l65">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=65#src-65">65</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-65" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l66">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=66#src-66">66</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-66" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="67" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-67' onclick="toggleInlineStats(this, 'inlinestats-67');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-67" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-67'), 'inlinestats-67');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l67">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=67#src-67">67</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 67, 'Tests that hit charToken(ObservableProperty)&#160;:&#160;CsmElement');" ><span title="Line 67, Col 5: method entered 1 time." class="nolink">&#160;1</span></td>
+<td class=" methodStart  srcCell" id="id-67"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 67,69);" id="img-67" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-67" class="srcLine"><span class="nolink" title="Line 67, Col 5: method entered 1 time.">    <span class="keyword">static</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> charToken(<a href="../../../../../com/github/javaparser/ast/observer/ObservableProperty.html#ObservableProperty">ObservableProperty</a> property) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-67'), 67,69);" id="e67" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l68">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=68#src-68">68</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 68, 'Tests that hit line # 68');" ><span title="Line 68, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-68" class="srcLine"><span class="nolink" title="Line 68, Col 9: statement executed 1 time.">        <span class="keyword">return</span> <span class="keyword">new</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmChar.html#CsmChar">CsmChar</a>(property);</span></span></td>
+</tr>
+ <tr id="l69">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=69#src-69">69</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-69" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l70">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=70#src-70">70</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-70" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="71" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-71' onclick="toggleInlineStats(this, 'inlinestats-71');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-71" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-71'), 'inlinestats-71');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l71">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=71#src-71">71</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 71, 'Tests that hit token(int)&#160;:&#160;CsmElement');" ><span title="Line 71, Col 5: method entered 176 times." class="nolink">&#160;176</span></td>
+<td class=" methodStart  srcCell" id="id-71"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 71,73);" id="img-71" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-71" class="srcLine"><span class="nolink" title="Line 71, Col 5: method entered 176 times.">    <span class="keyword">static</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> token(<span class="keyword">int</span> tokenType) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-71'), 71,73);" id="e71" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l72">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=72#src-72">72</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 72, 'Tests that hit line # 72');" ><span title="Line 72, Col 9: statement executed 176 times." class="nolink">&#160;176</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-72" class="srcLine"><span class="nolink" title="Line 72, Col 9: statement executed 176 times.">        <span class="keyword">return</span> <span class="keyword">new</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmToken.html#CsmToken">CsmToken</a>(tokenType);</span></span></td>
+</tr>
+ <tr id="l73">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=73#src-73">73</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-73" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l74">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=74#src-74">74</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-74" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="75" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-75' onclick="toggleInlineStats(this, 'inlinestats-75');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-75" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-75'), 'inlinestats-75');return true;">
+                <td><div>
+<div title="0% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:0%"></div></div></div></td><td>0%</td>
+                <td class="inlineStat">Uncovered Elements: 1 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l75">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=75#src-75">75</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 75, Col 5: method not entered." class="nolink">&#160;0</span></td>
+<td class=" methodStart  srcCell" id="id-75"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 75,77);" id="img-75" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-75" class="srcLineHilight"><span class="nolink" title="Line 75, Col 5: method not entered.">    <span class="keyword">static</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> token(<span class="keyword">int</span> tokenType, <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmToken.html#CsmToken">CsmToken</a>.TokenContentCalculator tokenContentCalculator) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-75'), 75,77);" id="e75" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l76">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=76#src-76">76</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 76, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-76" class="srcLineHilight"><span class="nolink" title="Line 76, Col 9: statement not executed.">        <span class="keyword">return</span> <span class="keyword">new</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmToken.html#CsmToken">CsmToken</a>(tokenType, tokenContentCalculator);</span></span></td>
+</tr>
+ <tr id="l77">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=77#src-77">77</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-77" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l78">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=78#src-78">78</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-78" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="79" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-79' onclick="toggleInlineStats(this, 'inlinestats-79');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-79" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-79'), 'inlinestats-79');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l79">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=79#src-79">79</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 79, 'Tests that hit conditional(ObservableProperty,CsmConditional.Condition,CsmElement)&#160;:&#160;CsmElement');" ><span title="Line 79, Col 5: method entered 37 times." class="nolink">&#160;37</span></td>
+<td class=" methodStart  srcCell" id="id-79"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 79,81);" id="img-79" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-79" class="srcLine"><span class="nolink" title="Line 79, Col 5: method entered 37 times.">    <span class="keyword">static</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> conditional(<a href="../../../../../com/github/javaparser/ast/observer/ObservableProperty.html#ObservableProperty">ObservableProperty</a> property, <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmConditional.html#CsmConditional">CsmConditional</a>.Condition condition, <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> thenElement) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-79'), 79,81);" id="e79" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l80">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=80#src-80">80</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 80, 'Tests that hit line # 80');" ><span title="Line 80, Col 9: statement executed 37 times." class="nolink">&#160;37</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-80" class="srcLine"><span class="nolink" title="Line 80, Col 9: statement executed 37 times.">        <span class="keyword">return</span> <span class="keyword">new</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmConditional.html#CsmConditional">CsmConditional</a>(property, condition, thenElement);</span></span></td>
+</tr>
+ <tr id="l81">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=81#src-81">81</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-81" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l82">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=82#src-82">82</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-82" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="83" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-83' onclick="toggleInlineStats(this, 'inlinestats-83');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-83" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-83'), 'inlinestats-83');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l83">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=83#src-83">83</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 83, 'Tests that hit conditional(ObservableProperty,CsmConditional.Condition,CsmElement,CsmElement)&#160;:&#160;CsmElement');" ><span title="Line 83, Col 5: method entered 8 times." class="nolink">&#160;8</span></td>
+<td class=" methodStart  srcCell" id="id-83"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 83,85);" id="img-83" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-83" class="srcLine"><span class="nolink" title="Line 83, Col 5: method entered 8 times.">    <span class="keyword">static</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> conditional(<a href="../../../../../com/github/javaparser/ast/observer/ObservableProperty.html#ObservableProperty">ObservableProperty</a> property, <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmConditional.html#CsmConditional">CsmConditional</a>.Condition condition, <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> thenElement, <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> elseElement) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-83'), 83,85);" id="e83" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l84">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=84#src-84">84</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 84, 'Tests that hit line # 84');" ><span title="Line 84, Col 9: statement executed 8 times." class="nolink">&#160;8</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-84" class="srcLine"><span class="nolink" title="Line 84, Col 9: statement executed 8 times.">        <span class="keyword">return</span> <span class="keyword">new</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmConditional.html#CsmConditional">CsmConditional</a>(property, condition, thenElement, elseElement);</span></span></td>
+</tr>
+ <tr id="l85">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=85#src-85">85</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-85" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l86">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=86#src-86">86</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-86" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="87" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-87' onclick="toggleInlineStats(this, 'inlinestats-87');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-87" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-87'), 'inlinestats-87');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l87">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=87#src-87">87</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 87, 'Tests that hit conditional(List&lt;ObservableProperty&gt;,CsmConditional.Condition,CsmElement,CsmElement)&#160;:&#160;CsmElement');" ><span title="Line 87, Col 5: method entered 1 time." class="nolink">&#160;1</span></td>
+<td class=" methodStart  srcCell" id="id-87"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 87,89);" id="img-87" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-87" class="srcLine"><span class="nolink" title="Line 87, Col 5: method entered 1 time.">    <span class="keyword">static</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> conditional(List&lt;<a href="../../../../../com/github/javaparser/ast/observer/ObservableProperty.html#ObservableProperty">ObservableProperty</a>&gt; properties, <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmConditional.html#CsmConditional">CsmConditional</a>.Condition condition, <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> thenElement, <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> elseElement) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-87'), 87,89);" id="e87" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l88">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=88#src-88">88</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 88, 'Tests that hit line # 88');" ><span title="Line 88, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-88" class="srcLine"><span class="nolink" title="Line 88, Col 9: statement executed 1 time.">        <span class="keyword">return</span> <span class="keyword">new</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmConditional.html#CsmConditional">CsmConditional</a>(properties, condition, thenElement, elseElement);</span></span></td>
+</tr>
+ <tr id="l89">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=89#src-89">89</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-89" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l90">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=90#src-90">90</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-90" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="91" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-91' onclick="toggleInlineStats(this, 'inlinestats-91');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-91" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-91'), 'inlinestats-91');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l91">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=91#src-91">91</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 91, 'Tests that hit space()&#160;:&#160;CsmElement');" ><span title="Line 91, Col 5: method entered 189 times." class="nolink">&#160;189</span></td>
+<td class=" methodStart  srcCell" id="id-91"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 91,93);" id="img-91" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-91" class="srcLine"><span class="nolink" title="Line 91, Col 5: method entered 189 times.">    <span class="keyword">static</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> space() {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-91'), 91,93);" id="e91" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l92">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=92#src-92">92</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 92, 'Tests that hit line # 92');" ><span title="Line 92, Col 9: statement executed 189 times." class="nolink">&#160;189</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-92" class="srcLine"><span class="nolink" title="Line 92, Col 9: statement executed 189 times.">        <span class="keyword">return</span> <span class="keyword">new</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmToken.html#CsmToken">CsmToken</a>(spaceTokenKind(), <span class="string">&quot; &quot;</span>);</span></span></td>
+</tr>
+ <tr id="l93">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=93#src-93">93</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-93" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l94">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=94#src-94">94</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-94" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="95" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-95' onclick="toggleInlineStats(this, 'inlinestats-95');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-95" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-95'), 'inlinestats-95');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l95">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=95#src-95">95</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 95, 'Tests that hit semicolon()&#160;:&#160;CsmElement');" ><span title="Line 95, Col 5: method entered 23 times." class="nolink">&#160;23</span></td>
+<td class=" methodStart  srcCell" id="id-95"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 95,97);" id="img-95" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-95" class="srcLine"><span class="nolink" title="Line 95, Col 5: method entered 23 times.">    <span class="keyword">static</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> semicolon() {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-95'), 95,97);" id="e95" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l96">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=96#src-96">96</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 96, 'Tests that hit line # 96');" ><span title="Line 96, Col 9: statement executed 23 times." class="nolink">&#160;23</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-96" class="srcLine"><span class="nolink" title="Line 96, Col 9: statement executed 23 times.">        <span class="keyword">return</span> <span class="keyword">new</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmToken.html#CsmToken">CsmToken</a>(GeneratedJavaParserConstants.SEMICOLON);</span></span></td>
+</tr>
+ <tr id="l97">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=97#src-97">97</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-97" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l98">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=98#src-98">98</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-98" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="99" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-99' onclick="toggleInlineStats(this, 'inlinestats-99');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-99" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-99'), 'inlinestats-99');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l99">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=99#src-99">99</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 99, 'Tests that hit comment()&#160;:&#160;CsmElement');" ><span title="Line 99, Col 35: statement executed 80 times." class="nolink">&#160;80</span></td>
+<td class=" methodStart  srcCell" id="id-99"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 99,99);" id="img-99" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-99" class="srcLine"><span class="nolink" title="Line 99, Col 35: statement executed 80 times.">    <span class="keyword">static</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> comment() { <span class="keyword">return</span> <span class="keyword">new</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmComment.html#CsmComment">CsmComment</a>(); }</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-99'), 99,99);" id="e99" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l100">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=100#src-100">100</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-100" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="101" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-101' onclick="toggleInlineStats(this, 'inlinestats-101');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-101" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-101'), 'inlinestats-101');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l101">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=101#src-101">101</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 101, 'Tests that hit newline()&#160;:&#160;CsmElement');" ><span title="Line 101, Col 5: method entered 84 times." class="nolink">&#160;84</span></td>
+<td class=" methodStart  srcCell" id="id-101"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 101,103);" id="img-101" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-101" class="srcLine"><span class="nolink" title="Line 101, Col 5: method entered 84 times.">    <span class="keyword">static</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> newline() {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-101'), 101,103);" id="e101" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l102">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=102#src-102">102</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 102, 'Tests that hit line # 102');" ><span title="Line 102, Col 9: statement executed 84 times." class="nolink">&#160;84</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-102" class="srcLine"><span class="nolink" title="Line 102, Col 9: statement executed 84 times.">        <span class="keyword">return</span> <span class="keyword">new</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmToken.html#CsmToken">CsmToken</a>(eolTokenKind(), EOL);</span></span></td>
+</tr>
+ <tr id="l103">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=103#src-103">103</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-103" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l104">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=104#src-104">104</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-104" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="105" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-105' onclick="toggleInlineStats(this, 'inlinestats-105');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-105" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-105'), 'inlinestats-105');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l105">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=105#src-105">105</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 105, 'Tests that hit none()&#160;:&#160;CsmElement');" ><span title="Line 105, Col 5: method entered 134 times." class="nolink">&#160;134</span></td>
+<td class=" methodStart  srcCell" id="id-105"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 105,107);" id="img-105" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-105" class="srcLine"><span class="nolink" title="Line 105, Col 5: method entered 134 times.">    <span class="keyword">static</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> none() {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-105'), 105,107);" id="e105" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l106">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=106#src-106">106</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 106, 'Tests that hit line # 106');" ><span title="Line 106, Col 9: statement executed 134 times." class="nolink">&#160;134</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-106" class="srcLine"><span class="nolink" title="Line 106, Col 9: statement executed 134 times.">        <span class="keyword">return</span> <span class="keyword">new</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmNone.html#CsmNone">CsmNone</a>();</span></span></td>
+</tr>
+ <tr id="l107">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=107#src-107">107</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-107" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l108">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=108#src-108">108</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-108" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="109" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-109' onclick="toggleInlineStats(this, 'inlinestats-109');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-109" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-109'), 'inlinestats-109');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l109">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=109#src-109">109</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 109, 'Tests that hit comma()&#160;:&#160;CsmElement');" ><span title="Line 109, Col 5: method entered 30 times." class="nolink">&#160;30</span></td>
+<td class=" methodStart  srcCell" id="id-109"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 109,111);" id="img-109" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-109" class="srcLine"><span class="nolink" title="Line 109, Col 5: method entered 30 times.">    <span class="keyword">static</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> comma() {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-109'), 109,111);" id="e109" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l110">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=110#src-110">110</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 110, 'Tests that hit line # 110');" ><span title="Line 110, Col 9: statement executed 30 times." class="nolink">&#160;30</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-110" class="srcLine"><span class="nolink" title="Line 110, Col 9: statement executed 30 times.">        <span class="keyword">return</span> <span class="keyword">new</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmToken.html#CsmToken">CsmToken</a>(GeneratedJavaParserConstants.COMMA);</span></span></td>
+</tr>
+ <tr id="l111">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=111#src-111">111</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-111" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l112">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=112#src-112">112</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-112" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="113" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-113' onclick="toggleInlineStats(this, 'inlinestats-113');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-113" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-113'), 'inlinestats-113');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l113">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=113#src-113">113</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 113, 'Tests that hit list(ObservableProperty)&#160;:&#160;CsmElement');" ><span title="Line 113, Col 5: method entered 6 times." class="nolink">&#160;6</span></td>
+<td class=" methodStart  srcCell" id="id-113"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 113,115);" id="img-113" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-113" class="srcLine"><span class="nolink" title="Line 113, Col 5: method entered 6 times.">    <span class="keyword">static</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> list(<a href="../../../../../com/github/javaparser/ast/observer/ObservableProperty.html#ObservableProperty">ObservableProperty</a> property) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-113'), 113,115);" id="e113" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l114">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=114#src-114">114</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 114, 'Tests that hit line # 114');" ><span title="Line 114, Col 9: statement executed 6 times." class="nolink">&#160;6</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-114" class="srcLine"><span class="nolink" title="Line 114, Col 9: statement executed 6 times.">        <span class="keyword">return</span> <span class="keyword">new</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmList.html#CsmList">CsmList</a>(property);</span></span></td>
+</tr>
+ <tr id="l115">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=115#src-115">115</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-115" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l116">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=116#src-116">116</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-116" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="117" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-117' onclick="toggleInlineStats(this, 'inlinestats-117');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-117" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-117'), 'inlinestats-117');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l117">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=117#src-117">117</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 117, 'Tests that hit list(ObservableProperty,CsmElement)&#160;:&#160;CsmElement');" ><span title="Line 117, Col 5: method entered 10 times." class="nolink">&#160;10</span></td>
+<td class=" methodStart  srcCell" id="id-117"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 117,119);" id="img-117" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-117" class="srcLine"><span class="nolink" title="Line 117, Col 5: method entered 10 times.">    <span class="keyword">static</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> list(<a href="../../../../../com/github/javaparser/ast/observer/ObservableProperty.html#ObservableProperty">ObservableProperty</a> property, <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> separator) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-117'), 117,119);" id="e117" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l118">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=118#src-118">118</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 118, 'Tests that hit line # 118');" ><span title="Line 118, Col 9: statement executed 10 times." class="nolink">&#160;10</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-118" class="srcLine"><span class="nolink" title="Line 118, Col 9: statement executed 10 times.">        <span class="keyword">return</span> <span class="keyword">new</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmList.html#CsmList">CsmList</a>(property, <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a>.none(), separator, <span class="keyword">new</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmNone.html#CsmNone">CsmNone</a>(), <span class="keyword">new</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmNone.html#CsmNone">CsmNone</a>());</span></span></td>
+</tr>
+ <tr id="l119">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=119#src-119">119</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-119" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l120">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=120#src-120">120</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-120" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="121" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-121' onclick="toggleInlineStats(this, 'inlinestats-121');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-121" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-121'), 'inlinestats-121');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l121">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=121#src-121">121</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 121, 'Tests that hit list(ObservableProperty,CsmElement,CsmElement,CsmElement)&#160;:&#160;CsmElement');" ><span title="Line 121, Col 5: method entered 63 times." class="nolink">&#160;63</span></td>
+<td class=" methodStart  srcCell" id="id-121"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 121,123);" id="img-121" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-121" class="srcLine"><span class="nolink" title="Line 121, Col 5: method entered 63 times.">    <span class="keyword">static</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> list(<a href="../../../../../com/github/javaparser/ast/observer/ObservableProperty.html#ObservableProperty">ObservableProperty</a> property, <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> separator, <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> preceeding, <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> following) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-121'), 121,123);" id="e121" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l122">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=122#src-122">122</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 122, 'Tests that hit line # 122');" ><span title="Line 122, Col 9: statement executed 63 times." class="nolink">&#160;63</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-122" class="srcLine"><span class="nolink" title="Line 122, Col 9: statement executed 63 times.">        <span class="keyword">return</span> <span class="keyword">new</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmList.html#CsmList">CsmList</a>(property, none(), separator, preceeding, following);</span></span></td>
+</tr>
+ <tr id="l123">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=123#src-123">123</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-123" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l124">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=124#src-124">124</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-124" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="125" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-125' onclick="toggleInlineStats(this, 'inlinestats-125');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-125" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-125'), 'inlinestats-125');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l125">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=125#src-125">125</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 125, 'Tests that hit list(ObservableProperty,CsmElement,CsmElement,CsmElement,CsmElement)&#160;:&#160;CsmElement');" ><span title="Line 125, Col 5: method entered 5 times." class="nolink">&#160;5</span></td>
+<td class=" methodStart  srcCell" id="id-125"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 125,127);" id="img-125" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-125" class="srcLine"><span class="nolink" title="Line 125, Col 5: method entered 5 times.">    <span class="keyword">static</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> list(<a href="../../../../../com/github/javaparser/ast/observer/ObservableProperty.html#ObservableProperty">ObservableProperty</a> property, <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> separatorPre, <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> separatorPost, <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> preceeding, <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> following) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-125'), 125,127);" id="e125" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l126">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=126#src-126">126</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 126, 'Tests that hit line # 126');" ><span title="Line 126, Col 9: statement executed 5 times." class="nolink">&#160;5</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-126" class="srcLine"><span class="nolink" title="Line 126, Col 9: statement executed 5 times.">        <span class="keyword">return</span> <span class="keyword">new</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmList.html#CsmList">CsmList</a>(property, separatorPre, separatorPost, preceeding, following);</span></span></td>
+</tr>
+ <tr id="l127">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=127#src-127">127</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-127" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l128">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=128#src-128">128</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-128" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="129" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-129' onclick="toggleInlineStats(this, 'inlinestats-129');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-129" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-129'), 'inlinestats-129');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l129">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=129#src-129">129</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 129, 'Tests that hit orphanCommentsEnding()&#160;:&#160;CsmElement');" ><span title="Line 129, Col 5: method entered 7 times." class="nolink">&#160;7</span></td>
+<td class=" methodStart  srcCell" id="id-129"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 129,131);" id="img-129" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-129" class="srcLine"><span class="nolink" title="Line 129, Col 5: method entered 7 times.">    <span class="keyword">static</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> orphanCommentsEnding() {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-129'), 129,131);" id="e129" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l130">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=130#src-130">130</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 130, 'Tests that hit line # 130');" ><span title="Line 130, Col 9: statement executed 7 times." class="nolink">&#160;7</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-130" class="srcLine"><span class="nolink" title="Line 130, Col 9: statement executed 7 times.">        <span class="keyword">return</span> <span class="keyword">new</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmOrphanCommentsEnding.html#CsmOrphanCommentsEnding">CsmOrphanCommentsEnding</a>();</span></span></td>
+</tr>
+ <tr id="l131">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=131#src-131">131</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-131" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l132">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=132#src-132">132</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-132" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="133" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-133' onclick="toggleInlineStats(this, 'inlinestats-133');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-133" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-133'), 'inlinestats-133');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l133">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=133#src-133">133</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 133, 'Tests that hit orphanCommentsBeforeThis()&#160;:&#160;CsmElement');" ><span title="Line 133, Col 5: method entered 4 times." class="nolink">&#160;4</span></td>
+<td class=" methodStart  srcCell" id="id-133"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 133,136);" id="img-133" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-133" class="srcLine"><span class="nolink" title="Line 133, Col 5: method entered 4 times.">    <span class="keyword">static</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> orphanCommentsBeforeThis() {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-133'), 133,136);" id="e133" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l134">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=134#src-134">134</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-134" class="srcLine">        <span class="comment">// FIXME</span></span></td>
+</tr>
+ <tr id="l135">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=135#src-135">135</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 135, 'Tests that hit line # 135');" ><span title="Line 135, Col 9: statement executed 4 times." class="nolink">&#160;4</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-135" class="srcLine"><span class="nolink" title="Line 135, Col 9: statement executed 4 times.">        <span class="keyword">return</span> <span class="keyword">new</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmNone.html#CsmNone">CsmNone</a>();</span></span></td>
+</tr>
+ <tr id="l136">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=136#src-136">136</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-136" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l137">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=137#src-137">137</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-137" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="138" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-138' onclick="toggleInlineStats(this, 'inlinestats-138');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-138" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-138'), 'inlinestats-138');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l138">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=138#src-138">138</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 138, 'Tests that hit indent()&#160;:&#160;CsmElement');" ><span title="Line 138, Col 5: method entered 15 times." class="nolink">&#160;15</span></td>
+<td class=" methodStart  srcCell" id="id-138"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 138,140);" id="img-138" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-138" class="srcLine"><span class="nolink" title="Line 138, Col 5: method entered 15 times.">    <span class="keyword">static</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> indent() {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-138'), 138,140);" id="e138" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l139">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=139#src-139">139</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 139, 'Tests that hit line # 139');" ><span title="Line 139, Col 9: statement executed 15 times." class="nolink">&#160;15</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-139" class="srcLine"><span class="nolink" title="Line 139, Col 9: statement executed 15 times.">        <span class="keyword">return</span> <span class="keyword">new</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmIndent.html#CsmIndent">CsmIndent</a>();</span></span></td>
+</tr>
+ <tr id="l140">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=140#src-140">140</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-140" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l141">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=141#src-141">141</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-141" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="142" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-142' onclick="toggleInlineStats(this, 'inlinestats-142');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-142" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-142'), 'inlinestats-142');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l142">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=142#src-142">142</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 142, 'Tests that hit unindent()&#160;:&#160;CsmElement');" ><span title="Line 142, Col 5: method entered 15 times." class="nolink">&#160;15</span></td>
+<td class=" methodStart  srcCell" id="id-142"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 142,144);" id="img-142" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-142" class="srcLine"><span class="nolink" title="Line 142, Col 5: method entered 15 times.">    <span class="keyword">static</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> unindent() {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-142'), 142,144);" id="e142" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l143">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=143#src-143">143</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 143, 'Tests that hit line # 143');" ><span title="Line 143, Col 9: statement executed 15 times." class="nolink">&#160;15</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-143" class="srcLine"><span class="nolink" title="Line 143, Col 9: statement executed 15 times.">        <span class="keyword">return</span> <span class="keyword">new</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmUnindent.html#CsmUnindent">CsmUnindent</a>();</span></span></td>
+</tr>
+ <tr id="l144">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=144#src-144">144</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-144" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l145">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=145#src-145">145</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-145" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="146" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-146' onclick="toggleInlineStats(this, 'inlinestats-146');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-146" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-146'), 'inlinestats-146');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l146">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=146#src-146">146</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 146, 'Tests that hit block(CsmElement)&#160;:&#160;CsmElement');" ><span title="Line 146, Col 5: method entered 1 time." class="nolink">&#160;1</span></td>
+<td class=" methodStart  srcCell" id="id-146"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 146,148);" id="img-146" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-146" class="srcLine"><span class="nolink" title="Line 146, Col 5: method entered 1 time.">    <span class="keyword">static</span> <a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> block(<a href="../../../../../com/github/javaparser/printer/concretesyntaxmodel/CsmElement.html#CsmElement">CsmElement</a> content) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-146'), 146,148);" id="e146" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l147">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=147#src-147">147</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 147, 'Tests that hit line # 147');" ><span title="Line 147, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-147" class="srcLine"><span class="nolink" title="Line 147, Col 9: statement executed 1 time.">        <span class="keyword">return</span> sequence(token(GeneratedJavaParserConstants.LBRACE), indent(), content, unindent(), token(GeneratedJavaParserConstants.RBRACE));</span></span></td>
+</tr>
+ <tr id="l148">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=148#src-148">148</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-148" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l149">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=149#src-149">149</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-149" class="srcLine">}</span></td>
+</tr>
+ 
+    </tbody></table>    </div>
+</div><!-- .aui-tabs -->
+
+<script type="text/javascript"> 
+    var ol_bgclass = "overBG";
+    var ol_fgclass = "overFG";
+    var ol_cgclass = "overCaption";
+    var ol_captionfontclass= "overCaption";
+    var ol_closefontclass = "closeFont";
+    var ol_closeclick = 1;
+    var ol_close = 'X';
+    var ol_wrap = 1;
+    var rootRelPath = '../../../../../';
+    var testsPerFile = -1;
+</script>
+<script src="CsmElement.js" type="text/javascript"></script>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Sun Feb 23 2020 18:17:02 CET using coverage data from Sun Feb 23 2020 18:16:51 CET.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

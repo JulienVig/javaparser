@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":118,"id":17892,"methods":[{"el":49,"sc":5,"sl":43},{"el":60,"sc":5,"sl":51},{"el":68,"sc":5,"sl":62},{"el":75,"sc":5,"sl":70},{"el":79,"sc":5,"sl":77},{"el":87,"sc":5,"sl":81},{"el":91,"sc":5,"sl":89},{"el":99,"sc":5,"sl":93},{"el":107,"sc":5,"sl":101},{"el":112,"sc":5,"sl":109},{"el":117,"sc":5,"sl":114}],"name":"SubtypeOfBound","sl":39}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_266":{"methods":[{"sl":43},{"sl":101}],"name":"recognizeProperLowerBound1","pass":true,"statements":[{"sl":44},{"sl":47},{"sl":48},{"sl":103},{"sl":104}]},"test_491":{"methods":[{"sl":43},{"sl":93},{"sl":101},{"sl":109}],"name":"recognizeProperUpperBound2","pass":true,"statements":[{"sl":44},{"sl":47},{"sl":48},{"sl":95},{"sl":96},{"sl":98},{"sl":103},{"sl":106},{"sl":111}]},"test_531":{"methods":[{"sl":43},{"sl":101}],"name":"recognizeProperLowerBound2","pass":true,"statements":[{"sl":44},{"sl":47},{"sl":48},{"sl":103},{"sl":104}]},"test_800":{"methods":[{"sl":43},{"sl":93}],"name":"recognizeProperUpperBound1","pass":true,"statements":[{"sl":44},{"sl":47},{"sl":48},{"sl":95},{"sl":96}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [531, 266, 800, 491], [531, 266, 800, 491], [], [], [531, 266, 800, 491], [531, 266, 800, 491], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [800, 491], [], [800, 491], [800, 491], [], [491], [], [], [531, 266, 491], [], [531, 266, 491], [531, 266], [], [491], [], [], [491], [], [491], [], [], [], [], [], [], []]

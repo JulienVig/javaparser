@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":76,"id":9594,"methods":[{"el":44,"sc":5,"sl":42},{"el":61,"sc":5,"sl":46},{"el":67,"sc":5,"sl":63},{"el":75,"sc":5,"sl":69}],"name":"ForEachStatementContext","sl":40}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_13":{"methods":[{"sl":42},{"sl":46}],"name":"resolveLocalAndSeveralAnnidatedLevels","pass":true,"statements":[{"sl":43},{"sl":48},{"sl":51},{"sl":52},{"sl":53},{"sl":55},{"sl":56}]},"test_286":{"methods":[{"sl":42},{"sl":69}],"name":"ambiguousNameToLocalVarFromNewFor","pass":true,"statements":[{"sl":43},{"sl":71},{"sl":72}]},"test_298":{"methods":[{"sl":42},{"sl":46}],"name":"resolveLocalVariableInParent","pass":true,"statements":[{"sl":43},{"sl":48},{"sl":51},{"sl":52},{"sl":55},{"sl":56}]},"test_534":{"methods":[{"sl":42},{"sl":46}],"name":"enumAndStaticInitializer","pass":true,"statements":[{"sl":43},{"sl":48},{"sl":51},{"sl":52},{"sl":53},{"sl":55},{"sl":56}]},"test_605":{"methods":[{"sl":42},{"sl":46}],"name":"resolveLocalVariableInParentOfParent","pass":true,"statements":[{"sl":43},{"sl":48},{"sl":51},{"sl":52},{"sl":55},{"sl":56}]},"test_685":{"methods":[{"sl":42},{"sl":69}],"name":"localVariablesExposedToChildWithinEnhancedForeachStmt","pass":true,"statements":[{"sl":43},{"sl":71},{"sl":72},{"sl":74}]},"test_845":{"methods":[{"sl":42}],"name":"resolveLocalVariableInSameParent","pass":true,"statements":[{"sl":43}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [298, 605, 13, 845, 286, 534, 685], [298, 605, 13, 845, 286, 534, 685], [], [], [298, 605, 13, 534], [], [298, 605, 13, 534], [], [], [298, 605, 13, 534], [298, 605, 13, 534], [13, 534], [], [298, 605, 13, 534], [298, 605, 13, 534], [], [], [], [], [], [], [], [], [], [], [], [], [286, 685], [], [286, 685], [286, 685], [], [685], [], []]

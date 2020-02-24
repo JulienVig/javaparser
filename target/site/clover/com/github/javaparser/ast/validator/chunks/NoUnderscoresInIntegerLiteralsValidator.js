@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":48,"id":24956,"methods":[{"el":35,"sc":5,"sl":31},{"el":41,"sc":5,"sl":37},{"el":47,"sc":5,"sl":43}],"name":"NoUnderscoresInIntegerLiteralsValidator","sl":30}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1165":{"methods":[{"sl":31},{"sl":43}],"name":"leftHandAssignmentCannotBeAConditional","pass":true,"statements":[{"sl":33},{"sl":34},{"sl":44}]},"test_1245":{"methods":[{"sl":31},{"sl":43}],"name":"leftHandAssignmentCannotBeEmptyBraces","pass":true,"statements":[{"sl":33},{"sl":34},{"sl":44}]},"test_1493":{"methods":[{"sl":31},{"sl":43}],"name":"noUnderscoresInIntegerLiterals","pass":true,"statements":[{"sl":33},{"sl":34},{"sl":44},{"sl":45}]},"test_1535":{"methods":[{"sl":31},{"sl":43}],"name":"labelBreakAllowed","pass":true,"statements":[{"sl":33},{"sl":34},{"sl":44}]},"test_1544":{"methods":[{"sl":31},{"sl":43}],"name":"nobinaryIntegerLiterals","pass":true,"statements":[{"sl":33},{"sl":34},{"sl":44}]},"test_1752":{"methods":[{"sl":31},{"sl":43}],"name":"emptyBreakAllowed","pass":true,"statements":[{"sl":33},{"sl":34},{"sl":44}]},"test_1923":{"methods":[{"sl":31},{"sl":43}],"name":"leftHandAssignmentCanBeInBraces","pass":true,"statements":[{"sl":33},{"sl":34},{"sl":44}]},"test_982":{"methods":[{"sl":31},{"sl":43}],"name":"noAnnotations","pass":true,"statements":[{"sl":33},{"sl":34},{"sl":44}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [1165, 1245, 1752, 1535, 982, 1544, 1493, 1923], [], [1165, 1245, 1752, 1535, 982, 1544, 1493, 1923], [1165, 1245, 1752, 1535, 982, 1544, 1493, 1923], [], [], [], [], [], [], [], [], [1165, 1245, 1752, 1535, 982, 1544, 1493, 1923], [1165, 1245, 1752, 1535, 982, 1544, 1493, 1923], [1493], [], [], []]

@@ -1,0 +1,2483 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../style.css');
+        @import url('../../../tree.css');
+        
+    </style>
+
+    <script src="../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../clover.js" type="text/javascript"></script>
+    <script src="../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../cloud.js" type="text/javascript"></script>
+
+            <title>javaparser-parent 3.15.13-SNAPSHOT (Aggregated)</title>
+    </head>
+
+<body  onload="onLoad('javaparser-parent 3.15.13-SNAPSHOT (Aggregated): com.github.javaparser.Problem.java')">
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                    <a href="https://github.com/javaparser" target="_top">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+                    </a>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                            <a href="https://github.com/javaparser" target="_top">
+                                        javaparser-parent 3.15.13-SNAPSHOT (Aggregated)
+                                        </a>
+                    </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../" data-package-name="com.github.javaparser">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="../../../dashboard.html">Project Clover database Sun Feb 23 2020 18:16:51 CET</a></li> 
+        <li><a href="pkg-summary.html">        Package com.github.javaparser</a></li> 
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            File Problem.java
+    </h1>
+
+
+
+
+
+
+
+
+    
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+            <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-source">
+        <div>&#160;</div>
+
+        
+                <div style="display: table; width: 100%">
+                            <div class="clover-histogram-table-cell">
+                                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Coverage histogram</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div class="aui-item clover-aui-item-histogram">
+                    <img src="../../../img/srcFileCovDistChart9.png" alt="../../../img/srcFileCovDistChart9.png"
+                         usemap="#srcFileCovDistChart9.png" class="clover-histogram-img"/>
+                    <map id="srcFileCovDistChart9.png" name="srcFileCovDistChart9.png">
+<area shape="rect" coords="100,8,107,65" title="216 files have 91-100% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="91,50,98,66" title="62 files have 81-90% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="82,53,89,66" title="51 files have 71-80% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="73,56,80,66" title="38 files have 61-70% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="64,53,71,65" title="48 files have 51-60% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="56,50,63,66" title="61 files have 41-50% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="47,55,54,66" title="44 files have 31-40% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="38,62,45,66" title="18 files have 21-30% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="29,65,36,66" title="6 files have 11-20% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="20,63,27,65" title="11 files have 1-10% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="11,46,18,66" title="75 files have 0% coverage" alt="" nohref="nohref"/>
+</map><br />
+                    <span class="subtle"><strong>34% </strong>of files have more coverage</span>
+                </div>
+            </div>
+        </div>
+                    </div>
+                        <div style="display: table-cell; width: 67%;">
+                    <div class="dashboard-widget">
+        <header class="dashboard-widget-header">
+            <h3>Code metrics</h3>
+        </header>
+        <div class="dashboard-widget-content">
+                        
+
+<div id="td-header-stats" class="aui-item" style="display: ">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">6</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">26</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">6</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">109</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">56</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">9</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0,35</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">4,33</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">6</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">1,5</div>
+    </div>
+</div>
+
+</div>
+                        
+
+<div id="td-filtered-header-stats" class="aui-item" style="display: none">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">6</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">26</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">6</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">109</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">56</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">9</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0,35</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">4,33</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">6</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">1,5</div>
+    </div>
+</div>
+
+</div>        </div>
+    </div>
+            </div>
+        </div>
+
+        
+        
+
+
+    <h2>Classes</h2>
+
+        <table class="aui aui-table-sortable">
+        <thead>
+                        <tr>     <th>Class</th>
+    <th>Line #</th>
+
+            
+        <th class="">
+            <label  title="The total number of statements.">Total Statements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The percentage of elements that have been filtered from this report.">% Filtered</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label>
+        </th>
+        
+    
+            <th>Actions</th>
+    </tr>         </thead>
+        <tbody>
+                              <tr> <td id="Problem">
+        <span><a href="#33" title="Problem" onclick="closeDialogAndScrollTo('dialog-Problem', '33');">Problem</a></span>
+</td>
+<td>33<a name="sl-33"></a></td>
+    <td class="">26</td>
+    <td class="">0%</td>
+    <td class="">9</td>
+    <td class="">5</td>
+    <td class=""><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.8684211</span>86,8%</div><div style="display: table-cell">
+ <div title="86,8% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:86.8%"></div></div></div></div></td>
+    <td><button data-dialog-id="dialog-Problem" class="aui-button aui-button-link dialog-show-button">Show methods</button></td>
+</tr>                      </tbody>
+    </table>
+
+    
+     
+        <section role="dialog" id="dialog-Problem" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+            
+            <header class="aui-dialog2-header">
+                <h1 class="aui-dialog2-header-main">Class Problem</h1>
+                <div class="aui-dialog2-header-secondary">
+                    <input id="dialog-Problem-method-filter" class="test-filter text" type="text" name="method-filter"
+                           placeholder="Type to filter methods..." autocomplete="off"
+                           onkeyup="filterMethods('dialog-Problem-methods-body', 'dialog-Problem-method-filter');"/>
+                </div>
+            </header>
+
+            
+            <div class="aui-dialog2-content">
+
+                
+
+                <table class="aui aui-table-sortable">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                    <thead>
+                                                 <tr> <th id="Problem">
+    Class<br/>    <span><a href="#33" title="Problem" onclick="closeDialogAndScrollTo('dialog-Problem', '33');">Problem</a></span>
+</th>
+<th>Line #<br/>33<a name="sl-33"></a></th>
+    <th class=""><label  title="The total number of statements.">Total Statements</label><br/>26</th>
+    <th class=""><label  title="The percentage of elements that have been filtered from this report.">% Filtered</label><br/>0%</th>
+    <th class=""><label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label><br/>9</th>
+    <th class=""><label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label><br/>5</th>
+    <th class=""><label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label><br/><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.8684211</span>86,8%</div><div style="display: table-cell">
+ <div title="86,8% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:86.8%"></div></div></div></div></th>
+</tr>                     </thead>
+                    <tbody id="dialog-Problem-methods-body">
+                                                                                                            <tr id="Problem-1">
+<td id="summary-38-5">
+ <span class="sortValue">Problem(String,TokenRange,Throwable)</span>
+&#160;&#160;<a href="?line=29#38" title="Problem(String,TokenRange,Throwable)" name="sl-38" onclick="closeDialogAndScrollTo('dialog-Problem', '38');">Problem(String,TokenRange,Throwable)</a>
+</td>
+<td align="right"><span class="sortValue">38</span>38</td>
+<td class="" align="right"><span class="sortValue">4.0</span>4</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="Problem-2">
+<td id="summary-46-5">
+ <span class="sortValue">toString()&#160;:&#160;String</span>
+&#160;&#160;<a href="?line=29#46" title="toString()&#160;:&#160;String" name="sl-46" onclick="closeDialogAndScrollTo('dialog-Problem', '46');">toString()&#160;:&#160;String</a>
+</td>
+<td align="right"><span class="sortValue">46</span>46</td>
+<td class="" align="right"><span class="sortValue">9.0</span>9</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">4.0</span>4</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="Problem-3">
+<td id="summary-64-5">
+ <span class="sortValue">getMessage()&#160;:&#160;String</span>
+&#160;&#160;<a href="?line=29#64" title="getMessage()&#160;:&#160;String" name="sl-64" onclick="closeDialogAndScrollTo('dialog-Problem', '64');">getMessage()&#160;:&#160;String</a>
+</td>
+<td align="right"><span class="sortValue">64</span>64</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="Problem-4">
+<td id="summary-71-5">
+ <span class="sortValue">getVerboseMessage()&#160;:&#160;String</span>
+&#160;&#160;<a href="?line=29#71" title="getVerboseMessage()&#160;:&#160;String" name="sl-71" onclick="closeDialogAndScrollTo('dialog-Problem', '71');">getVerboseMessage()&#160;:&#160;String</a>
+</td>
+<td align="right"><span class="sortValue">71</span>71</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="Problem-5">
+<td id="summary-78-5">
+ <span class="sortValue">getLocation()&#160;:&#160;Optional&lt;TokenRange&gt;</span>
+&#160;&#160;<a href="?line=29#78" title="getLocation()&#160;:&#160;Optional&lt;TokenRange&gt;" name="sl-78" onclick="closeDialogAndScrollTo('dialog-Problem', '78');">getLocation()&#160;:&#160;Optional&lt;TokenRange&gt;</a>
+</td>
+<td align="right"><span class="sortValue">78</span>78</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="Problem-6">
+<td id="summary-85-5">
+ <span class="sortValue">getCause()&#160;:&#160;Optional&lt;Throwable&gt;</span>
+&#160;&#160;<a href="?line=29#85" title="getCause()&#160;:&#160;Optional&lt;Throwable&gt;" name="sl-85" onclick="closeDialogAndScrollTo('dialog-Problem', '85');">getCause()&#160;:&#160;Optional&lt;Throwable&gt;</a>
+</td>
+<td align="right"><span class="sortValue">85</span>85</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                         </tbody>
+                </table>
+
+                <div>&#160;</div>
+                
+
+            </div>
+
+            
+            <footer class="aui-dialog2-footer">
+                <div class="aui-dialog2-footer-actions">
+                    <button class="aui-button aui-button-primary dialog-close-button"
+                            data-dialog-id="dialog-Problem">Close</button>
+                </div>
+                <div class="aui-dialog2-footer-hint">Click on a class or a method name to jump to source.</div>
+            </footer>
+        </section>
+
+     
+ 
+        
+        <div>&#160;</div>
+
+<h2>Contributing tests</h2>
+
+    <div>
+                This file is covered by 101 tests.
+        <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-link dialog-show-button">
+            Select tests to highlight the test coverage
+        </button>.
+    </div>
+
+<section role="dialog" id="contr-tests-dialog" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+    
+    <header class="aui-dialog2-header">
+        <h1 class="aui-dialog2-header-main">Contributing tests</h1>
+        <div class="aui-dialog2-header-secondary">
+            <input id="test-filter" class="test-filter text" type="text" name="test-filter"
+                   placeholder="Type to filter tests..." autocomplete="off"
+                   onkeyup="filterTests('tests-body', 'test-filter', 3);"/>
+        </div>
+    </header>
+
+    
+    <div class="aui-dialog2-content">
+    
+
+        <p class="aui-buttons">
+            <button title="Selects all tests for this file, highlighting their coverage."
+                    class="aui-button" id="selectalltests">Select all</button>
+        </p>
+
+        <table class="aui aui-table-sortable">
+            <thead id="tests-head">
+            <tr id="testHeaderRow">
+                <th class="aui-table-column-unsortable"></th>
+                <th>
+                    <label title="The percentage of coverage contributed by each single test.">Test contribution</label>
+                </th>
+                <th>
+                    <label title="The test (or test iteration) which was executed.">Test</label>
+                </th>
+                <th>
+                    <label>Result</label>
+                </th>
+                <th class="aui-table-column-unsortable">
+                    <label>Actions</label>
+                </th>
+            </tr>
+            </thead>
+            <tbody id="tests-body">
+
+<tr id="test-1948">
+<td><a name="testA-1948"></a><input type="checkbox" id="cb-1948" value="1948" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.68421054</span>
+<div>
+<div title="68,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:68.4%"></div></div></div></td>
+<td id="tc-1948">  <span class="sortValue">com.github.javaparser.ast.ParseResultTest.whenParsingFailsThenWeGetProblemsAndABadResult</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.ParseResultTest.whenParsingFailsThenWeGetProblemsAndABadResult</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1687">
+<td><a name="testA-1687"></a><input type="checkbox" id="cb-1687" value="1687" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.6315789</span>
+<div>
+<div title="63,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:63.2%"></div></div></div></td>
+<td id="tc-1687">  <span class="sortValue">com.github.javaparser.ast.type.TypeTest.primitiveTypeArgumentDefaultValidator</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.type.TypeTest.primitiveTypeArgumentDefaultValidator</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1557">
+<td><a name="testA-1557"></a><input type="checkbox" id="cb-1557" value="1557" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.6315789</span>
+<div>
+<div title="63,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:63.2%"></div></div></div></td>
+<td id="tc-1557">  <span class="sortValue">com.github.javaparser.ast.expr.SuperExprTest.justSuper</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.expr.SuperExprTest.justSuper</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1577">
+<td><a name="testA-1577"></a><input type="checkbox" id="cb-1577" value="1577" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.6315789</span>
+<div>
+<div title="63,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:63.2%"></div></div></div></td>
+<td id="tc-1577">  <span class="sortValue">com.github.javaparser.javadoc.JavadocExtractorTest.canParseAllJavadocsInJavaParser</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.javadoc.JavadocExtractorTest.canParseAllJavadocsInJavaParser</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1327">
+<td><a name="testA-1327"></a><input type="checkbox" id="cb-1327" value="1327" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.6315789</span>
+<div>
+<div title="63,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:63.2%"></div></div></div></td>
+<td id="tc-1327">  <span class="sortValue">com.github.javaparser.utils.SourceRootTest.dotsInPackageAreNotAllowed</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.utils.SourceRootTest.dotsInPackageAreNotAllowed</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1701">
+<td><a name="testA-1701"></a><input type="checkbox" id="cb-1701" value="1701" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.6315789</span>
+<div>
+<div title="63,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:63.2%"></div></div></div></td>
+<td id="tc-1701">  <span class="sortValue">com.github.javaparser.ast.expr.NameTest.parsingEmptyNameThrowsException</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.expr.NameTest.parsingEmptyNameThrowsException</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1545">
+<td><a name="testA-1545"></a><input type="checkbox" id="cb-1545" value="1545" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.6315789</span>
+<div>
+<div title="63,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:63.2%"></div></div></div></td>
+<td id="tc-1545">  <span class="sortValue">com.github.javaparser.JavaParserTest.trailingCodeIsAnError</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.JavaParserTest.trailingCodeIsAnError</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1113">
+<td><a name="testA-1113"></a><input type="checkbox" id="cb-1113" value="1113" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1113">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_2ValidatorTest.classMethod</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_2ValidatorTest.classMethod</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1654">
+<td><a name="testA-1654"></a><input type="checkbox" id="cb-1654" value="1654" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1654">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_1ValidatorTest.catchParameter</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_1ValidatorTest.catchParameter</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1786">
+<td><a name="testA-1786"></a><input type="checkbox" id="cb-1786" value="1786" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1786">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_3ValidatorTest.noAssert</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_3ValidatorTest.noAssert</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1441">
+<td><a name="testA-1441"></a><input type="checkbox" id="cb-1441" value="1441" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1441">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_1ValidatorTest.localVariable</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_1ValidatorTest.localVariable</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1085">
+<td><a name="testA-1085"></a><input type="checkbox" id="cb-1085" value="1085" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1085">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_1ValidatorTest.classMethod</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_1ValidatorTest.classMethod</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1695">
+<td><a name="testA-1695"></a><input type="checkbox" id="cb-1695" value="1695" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1695">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_4ValidatorTest.staticImport</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_4ValidatorTest.staticImport</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-983">
+<td><a name="testA-983"></a><input type="checkbox" id="cb-983" value="983" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-983">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_2ValidatorTest.localVariable</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_2ValidatorTest.localVariable</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1789">
+<td><a name="testA-1789"></a><input type="checkbox" id="cb-1789" value="1789" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1789">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_2ValidatorTest.nestedClass</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_2ValidatorTest.nestedClass</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1891">
+<td><a name="testA-1891"></a><input type="checkbox" id="cb-1891" value="1891" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1891">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_2ValidatorTest.methodParameter</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_2ValidatorTest.methodParameter</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1323">
+<td><a name="testA-1323"></a><input type="checkbox" id="cb-1323" value="1323" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1323">  <span class="sortValue">com.github.javaparser.ast.validator.Java9ValidatorTest.interfaceMethod</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java9ValidatorTest.interfaceMethod</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1073">
+<td><a name="testA-1073"></a><input type="checkbox" id="cb-1073" value="1073" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1073">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_1ValidatorTest.constructor</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_1ValidatorTest.constructor</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1193">
+<td><a name="testA-1193"></a><input type="checkbox" id="cb-1193" value="1193" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1193">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_1ValidatorTest.localClass</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_1ValidatorTest.localClass</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-986">
+<td><a name="testA-986"></a><input type="checkbox" id="cb-986" value="986" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-986">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_0ValidatorTest.noForEach</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_0ValidatorTest.noForEach</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1563">
+<td><a name="testA-1563"></a><input type="checkbox" id="cb-1563" value="1563" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1563">  <span class="sortValue">com.github.javaparser.ast.validator.Java9ValidatorTest.underscoreIdentifiers</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java9ValidatorTest.underscoreIdentifiers</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1628">
+<td><a name="testA-1628"></a><input type="checkbox" id="cb-1628" value="1628" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1628">  <span class="sortValue">com.github.javaparser.ast.validator.Java7ValidatorTest.tryWithResourceReference</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java7ValidatorTest.tryWithResourceReference</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1191">
+<td><a name="testA-1191"></a><input type="checkbox" id="cb-1191" value="1191" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1191">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_2ValidatorTest.constructor</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_2ValidatorTest.constructor</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1478">
+<td><a name="testA-1478"></a><input type="checkbox" id="cb-1478" value="1478" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1478">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_2ValidatorTest.field</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_2ValidatorTest.field</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-972">
+<td><a name="testA-972"></a><input type="checkbox" id="cb-972" value="972" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-972">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_2ValidatorTest.interfaceMethod</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_2ValidatorTest.interfaceMethod</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1767">
+<td><a name="testA-1767"></a><input type="checkbox" id="cb-1767" value="1767" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1767">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_1ValidatorTest.constructorParameter</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_1ValidatorTest.constructorParameter</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1823">
+<td><a name="testA-1823"></a><input type="checkbox" id="cb-1823" value="1823" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1823">  <span class="sortValue">com.github.javaparser.ast.validator.Java9ValidatorTest.moduleRequires</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java9ValidatorTest.moduleRequires</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1865">
+<td><a name="testA-1865"></a><input type="checkbox" id="cb-1865" value="1865" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1865">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_2ValidatorTest.constructorParameter</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_2ValidatorTest.constructorParameter</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1279">
+<td><a name="testA-1279"></a><input type="checkbox" id="cb-1279" value="1279" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1279">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_2ValidatorTest.catchParameter</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_2ValidatorTest.catchParameter</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1110">
+<td><a name="testA-1110"></a><input type="checkbox" id="cb-1110" value="1110" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1110">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_0ValidatorTest.tryWithoutResources</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_0ValidatorTest.tryWithoutResources</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1506">
+<td><a name="testA-1506"></a><input type="checkbox" id="cb-1506" value="1506" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1506">  <span class="sortValue">com.github.javaparser.ast.validator.Java5ValidatorTest.noModifiersInForEachBesideFinal</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java5ValidatorTest.noModifiersInForEachBesideFinal</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1960">
+<td><a name="testA-1960"></a><input type="checkbox" id="cb-1960" value="1960" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1960">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_4ValidatorTest.noGenerics</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_4ValidatorTest.noGenerics</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1165">
+<td><a name="testA-1165"></a><input type="checkbox" id="cb-1165" value="1165" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1165">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_0ValidatorTest.leftHandAssignmentCannotBeAConditional</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_0ValidatorTest.leftHandAssignmentCannotBeAConditional</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1947">
+<td><a name="testA-1947"></a><input type="checkbox" id="cb-1947" value="1947" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1947">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_4ValidatorTest.novarargs</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_4ValidatorTest.novarargs</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1875">
+<td><a name="testA-1875"></a><input type="checkbox" id="cb-1875" value="1875" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1875">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_1ValidatorTest.nestedClass</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_1ValidatorTest.nestedClass</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1568">
+<td><a name="testA-1568"></a><input type="checkbox" id="cb-1568" value="1568" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1568">  <span class="sortValue">com.github.javaparser.ast.validator.Java5ValidatorTest.annotationMember</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java5ValidatorTest.annotationMember</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1501">
+<td><a name="testA-1501"></a><input type="checkbox" id="cb-1501" value="1501" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1501">  <span class="sortValue">com.github.javaparser.ast.validator.Java8ValidatorTest.interfaceMethod</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java8ValidatorTest.interfaceMethod</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1631">
+<td><a name="testA-1631"></a><input type="checkbox" id="cb-1631" value="1631" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1631">  <span class="sortValue">com.github.javaparser.ast.validator.Java5ValidatorTest.topEnum</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java5ValidatorTest.topEnum</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1112">
+<td><a name="testA-1112"></a><input type="checkbox" id="cb-1112" value="1112" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1112">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_1ValidatorTest.nestedInterface</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_1ValidatorTest.nestedInterface</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1866">
+<td><a name="testA-1866"></a><input type="checkbox" id="cb-1866" value="1866" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1866">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_0ValidatorTest.noReflection</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_0ValidatorTest.noReflection</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-982">
+<td><a name="testA-982"></a><input type="checkbox" id="cb-982" value="982" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-982">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_4ValidatorTest.noAnnotations</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_4ValidatorTest.noAnnotations</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1258">
+<td><a name="testA-1258"></a><input type="checkbox" id="cb-1258" value="1258" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1258">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_1ValidatorTest.topInterface</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_1ValidatorTest.topInterface</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1540">
+<td><a name="testA-1540"></a><input type="checkbox" id="cb-1540" value="1540" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1540">  <span class="sortValue">com.github.javaparser.ast.validator.Java5ValidatorTest.topAnnotationDeclaration</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java5ValidatorTest.topAnnotationDeclaration</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1477">
+<td><a name="testA-1477"></a><input type="checkbox" id="cb-1477" value="1477" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1477">  <span class="sortValue">com.github.javaparser.ast.validator.Java5ValidatorTest.nestedEnum</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java5ValidatorTest.nestedEnum</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-962">
+<td><a name="testA-962"></a><input type="checkbox" id="cb-962" value="962" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-962">  <span class="sortValue">com.github.javaparser.ast.validator.Java10ValidatorTest.multipleVariablesNotAllowed</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java10ValidatorTest.multipleVariablesNotAllowed</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1245">
+<td><a name="testA-1245"></a><input type="checkbox" id="cb-1245" value="1245" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1245">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_0ValidatorTest.leftHandAssignmentCannotBeEmptyBraces</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_0ValidatorTest.leftHandAssignmentCannotBeEmptyBraces</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1462">
+<td><a name="testA-1462"></a><input type="checkbox" id="cb-1462" value="1462" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1462">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_1ValidatorTest.field</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_1ValidatorTest.field</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1081">
+<td><a name="testA-1081"></a><input type="checkbox" id="cb-1081" value="1081" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1081">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_2ValidatorTest.topInterface</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_2ValidatorTest.topInterface</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1362">
+<td><a name="testA-1362"></a><input type="checkbox" id="cb-1362" value="1362" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1362">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_1ValidatorTest.interfaceMethod</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_1ValidatorTest.interfaceMethod</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1608">
+<td><a name="testA-1608"></a><input type="checkbox" id="cb-1608" value="1608" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1608">  <span class="sortValue">com.github.javaparser.ast.validator.Java8ValidatorTest.lambdaParameter</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java8ValidatorTest.lambdaParameter</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1312">
+<td><a name="testA-1312"></a><input type="checkbox" id="cb-1312" value="1312" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1312">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_1ValidatorTest.topClass</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_1ValidatorTest.topClass</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1484">
+<td><a name="testA-1484"></a><input type="checkbox" id="cb-1484" value="1484" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1484">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_2ValidatorTest.localClass</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_2ValidatorTest.localClass</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1242">
+<td><a name="testA-1242"></a><input type="checkbox" id="cb-1242" value="1242" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1242">  <span class="sortValue">com.github.javaparser.ast.validator.Java5ValidatorTest.nestedAnnotationDeclaration</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java5ValidatorTest.nestedAnnotationDeclaration</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1500">
+<td><a name="testA-1500"></a><input type="checkbox" id="cb-1500" value="1500" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1500">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_4ValidatorTest.noforeach</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_4ValidatorTest.noforeach</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1303">
+<td><a name="testA-1303"></a><input type="checkbox" id="cb-1303" value="1303" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1303">  <span class="sortValue">com.github.javaparser.ast.validator.Java7ValidatorTest.tryWithoutAnything</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java7ValidatorTest.tryWithoutAnything</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1382">
+<td><a name="testA-1382"></a><input type="checkbox" id="cb-1382" value="1382" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1382">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_2ValidatorTest.topClass</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_2ValidatorTest.topClass</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1181">
+<td><a name="testA-1181"></a><input type="checkbox" id="cb-1181" value="1181" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1181">  <span class="sortValue">com.github.javaparser.ast.validator.Java5ValidatorTest.noMultipleVariablesInForEach</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java5ValidatorTest.noMultipleVariablesInForEach</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1170">
+<td><a name="testA-1170"></a><input type="checkbox" id="cb-1170" value="1170" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1170">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_1ValidatorTest.methodParameter</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_1ValidatorTest.methodParameter</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1483">
+<td><a name="testA-1483"></a><input type="checkbox" id="cb-1483" value="1483" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.47368422</span>
+<div>
+<div title="47,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.4%"></div></div></div></td>
+<td id="tc-1483">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_2ValidatorTest.nestedInterface</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_2ValidatorTest.nestedInterface</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1502">
+<td><a name="testA-1502"></a><input type="checkbox" id="cb-1502" value="1502" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.36842105</span>
+<div>
+<div title="36,8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.8%"></div></div></div></td>
+<td id="tc-1502">  <span class="sortValue">com.github.javaparser.ast.validator.Java7ValidatorTest.noLambdas</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java7ValidatorTest.noLambdas</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1292">
+<td><a name="testA-1292"></a><input type="checkbox" id="cb-1292" value="1292" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.36842105</span>
+<div>
+<div title="36,8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.8%"></div></div></div></td>
+<td id="tc-1292">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_0ValidatorTest.classExtendingMoreThanOne</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_0ValidatorTest.classExtendingMoreThanOne</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1152">
+<td><a name="testA-1152"></a><input type="checkbox" id="cb-1152" value="1152" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.36842105</span>
+<div>
+<div title="36,8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.8%"></div></div></div></td>
+<td id="tc-1152">  <span class="sortValue">com.github.javaparser.ast.validator.Java8ValidatorTest.defaultMethodWithoutBody</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java8ValidatorTest.defaultMethodWithoutBody</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1902">
+<td><a name="testA-1902"></a><input type="checkbox" id="cb-1902" value="1902" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.36842105</span>
+<div>
+<div title="36,8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.8%"></div></div></div></td>
+<td id="tc-1902">  <span class="sortValue">com.github.javaparser.ast.validator.Java10ValidatorTest.nullVariablesNotAllowed</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java10ValidatorTest.nullVariablesNotAllowed</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1493">
+<td><a name="testA-1493"></a><input type="checkbox" id="cb-1493" value="1493" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.36842105</span>
+<div>
+<div title="36,8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.8%"></div></div></div></td>
+<td id="tc-1493">  <span class="sortValue">com.github.javaparser.ast.validator.Java6ValidatorTest.noUnderscoresInIntegerLiterals</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java6ValidatorTest.noUnderscoresInIntegerLiterals</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1642">
+<td><a name="testA-1642"></a><input type="checkbox" id="cb-1642" value="1642" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.36842105</span>
+<div>
+<div title="36,8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.8%"></div></div></div></td>
+<td id="tc-1642">  <span class="sortValue">com.github.javaparser.ast.validator.Java5ValidatorTest.genericsWithoutDiamond</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java5ValidatorTest.genericsWithoutDiamond</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1761">
+<td><a name="testA-1761"></a><input type="checkbox" id="cb-1761" value="1761" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.36842105</span>
+<div>
+<div title="36,8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.8%"></div></div></div></td>
+<td id="tc-1761">  <span class="sortValue">com.github.javaparser.ast.validator.Java11ValidatorTest.multiLabelCaseNotAllowed</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java11ValidatorTest.multiLabelCaseNotAllowed</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1070">
+<td><a name="testA-1070"></a><input type="checkbox" id="cb-1070" value="1070" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.36842105</span>
+<div>
+<div title="36,8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.8%"></div></div></div></td>
+<td id="tc-1070">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_0ValidatorTest.defaultInClass</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_0ValidatorTest.defaultInClass</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-988">
+<td><a name="testA-988"></a><input type="checkbox" id="cb-988" value="988" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.36842105</span>
+<div>
+<div title="36,8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.8%"></div></div></div></td>
+<td id="tc-988">  <span class="sortValue">com.github.javaparser.ast.validator.Java5ValidatorTest.noPrimitiveTypeArguments</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java5ValidatorTest.noPrimitiveTypeArguments</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1287">
+<td><a name="testA-1287"></a><input type="checkbox" id="cb-1287" value="1287" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.36842105</span>
+<div>
+<div title="36,8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.8%"></div></div></div></td>
+<td id="tc-1287">  <span class="sortValue">com.github.javaparser.ast.validator.Java5ValidatorTest.enumAllowedAsIdentifier</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java5ValidatorTest.enumAllowedAsIdentifier</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1572">
+<td><a name="testA-1572"></a><input type="checkbox" id="cb-1572" value="1572" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.36842105</span>
+<div>
+<div title="36,8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.8%"></div></div></div></td>
+<td id="tc-1572">  <span class="sortValue">com.github.javaparser.ast.validator.Java8ValidatorTest.localInterface</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java8ValidatorTest.localInterface</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1384">
+<td><a name="testA-1384"></a><input type="checkbox" id="cb-1384" value="1384" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.36842105</span>
+<div>
+<div title="36,8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.8%"></div></div></div></td>
+<td id="tc-1384">  <span class="sortValue">com.github.javaparser.ast.validator.Java10ValidatorTest.varNotAllowedInLambdaParameters</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java10ValidatorTest.varNotAllowedInLambdaParameters</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1518">
+<td><a name="testA-1518"></a><input type="checkbox" id="cb-1518" value="1518" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.36842105</span>
+<div>
+<div title="36,8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.8%"></div></div></div></td>
+<td id="tc-1518">  <span class="sortValue">com.github.javaparser.ast.validator.Java7ValidatorTest.multiCatchWithoutElements</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java7ValidatorTest.multiCatchWithoutElements</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1544">
+<td><a name="testA-1544"></a><input type="checkbox" id="cb-1544" value="1544" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.36842105</span>
+<div>
+<div title="36,8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.8%"></div></div></div></td>
+<td id="tc-1544">  <span class="sortValue">com.github.javaparser.ast.validator.Java6ValidatorTest.nobinaryIntegerLiterals</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java6ValidatorTest.nobinaryIntegerLiterals</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1878">
+<td><a name="testA-1878"></a><input type="checkbox" id="cb-1878" value="1878" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.36842105</span>
+<div>
+<div title="36,8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.8%"></div></div></div></td>
+<td id="tc-1878">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_0ValidatorTest.noInnerClasses</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_0ValidatorTest.noInnerClasses</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1056">
+<td><a name="testA-1056"></a><input type="checkbox" id="cb-1056" value="1056" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.36842105</span>
+<div>
+<div title="36,8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.8%"></div></div></div></td>
+<td id="tc-1056">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_0ValidatorTest.interfaceWithInitializer</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_0ValidatorTest.interfaceWithInitializer</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1942">
+<td><a name="testA-1942"></a><input type="checkbox" id="cb-1942" value="1942" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.36842105</span>
+<div>
+<div title="36,8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.8%"></div></div></div></td>
+<td id="tc-1942">  <span class="sortValue">com.github.javaparser.ast.validator.Java10ValidatorTest.emptyInitializerNotAllowed</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java10ValidatorTest.emptyInitializerNotAllowed</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1537">
+<td><a name="testA-1537"></a><input type="checkbox" id="cb-1537" value="1537" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.36842105</span>
+<div>
+<div title="36,8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.8%"></div></div></div></td>
+<td id="tc-1537">  <span class="sortValue">com.github.javaparser.ast.validator.Java7ValidatorTest.multiCatchWithOneElement</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java7ValidatorTest.multiCatchWithOneElement</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1749">
+<td><a name="testA-1749"></a><input type="checkbox" id="cb-1749" value="1749" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.36842105</span>
+<div>
+<div title="36,8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.8%"></div></div></div></td>
+<td id="tc-1749">  <span class="sortValue">com.github.javaparser.ast.validator.Java10ValidatorTest.varNotAllowedInTypeArguments</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java10ValidatorTest.varNotAllowedInTypeArguments</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1806">
+<td><a name="testA-1806"></a><input type="checkbox" id="cb-1806" value="1806" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.36842105</span>
+<div>
+<div title="36,8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.8%"></div></div></div></td>
+<td id="tc-1806">  <span class="sortValue">com.github.javaparser.ast.validator.Java10ValidatorTest.extraBracketPairsNotAllowed</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java10ValidatorTest.extraBracketPairsNotAllowed</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1528">
+<td><a name="testA-1528"></a><input type="checkbox" id="cb-1528" value="1528" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.36842105</span>
+<div>
+<div title="36,8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.8%"></div></div></div></td>
+<td id="tc-1528">  <span class="sortValue">com.github.javaparser.ast.validator.Java8ValidatorTest.noModules</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java8ValidatorTest.noModules</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1450">
+<td><a name="testA-1450"></a><input type="checkbox" id="cb-1450" value="1450" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.36842105</span>
+<div>
+<div title="36,8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.8%"></div></div></div></td>
+<td id="tc-1450">  <span class="sortValue">com.github.javaparser.ast.validator.Java7ValidatorTest.defaultMethodWithoutBody</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java7ValidatorTest.defaultMethodWithoutBody</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1474">
+<td><a name="testA-1474"></a><input type="checkbox" id="cb-1474" value="1474" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.36842105</span>
+<div>
+<div title="36,8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.8%"></div></div></div></td>
+<td id="tc-1474">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_2ValidatorTest.strictfpNotAllowedAsIdentifier</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_2ValidatorTest.strictfpNotAllowedAsIdentifier</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1849">
+<td><a name="testA-1849"></a><input type="checkbox" id="cb-1849" value="1849" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.36842105</span>
+<div>
+<div title="36,8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.8%"></div></div></div></td>
+<td id="tc-1849">  <span class="sortValue">com.github.javaparser.ast.validator.Java10ValidatorTest.arrayDimensionBracketsNotAllowed</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java10ValidatorTest.arrayDimensionBracketsNotAllowed</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1218">
+<td><a name="testA-1218"></a><input type="checkbox" id="cb-1218" value="1218" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.36842105</span>
+<div>
+<div title="36,8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.8%"></div></div></div></td>
+<td id="tc-1218">  <span class="sortValue">com.github.javaparser.ast.validator.Java11ValidatorTest.switchExpressionNotAllowed</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java11ValidatorTest.switchExpressionNotAllowed</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1004">
+<td><a name="testA-1004"></a><input type="checkbox" id="cb-1004" value="1004" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.36842105</span>
+<div>
+<div title="36,8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.8%"></div></div></div></td>
+<td id="tc-1004">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_0ValidatorTest.interfaceUsingImplements</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_0ValidatorTest.interfaceUsingImplements</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1910">
+<td><a name="testA-1910"></a><input type="checkbox" id="cb-1910" value="1910" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.36842105</span>
+<div>
+<div title="36,8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.8%"></div></div></div></td>
+<td id="tc-1910">  <span class="sortValue">com.github.javaparser.ast.validator.Java10ValidatorTest.varNotAllowedInField</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java10ValidatorTest.varNotAllowedInField</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1803">
+<td><a name="testA-1803"></a><input type="checkbox" id="cb-1803" value="1803" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.36842105</span>
+<div>
+<div title="36,8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.8%"></div></div></div></td>
+<td id="tc-1803">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_1ValidatorTest.localInterface</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_1ValidatorTest.localInterface</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1135">
+<td><a name="testA-1135"></a><input type="checkbox" id="cb-1135" value="1135" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.36842105</span>
+<div>
+<div title="36,8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.8%"></div></div></div></td>
+<td id="tc-1135">  <span class="sortValue">com.github.javaparser.ast.validator.Java6ValidatorTest.noMultiCatch</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java6ValidatorTest.noMultiCatch</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1061">
+<td><a name="testA-1061"></a><input type="checkbox" id="cb-1061" value="1061" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.28947368</span>
+<div>
+<div title="28,9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:28.9%"></div></div></div></td>
+<td id="tc-1061">  <span class="sortValue">com.github.javaparser.ProblemTest.testSimpleGetters</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ProblemTest.testSimpleGetters</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1336">
+<td><a name="testA-1336"></a><input type="checkbox" id="cb-1336" value="1336" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.28947368</span>
+<div>
+<div title="28,9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:28.9%"></div></div></div></td>
+<td id="tc-1336">  <span class="sortValue">com.github.javaparser.JavaParserTest.parseErrorContainsLocation</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.JavaParserTest.parseErrorContainsLocation</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1049">
+<td><a name="testA-1049"></a><input type="checkbox" id="cb-1049" value="1049" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.28947368</span>
+<div>
+<div title="28,9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:28.9%"></div></div></div></td>
+<td id="tc-1049">  <span class="sortValue">com.github.javaparser.ParseErrorRecoveryTest.bodystatementClosingBraceRecovery</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ParseErrorRecoveryTest.bodystatementClosingBraceRecovery</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1417">
+<td><a name="testA-1417"></a><input type="checkbox" id="cb-1417" value="1417" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.23684211</span>
+<div>
+<div title="23,7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:23.7%"></div></div></div></td>
+<td id="tc-1417">  <span class="sortValue">com.github.javaparser.ProblemTest.testVerboseMessageWithoutLocation</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ProblemTest.testVerboseMessageWithoutLocation</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1842">
+<td><a name="testA-1842"></a><input type="checkbox" id="cb-1842" value="1842" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.23684211</span>
+<div>
+<div title="23,7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:23.7%"></div></div></div></td>
+<td id="tc-1842">  <span class="sortValue">com.github.javaparser.ProblemTest.testVerboseMessage</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ProblemTest.testVerboseMessage</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1965">
+<td><a name="testA-1965"></a><input type="checkbox" id="cb-1965" value="1965" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.18421052</span>
+<div>
+<div title="18,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:18.4%"></div></div></div></td>
+<td id="tc-1965">  <span class="sortValue">com.github.javaparser.JavaParserTest.testSourcePositionsWithBrokenUnicodeEscapes</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.JavaParserTest.testSourcePositionsWithBrokenUnicodeEscapes</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1344">
+<td><a name="testA-1344"></a><input type="checkbox" id="cb-1344" value="1344" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.18421052</span>
+<div>
+<div title="18,4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:18.4%"></div></div></div></td>
+<td id="tc-1344">  <span class="sortValue">com.github.javaparser.ast.validator.Java1_0ValidatorTest.nonEmptyList</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ast.validator.Java1_0ValidatorTest.nonEmptyList</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-924">
+<td><a name="testA-924"></a><input type="checkbox" id="cb-924" value="924" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.13157895</span>
+<div>
+<div title="13,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:13.2%"></div></div></div></td>
+<td id="tc-924">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.javaparser.VarTypeTest.failResolveNoInitializer</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.javaparser.VarTypeTest.failResolveNoInitializer</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1912">
+<td><a name="testA-1912"></a><input type="checkbox" id="cb-1912" value="1912" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.13157895</span>
+<div>
+<div title="13,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:13.2%"></div></div></div></td>
+<td id="tc-1912">  <span class="sortValue">com.github.javaparser.ParseErrorRecoveryTest.labeledStatementSemicolonRecovery</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ParseErrorRecoveryTest.labeledStatementSemicolonRecovery</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1886">
+<td><a name="testA-1886"></a><input type="checkbox" id="cb-1886" value="1886" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.13157895</span>
+<div>
+<div title="13,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:13.2%"></div></div></div></td>
+<td id="tc-1886">  <span class="sortValue">com.github.javaparser.ParseErrorRecoveryTest.bodystatementSemicolonRecovery</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ParseErrorRecoveryTest.bodystatementSemicolonRecovery</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-953">
+<td><a name="testA-953"></a><input type="checkbox" id="cb-953" value="953" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.13157895</span>
+<div>
+<div title="13,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:13.2%"></div></div></div></td>
+<td id="tc-953">  <span class="sortValue">com.github.javaparser.symbolsolver.resolution.javaparser.VarTypeTest.failResolveWrongLocation</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.symbolsolver.resolution.javaparser.VarTypeTest.failResolveWrongLocation</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1629">
+<td><a name="testA-1629"></a><input type="checkbox" id="cb-1629" value="1629" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.13157895</span>
+<div>
+<div title="13,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:13.2%"></div></div></div></td>
+<td id="tc-1629">  <span class="sortValue">com.github.javaparser.ParseErrorRecoveryTest.compilationUnitRecovery</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ParseErrorRecoveryTest.compilationUnitRecovery</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+<tr id="test-1682">
+<td><a name="testA-1682"></a><input type="checkbox" id="cb-1682" value="1682" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle" >
+<span class="sortValue">0.13157895</span>
+<div>
+<div title="13,2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:13.2%"></div></div></div></td>
+<td id="tc-1682">  <span class="sortValue">com.github.javaparser.ProvidersTest.testResourceProviderWithWrongEncoding</span><a href="../../../" title="View Test Summary Page">com.github.javaparser.ProvidersTest.testResourceProviderWithWrongEncoding</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> </td>
+</tr>
+
+            </tbody>
+        </table>
+
+        
+        <div>&#160;</div>
+
+    
+    </div>
+
+    
+    <footer class="aui-dialog2-footer">
+        <div class="aui-dialog2-footer-actions">
+            <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-primary dialog-close-button">Apply</button>
+        </div>
+        <div class="aui-dialog2-footer-hint">Select tests to highlight code covered by them in the source view.</div>
+    </footer>
+</section>
+
+ 
+        
+        
+
+
+
+
+
+<h2>Source view</h2>
+
+
+<div style="display: table; width: 100%;">
+    <div style="display: table-cell">
+        <button class="aui-button aui-button-link"
+                title="Toggles all methods in the source to be either expanded or collapsed."
+                onclick="toggleAllInlineMethods(this); return false;" id="method-expander">
+            Collapse all methods
+        </button>
+    </div>
+    <div style="display: table-cell">
+        <div style="text-align: right; margin-bottom: 10px">
+            <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;Show legend
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function(content, trigger, showPopup) {
+                content.css({"padding":"20px"}).html(SRC_FILE_LEGEND_TEXT);
+                showPopup();
+                return false;
+            },
+            {
+                width: 700, hideDelay: 60000
+            }
+    );
+</script>        </div>
+    </div>
+</div>
+
+<table cellspacing="0" cellpadding="0" class="srcView" width="100%">
+
+    
+<tbody> <tr id="l1">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=1#src-1">1</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-1" class="srcLine"><span class="comment">/*</span></span></td>
+</tr>
+ <tr id="l2">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=2#src-2">2</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-2" class="srcLine"><span class="comment"> * Copyright (C) 2007-2010 Júlio Vilmar Gesser.</span></span></td>
+</tr>
+ <tr id="l3">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=3#src-3">3</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-3" class="srcLine"><span class="comment"> * Copyright (C) 2011, 2013-2020 The JavaParser Team.</span></span></td>
+</tr>
+ <tr id="l4">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=4#src-4">4</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-4" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l5">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=5#src-5">5</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-5" class="srcLine"><span class="comment"> * This file is part of JavaParser.</span></span></td>
+</tr>
+ <tr id="l6">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=6#src-6">6</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-6" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l7">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=7#src-7">7</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-7" class="srcLine"><span class="comment"> * JavaParser can be used either under the terms of</span></span></td>
+</tr>
+ <tr id="l8">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=8#src-8">8</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-8" class="srcLine"><span class="comment"> * a) the GNU Lesser General Public License as published by</span></span></td>
+</tr>
+ <tr id="l9">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=9#src-9">9</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-9" class="srcLine"><span class="comment"> *     the Free Software Foundation, either version 3 of the License, or</span></span></td>
+</tr>
+ <tr id="l10">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=10#src-10">10</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-10" class="srcLine"><span class="comment"> *     (at your option) any later version.</span></span></td>
+</tr>
+ <tr id="l11">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=11#src-11">11</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-11" class="srcLine"><span class="comment"> * b) the terms of the Apache License</span></span></td>
+</tr>
+ <tr id="l12">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=12#src-12">12</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-12" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l13">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=13#src-13">13</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-13" class="srcLine"><span class="comment"> * You should have received a copy of both licenses in LICENCE.LGPL and</span></span></td>
+</tr>
+ <tr id="l14">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=14#src-14">14</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-14" class="srcLine"><span class="comment"> * LICENCE.APACHE. Please refer to those files for details.</span></span></td>
+</tr>
+ <tr id="l15">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=15#src-15">15</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-15" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l16">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=16#src-16">16</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-16" class="srcLine"><span class="comment"> * JavaParser is distributed in the hope that it will be useful,</span></span></td>
+</tr>
+ <tr id="l17">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=17#src-17">17</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-17" class="srcLine"><span class="comment"> * but WITHOUT ANY WARRANTY; without even the implied warranty of</span></span></td>
+</tr>
+ <tr id="l18">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=18#src-18">18</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-18" class="srcLine"><span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></span></td>
+</tr>
+ <tr id="l19">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=19#src-19">19</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-19" class="srcLine"><span class="comment"> * GNU Lesser General Public License for more details.</span></span></td>
+</tr>
+ <tr id="l20">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=20#src-20">20</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-20" class="srcLine"><span class="comment"> */</span></span></td>
+</tr>
+ <tr id="l21">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=21#src-21">21</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-21" class="srcLine"></span></td>
+</tr>
+ <tr id="l22">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=22#src-22">22</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-22" class="srcLine"><span class="keyword">package</span> com.github.<a href="../javaparser/pkg-summary.html">javaparser</a>;</span></td>
+</tr>
+ <tr id="l23">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=23#src-23">23</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-23" class="srcLine"></span></td>
+</tr>
+ <tr id="l24">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=24#src-24">24</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-24" class="srcLine"><span class="keyword">import</span> java.util.Comparator;</span></td>
+</tr>
+ <tr id="l25">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=25#src-25">25</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-25" class="srcLine"><span class="keyword">import</span> java.util.Optional;</span></td>
+</tr>
+ <tr id="l26">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=26#src-26">26</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-26" class="srcLine"></span></td>
+</tr>
+ <tr id="l27">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=27#src-27">27</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-27" class="srcLine"><span class="keyword">import</span> <span class="keyword">static</span> com.github.javaparser.utils.Utils.EOL;</span></td>
+</tr>
+ <tr id="l28">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=28#src-28">28</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-28" class="srcLine"><span class="keyword">import</span> <span class="keyword">static</span> com.github.javaparser.utils.Utils.assertNotNull;</span></td>
+</tr>
+ <tr id="l29">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=29#src-29">29</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-29" class="srcLine"></span></td>
+</tr>
+ <tr id="l30">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=30#src-30">30</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-30" class="srcLine"><span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l31">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=31#src-31">31</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-31" class="srcLine"><span class="comment"> * A problem that was encountered during parsing.</span></span></td>
+</tr>
+ <tr id="l32">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=32#src-32">32</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-32" class="srcLine"><span class="comment"> */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="33" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-33' onclick="toggleInlineStats(this, 'inlinestats-33');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-33" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-33'), 'inlinestats-33');return true;">
+                <td><div>
+<div title="86,8% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:86.8%"></div></div></div></td><td>86,8%</td>
+                <td class="inlineStat">Uncovered Elements: 5 (38)</td>
+                <td class="inlineStat">Complexity: 9</td>
+                <td class="inlineStat">Complexity Density: 0,35</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l33">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=33#src-33">33</a></td>
+<td align="right" class="coverageCount NoHilight "   onclick="return showTestsForLine(this, 33, 'Tests that hit Problem');" >&#160;&#160;</td>
+<td class=" srcCell" id="id-33"><span class="spacer"></span><span id="src-33" class="srcLine"><span class="keyword">public</span> <span class="keyword">class</span> <a href="../../../com/github/javaparser/Problem.html#Problem">Problem</a> {</span></td>
+</tr>
+ <tr id="l34">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=34#src-34">34</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-34" class="srcLine">    <span class="keyword">private</span> <span class="keyword">final</span> String message;</span></td>
+</tr>
+ <tr id="l35">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=35#src-35">35</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-35" class="srcLine">    <span class="keyword">private</span> <span class="keyword">final</span> <a href="../../../com/github/javaparser/TokenRange.html#TokenRange">TokenRange</a> location;</span></td>
+</tr>
+ <tr id="l36">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=36#src-36">36</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-36" class="srcLine">    <span class="keyword">private</span> <span class="keyword">final</span> Throwable cause;</span></td>
+</tr>
+ <tr id="l37">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=37#src-37">37</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-37" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="38" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-38' onclick="toggleInlineStats(this, 'inlinestats-38');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-38" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-38'), 'inlinestats-38');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (4)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0,25</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l38">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=38#src-38">38</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 38, 'Tests that hit Problem(String,TokenRange,Throwable)');" ><span title="Line 38, Col 5: method entered 514 times." class="nolink">&#160;514</span></td>
+<td class=" methodStart  srcCell" id="id-38"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 38,44);" id="img-38" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-38" class="srcLine"><span class="nolink" title="Line 38, Col 5: method entered 514 times.">    <span class="keyword">public</span> <a href="../../../com/github/javaparser/Problem.html#Problem">Problem</a>(String message, <a href="../../../com/github/javaparser/TokenRange.html#TokenRange">TokenRange</a> location, Throwable cause) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-38'), 38,44);" id="e38" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l39">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=39#src-39">39</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 39, 'Tests that hit line # 39');" ><span title="Line 39, Col 9: statement executed 514 times." class="nolink">&#160;514</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-39" class="srcLine"><span class="nolink" title="Line 39, Col 9: statement executed 514 times.">        assertNotNull(message);</span></span></td>
+</tr>
+ <tr id="l40">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=40#src-40">40</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-40" class="srcLine"></span></td>
+</tr>
+ <tr id="l41">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=41#src-41">41</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 41, 'Tests that hit line # 41');" ><span title="Line 41, Col 9: statement executed 514 times." class="nolink">&#160;514</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-41" class="srcLine"><span class="nolink" title="Line 41, Col 9: statement executed 514 times.">        <span class="keyword">this</span>.message = message;</span></span></td>
+</tr>
+ <tr id="l42">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=42#src-42">42</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 42, 'Tests that hit line # 42');" ><span title="Line 42, Col 9: statement executed 514 times." class="nolink">&#160;514</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-42" class="srcLine"><span class="nolink" title="Line 42, Col 9: statement executed 514 times.">        <span class="keyword">this</span>.location = location;</span></span></td>
+</tr>
+ <tr id="l43">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=43#src-43">43</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 43, 'Tests that hit line # 43');" ><span title="Line 43, Col 9: statement executed 514 times." class="nolink">&#160;514</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-43" class="srcLine"><span class="nolink" title="Line 43, Col 9: statement executed 514 times.">        <span class="keyword">this</span>.cause = cause;</span></span></td>
+</tr>
+ <tr id="l44">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=44#src-44">44</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-44" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l45">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=45#src-45">45</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-45" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="46" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-46' onclick="toggleInlineStats(this, 'inlinestats-46');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-46" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-46'), 'inlinestats-46');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (15)</td>
+                <td class="inlineStat">Complexity: 4</td>
+                <td class="inlineStat">Complexity Density: 0,44</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l46">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=46#src-46">46</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 46, 'Tests that hit toString()&#160;:&#160;String');" ><span title="Line 46, Col 5: method entered 495 times." class="nolink">&#160;495</span></td>
+<td class=" methodStart  srcCell" id="id-46"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 46,59);" id="img-46" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-46" class="srcLine"><span class="nolink" title="Line 46, Col 5: method entered 495 times.">    @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-46'), 46,59);" id="e46" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l47">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=47#src-47">47</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-47" class="srcLine">    <span class="keyword">public</span> String toString() {</span></td>
+</tr>
+ <tr id="l48">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=48#src-48">48</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 48, 'Tests that hit line # 48');" ><span title="Line 48, Col 9: statement executed 495 times." class="nolink">&#160;495</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-48" class="srcLine"><span class="nolink" title="Line 48, Col 9: statement executed 495 times.">        <span class="keyword">final</span> StringBuilder str = <span class="keyword">new</span> StringBuilder(getVerboseMessage());</span></span></td>
+</tr>
+ <tr id="l49">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=49#src-49">49</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 49, 'Tests that hit line # 49');" ><span title="Line 49, Col 12: true branch executed 10 times, false branch executed 485 times." class="nolink">&#160;495</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-49" class="srcLine"><span class="nolink" title="Line 49, Col 12: true branch executed 10 times, false branch executed 485 times.">        <span class="keyword">if</span> (cause != <span class="keyword">null</span>) {</span></span></td>
+</tr>
+ <tr id="l50">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=50#src-50">50</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 50, 'Tests that hit line # 50');" ><span title="Line 50, Col 13: statement executed 10 times." class="nolink">&#160;10</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-50" class="srcLine"><span class="nolink" title="Line 50, Col 13: statement executed 10 times.">            str.append(EOL).append(<span class="string">&quot;Problem stacktrace : &quot;</span>).append(EOL);</span></span></td>
+</tr>
+ <tr id="l51">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=51#src-51">51</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 51, 'Tests that hit line # 51');" ><span title="Line 51, Col 28: true branch executed 845 times, false branch executed 10 times." class="nolink">&#160;855</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-51" class="srcLine"><span class="nolink" title="Line 51, Col 28: true branch executed 845 times, false branch executed 10 times.">            <span class="keyword">for</span> (<span class="keyword">int</span> i = 0; i &lt; cause.getStackTrace().length; i++) {</span></span></td>
+</tr>
+ <tr id="l52">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=52#src-52">52</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 52, 'Tests that hit line # 52');" ><span title="Line 52, Col 17: statement executed 845 times." class="nolink">&#160;845</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-52" class="srcLine"><span class="nolink" title="Line 52, Col 17: statement executed 845 times.">                StackTraceElement ste = cause.getStackTrace()[i];</span></span></td>
+</tr>
+ <tr id="l53">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=53#src-53">53</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 53, 'Tests that hit line # 53');" ><span title="Line 53, Col 17: statement executed 845 times." class="nolink">&#160;845</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-53" class="srcLine"><span class="nolink" title="Line 53, Col 17: statement executed 845 times.">                str.append(<span class="string">&quot;  &quot;</span>).append(ste.toString());</span></span></td>
+</tr>
+ <tr id="l54">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=54#src-54">54</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 54, 'Tests that hit line # 54');" ><span title="Line 54, Col 20: true branch executed 835 times, false branch executed 10 times." class="nolink">&#160;845</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-54" class="srcLine"><span class="nolink" title="Line 54, Col 20: true branch executed 835 times, false branch executed 10 times.">                <span class="keyword">if</span> (i + 1 != cause.getStackTrace().length)</span></span></td>
+</tr>
+ <tr id="l55">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=55#src-55">55</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 55, 'Tests that hit line # 55');" ><span title="Line 55, Col 21: statement executed 835 times." class="nolink">&#160;835</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-55" class="srcLine"><span class="nolink" title="Line 55, Col 21: statement executed 835 times.">                    str.append(EOL);</span></span></td>
+</tr>
+ <tr id="l56">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=56#src-56">56</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-56" class="srcLine">            }</span></td>
+</tr>
+ <tr id="l57">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=57#src-57">57</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-57" class="srcLine">        }</span></td>
+</tr>
+ <tr id="l58">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=58#src-58">58</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 58, 'Tests that hit line # 58');" ><span title="Line 58, Col 9: statement executed 495 times." class="nolink">&#160;495</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-58" class="srcLine"><span class="nolink" title="Line 58, Col 9: statement executed 495 times.">        <span class="keyword">return</span> str.toString();</span></span></td>
+</tr>
+ <tr id="l59">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=59#src-59">59</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-59" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l60">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=60#src-60">60</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-60" class="srcLine"></span></td>
+</tr>
+ <tr id="l61">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=61#src-61">61</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-61" class="srcLine">    <span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l62">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=62#src-62">62</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-62" class="srcLine"><span class="comment">     * </span><span class="javadoc">@return</span><span class="comment"> the message that was passed into the constructor.</span></span></td>
+</tr>
+ <tr id="l63">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=63#src-63">63</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-63" class="srcLine"><span class="comment">     */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="64" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-64' onclick="toggleInlineStats(this, 'inlinestats-64');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-64" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-64'), 'inlinestats-64');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l64">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=64#src-64">64</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 64, 'Tests that hit getMessage()&#160;:&#160;String');" ><span title="Line 64, Col 5: method entered 5 times." class="nolink">&#160;5</span></td>
+<td class=" methodStart  srcCell" id="id-64"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 64,66);" id="img-64" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-64" class="srcLine"><span class="nolink" title="Line 64, Col 5: method entered 5 times.">    <span class="keyword">public</span> String getMessage() {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-64'), 64,66);" id="e64" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l65">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=65#src-65">65</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 65, 'Tests that hit line # 65');" ><span title="Line 65, Col 9: statement executed 5 times." class="nolink">&#160;5</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-65" class="srcLine"><span class="nolink" title="Line 65, Col 9: statement executed 5 times.">        <span class="keyword">return</span> message;</span></span></td>
+</tr>
+ <tr id="l66">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=66#src-66">66</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-66" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l67">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=67#src-67">67</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-67" class="srcLine"></span></td>
+</tr>
+ <tr id="l68">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=68#src-68">68</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-68" class="srcLine">    <span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l69">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=69#src-69">69</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-69" class="srcLine"><span class="comment">     * </span><span class="javadoc">@return</span><span class="comment"> the message plus location information.</span></span></td>
+</tr>
+ <tr id="l70">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=70#src-70">70</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-70" class="srcLine"><span class="comment">     */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="71" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-71' onclick="toggleInlineStats(this, 'inlinestats-71');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-71" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-71'), 'inlinestats-71');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l71">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=71#src-71">71</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 71, 'Tests that hit getVerboseMessage()&#160;:&#160;String');" ><span title="Line 71, Col 5: method entered 497 times." class="nolink">&#160;497</span></td>
+<td class=" methodStart  srcCell" id="id-71"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 71,73);" id="img-71" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-71" class="srcLine"><span class="nolink" title="Line 71, Col 5: method entered 497 times.">    <span class="keyword">public</span> String getVerboseMessage() {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-71'), 71,73);" id="e71" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l72">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=72#src-72">72</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 72, 'Tests that hit line # 72');" ><span title="Line 72, Col 9: statement executed 497 times." class="nolink">&#160;497</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-72" class="srcLine"><span class="nolink" title="Line 72, Col 9: statement executed 497 times.">        <span class="keyword">return</span> getLocation().map(l -&gt; l.getBegin().getRange().map(r -&gt; r.begin.toString()).orElse(<span class="string">&quot;(line ?,col ?)&quot;</span>) + <span class="string">&quot; &quot;</span> + message).orElse(message);</span></span></td>
+</tr>
+ <tr id="l73">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=73#src-73">73</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-73" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l74">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=74#src-74">74</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-74" class="srcLine"></span></td>
+</tr>
+ <tr id="l75">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=75#src-75">75</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-75" class="srcLine">    <span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l76">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=76#src-76">76</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-76" class="srcLine"><span class="comment">     * </span><span class="javadoc">@return</span><span class="comment"> the location that was passed into the constructor.</span></span></td>
+</tr>
+ <tr id="l77">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=77#src-77">77</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-77" class="srcLine"><span class="comment">     */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="78" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-78' onclick="toggleInlineStats(this, 'inlinestats-78');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-78" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-78'), 'inlinestats-78');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l78">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=78#src-78">78</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 78, 'Tests that hit getLocation()&#160;:&#160;Optional&lt;TokenRange&gt;');" ><span title="Line 78, Col 5: method entered 1.311 times." class="nolink">&#160;1311</span></td>
+<td class=" methodStart  srcCell" id="id-78"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 78,80);" id="img-78" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-78" class="srcLine"><span class="nolink" title="Line 78, Col 5: method entered 1.311 times.">    <span class="keyword">public</span> Optional&lt;<a href="../../../com/github/javaparser/TokenRange.html#TokenRange">TokenRange</a>&gt; getLocation() {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-78'), 78,80);" id="e78" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l79">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=79#src-79">79</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 79, 'Tests that hit line # 79');" ><span title="Line 79, Col 9: statement executed 1.311 times." class="nolink">&#160;1311</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-79" class="srcLine"><span class="nolink" title="Line 79, Col 9: statement executed 1.311 times.">        <span class="keyword">return</span> Optional.ofNullable(location);</span></span></td>
+</tr>
+ <tr id="l80">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=80#src-80">80</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-80" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l81">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=81#src-81">81</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-81" class="srcLine"></span></td>
+</tr>
+ <tr id="l82">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=82#src-82">82</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-82" class="srcLine">    <span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l83">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=83#src-83">83</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-83" class="srcLine"><span class="comment">     * </span><span class="javadoc">@return</span><span class="comment"> the cause that was passed into the constructor.</span></span></td>
+</tr>
+ <tr id="l84">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=84#src-84">84</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-84" class="srcLine"><span class="comment">     */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="85" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-85' onclick="toggleInlineStats(this, 'inlinestats-85');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-85" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-85'), 'inlinestats-85');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l85">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=85#src-85">85</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 85, 'Tests that hit getCause()&#160;:&#160;Optional&lt;Throwable&gt;');" ><span title="Line 85, Col 5: method entered 2 times." class="nolink">&#160;2</span></td>
+<td class=" methodStart  srcCell" id="id-85"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 85,87);" id="img-85" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-85" class="srcLine"><span class="nolink" title="Line 85, Col 5: method entered 2 times.">    <span class="keyword">public</span> Optional&lt;Throwable&gt; getCause() {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-85'), 85,87);" id="e85" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l86">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=86#src-86">86</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 86, 'Tests that hit line # 86');" ><span title="Line 86, Col 9: statement executed 2 times." class="nolink">&#160;2</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-86" class="srcLine"><span class="nolink" title="Line 86, Col 9: statement executed 2 times.">        <span class="keyword">return</span> Optional.ofNullable(cause);</span></span></td>
+</tr>
+ <tr id="l87">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=87#src-87">87</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-87" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l88">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=88#src-88">88</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-88" class="srcLine"></span></td>
+</tr>
+ <tr id="l89">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=89#src-89">89</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-89" class="srcLine">    <span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l90">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=90#src-90">90</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-90" class="srcLine"><span class="comment">     * Sorts problems on position.</span></span></td>
+</tr>
+ <tr id="l91">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=91#src-91">91</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-91" class="srcLine"><span class="comment">     */</span></span></td>
+</tr>
+ <tr id="l92">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=92#src-92">92</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-92" class="srcLine">    <span class="keyword">public</span> <span class="keyword">static</span> Comparator&lt;<a href="../../../com/github/javaparser/Problem.html#Problem">Problem</a>&gt; PROBLEM_BY_BEGIN_POSITION = (a, b) -&gt; {</span></td>
+</tr>
+ <tr id="l93">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=93#src-93">93</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 93, 'Tests that hit line # 93');" ><span title="Line 93, Col 9: statement executed 406 times." class="nolink">&#160;406</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-93" class="srcLine"><span class="nolink" title="Line 93, Col 9: statement executed 406 times.">        <span class="keyword">final</span> Optional&lt;<a href="../../../com/github/javaparser/Position.html#Position">Position</a>&gt; aBegin= a.getLocation().flatMap(l -&gt; l.getBegin().getRange().map(r -&gt; r.begin));</span></span></td>
+</tr>
+ <tr id="l94">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=94#src-94">94</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 94, 'Tests that hit line # 94');" ><span title="Line 94, Col 9: statement executed 406 times." class="nolink">&#160;406</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-94" class="srcLine"><span class="nolink" title="Line 94, Col 9: statement executed 406 times.">        <span class="keyword">final</span> Optional&lt;<a href="../../../com/github/javaparser/Position.html#Position">Position</a>&gt; bBegin = b.getLocation().flatMap(l -&gt; l.getBegin().getRange().map(r -&gt; r.begin));</span></span></td>
+</tr>
+ <tr id="l95">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=95#src-95">95</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-95" class="srcLine"></span></td>
+</tr>
+ <tr id="l96">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=96#src-96">96</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 96, 'Tests that hit line # 96');" ><span title="Line 96, Col 9: statement executed 406 times." class="nolink">&#160;406</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-96" class="srcLine"><span class="nolink" title="Line 96, Col 9: statement executed 406 times.">        <span class="keyword">if</span> (aBegin.isPresent() &amp;&amp; bBegin.isPresent()) {</span></span></td>
+</tr>
+ <tr id="l97">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=97#src-97">97</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 97, 'Tests that hit line # 97');" ><span title="Line 97, Col 13: statement executed 406 times." class="nolink">&#160;406</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-97" class="srcLine"><span class="nolink" title="Line 97, Col 13: statement executed 406 times.">            <span class="keyword">return</span> aBegin.get().compareTo(bBegin.get());</span></span></td>
+</tr>
+ <tr id="l98">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=98#src-98">98</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-98" class="srcLine">        }</span></td>
+</tr>
+ <tr id="l99">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=99#src-99">99</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 99, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-99" class="srcLineHilight"><span class="nolink" title="Line 99, Col 9: statement not executed.">        <span class="keyword">if</span> (a.getLocation().isPresent() || b.getLocation().isPresent()) {</span></span></td>
+</tr>
+ <tr id="l100">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=100#src-100">100</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 100, Col 13: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-100" class="srcLineHilight"><span class="nolink" title="Line 100, Col 13: statement not executed.">            <span class="keyword">if</span> (a.getLocation().isPresent()) {</span></span></td>
+</tr>
+ <tr id="l101">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=101#src-101">101</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 101, Col 17: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-101" class="srcLineHilight"><span class="nolink" title="Line 101, Col 17: statement not executed.">                <span class="keyword">return</span> 1;</span></span></td>
+</tr>
+ <tr id="l102">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=102#src-102">102</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-102" class="srcLine">            }</span></td>
+</tr>
+ <tr id="l103">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=103#src-103">103</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 103, Col 13: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-103" class="srcLineHilight"><span class="nolink" title="Line 103, Col 13: statement not executed.">            <span class="keyword">return</span> -1;</span></span></td>
+</tr>
+ <tr id="l104">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=104#src-104">104</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-104" class="srcLine">        }</span></td>
+</tr>
+ <tr id="l105">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=105#src-105">105</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 105, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-105" class="srcLineHilight"><span class="nolink" title="Line 105, Col 9: statement not executed.">        <span class="keyword">return</span> 0;</span></span></td>
+</tr>
+ <tr id="l106">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=106#src-106">106</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-106" class="srcLine">    };</span></td>
+</tr>
+ <tr id="l107">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=107#src-107">107</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-107" class="srcLine"></span></td>
+</tr>
+ <tr id="l108">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=108#src-108">108</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-108" class="srcLine"></span></td>
+</tr>
+ <tr id="l109">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=109#src-109">109</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-109" class="srcLine">}</span></td>
+</tr>
+ 
+    </tbody></table>    </div>
+</div><!-- .aui-tabs -->
+
+<script type="text/javascript"> 
+    var ol_bgclass = "overBG";
+    var ol_fgclass = "overFG";
+    var ol_cgclass = "overCaption";
+    var ol_captionfontclass= "overCaption";
+    var ol_closefontclass = "closeFont";
+    var ol_closeclick = 1;
+    var ol_close = 'X';
+    var ol_wrap = 1;
+    var rootRelPath = '../../../';
+    var testsPerFile = -1;
+</script>
+<script src="Problem.js" type="text/javascript"></script>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Sun Feb 23 2020 18:17:02 CET using coverage data from Sun Feb 23 2020 18:16:51 CET.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

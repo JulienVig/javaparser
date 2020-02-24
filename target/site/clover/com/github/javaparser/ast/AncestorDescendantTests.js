@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":129,"id":30872,"methods":[{"el":51,"sc":5,"sl":35},{"el":69,"sc":5,"sl":53},{"el":92,"sc":5,"sl":71},{"el":128,"sc":5,"sl":94}],"name":"AncestorDescendantTests","sl":33}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1052":{"methods":[{"sl":71}],"name":"nodeInSameFileIsDescendantOfAncestor","pass":true,"statements":[{"sl":73},{"sl":75},{"sl":76},{"sl":77},{"sl":78},{"sl":80},{"sl":86},{"sl":88},{"sl":89},{"sl":90},{"sl":91}]},"test_1206":{"methods":[{"sl":53}],"name":"nodeIsNotDescendantOfItself","pass":true,"statements":[{"sl":55},{"sl":57},{"sl":58},{"sl":59},{"sl":60},{"sl":62},{"sl":68}]},"test_1527":{"methods":[{"sl":35}],"name":"nodeIsNotAncestorOfItself","pass":true,"statements":[{"sl":37},{"sl":39},{"sl":40},{"sl":41},{"sl":42},{"sl":44},{"sl":50}]},"test_1964":{"methods":[{"sl":94}],"name":"nodesInTwoDifferentFilesAreNotDescendantOrAncestorOfEachOther","pass":true,"statements":[{"sl":96},{"sl":98},{"sl":99},{"sl":100},{"sl":101},{"sl":103},{"sl":104},{"sl":105},{"sl":106},{"sl":108},{"sl":114},{"sl":116},{"sl":122},{"sl":124},{"sl":125},{"sl":126},{"sl":127}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [1527], [], [1527], [], [1527], [1527], [1527], [1527], [], [1527], [], [], [], [], [], [1527], [], [], [1206], [], [1206], [], [1206], [1206], [1206], [1206], [], [1206], [], [], [], [], [], [1206], [], [], [1052], [], [1052], [], [1052], [1052], [1052], [1052], [], [1052], [], [], [], [], [], [1052], [], [1052], [1052], [1052], [1052], [], [], [1964], [], [1964], [], [1964], [1964], [1964], [1964], [], [1964], [1964], [1964], [1964], [], [1964], [], [], [], [], [], [1964], [], [1964], [], [], [], [], [], [1964], [], [1964], [1964], [1964], [1964], [], []]
