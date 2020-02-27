@@ -41,9 +41,23 @@ import static com.github.javaparser.symbolsolver.resolution.typeinference.TypeHe
  */
 public class BoundSet {
 
-    private List<Bound> bounds = new LinkedList<>();
+    public List<Bound> bounds = new LinkedList<>();
 
-    private static final BoundSet EMPTY = new BoundSet();
+    public static final BoundSet EMPTY = new BoundSet();
+
+    //TODO remove after test
+    // public List<Bound> getBounds(){
+    //   return bounds;
+    // }
+    // //TODO remove after test
+    // public Optional<Pair<SameAsBound, SameAsBound>> CallFindPairSameAs(Predicate<Pair<SameAsBound, SameAsBound>> condition) {
+    //   return findPairSameAs(condition);
+    // }
+    //
+    // //TODO remove after test
+    // public <T> T CallForEachPairSameAs(Processor<SameAsBound, SameAsBound, T> processor, T initialValue) {
+    //   return forEachPairSameAs(processor, initialValue);
+    // }
 
     @Override
     public boolean equals(Object o) {
@@ -90,7 +104,7 @@ public class BoundSet {
         return boundSet;
     }
 
-    private Optional<Pair<SameAsBound, SameAsBound>> findPairSameAs(Predicate<Pair<SameAsBound, SameAsBound>> condition) {
+    public Optional<Pair<SameAsBound, SameAsBound>> findPairSameAs(Predicate<Pair<SameAsBound, SameAsBound>> condition) {
         for (int i=0;i<bounds.size();i++) {
             Bound bi = bounds.get(i);
             if (bi instanceof SameAsBound) {
@@ -114,11 +128,11 @@ public class BoundSet {
         return bounds.isEmpty();
     }
 
-    interface Processor<B1 extends Bound, B2 extends Bound, R> {
-        R process(B1 a, B2 b, R initialValue);
+    public interface Processor<B1 extends Bound, B2 extends Bound, R> {
+        public R process(B1 a, B2 b, R initialValue);
     }
 
-    private <T> T forEachPairSameAs(Processor<SameAsBound, SameAsBound, T> processor, T initialValue) {
+    public <T> T forEachPairSameAs(Processor<SameAsBound, SameAsBound, T> processor, T initialValue) {
         T currentValue = initialValue;
         for (int i=0;i<bounds.size();i++) {
             Bound bi = bounds.get(i);
@@ -136,7 +150,7 @@ public class BoundSet {
         return currentValue;
     }
 
-    private <T> T forEachPairSameAndSubtype(Processor<SameAsBound, SubtypeOfBound, T> processor, T initialValue) {
+    public <T> T forEachPairSameAndSubtype(Processor<SameAsBound, SubtypeOfBound, T> processor, T initialValue) {
         T currentValue = initialValue;
         for (int i=0;i<bounds.size();i++) {
             Bound bi = bounds.get(i);
@@ -154,7 +168,7 @@ public class BoundSet {
         return currentValue;
     }
 
-    private <T> T forEachPairSubtypeAndSubtype(Processor<SubtypeOfBound, SubtypeOfBound, T> processor, T initialValue) {
+    public <T> T forEachPairSubtypeAndSubtype(Processor<SubtypeOfBound, SubtypeOfBound, T> processor, T initialValue) {
         T currentValue = initialValue;
         for (int i=0;i<bounds.size();i++) {
             Bound bi = bounds.get(i);
@@ -172,11 +186,11 @@ public class BoundSet {
         return currentValue;
     }
 
-    private boolean areSameTypeInference(ResolvedType a, ResolvedType b) {
+    public boolean areSameTypeInference(ResolvedType a, ResolvedType b) {
         return isInferenceVariable(a) && isInferenceVariable(b) && a.equals(b);
     }
 
-    private List<Pair<ResolvedReferenceType, ResolvedReferenceType>> findPairsOfCommonAncestors(ResolvedReferenceType r1, ResolvedReferenceType r2) {
+    public List<Pair<ResolvedReferenceType, ResolvedReferenceType>> findPairsOfCommonAncestors(ResolvedReferenceType r1, ResolvedReferenceType r2) {
         List<ResolvedReferenceType> set1 = new LinkedList<>();
         set1.add(r1);
         set1.addAll(r1.getAllAncestors());
@@ -385,7 +399,7 @@ public class BoundSet {
         for (Bound b : this.bounds.stream().filter(b -> b instanceof CapturesBound).collect(Collectors.toList())) {
             CapturesBound capturesBound = (CapturesBound)b;
 
-            throw new UnsupportedOperationException();
+            //throw new UnsupportedOperationException();
 
             // Let P1, ..., Pn represent the type parameters of G and let B1, ..., Bn represent the bounds of these type
             // parameters. Let θ represent the substitution [P1:=α1, ..., Pn:=αn]. Let R be a type that is not an inference
@@ -440,9 +454,9 @@ public class BoundSet {
         return bounds.stream().anyMatch(it -> it instanceof FalseBound);
     }
 
-    private class VariableDependency {
-        private InferenceVariable depending;
-        private InferenceVariable dependedOn;
+    public static class VariableDependency {
+        public InferenceVariable depending;
+        public InferenceVariable dependedOn;
 
         public VariableDependency(InferenceVariable depending, InferenceVariable dependedOn) {
             this.depending = depending;
@@ -462,7 +476,7 @@ public class BoundSet {
         }
     }
 
-    private Set<InferenceVariable> allInferenceVariables() {
+    public Set<InferenceVariable> allInferenceVariables() {
         Set<InferenceVariable> variables = new HashSet<>();
         for (Bound b : bounds) {
             variables.addAll(b.usedInferenceVariables());
@@ -470,7 +484,7 @@ public class BoundSet {
         return variables;
     }
 
-    private boolean hasInstantiationFor(InferenceVariable v) {
+    public boolean hasInstantiationFor(InferenceVariable v) {
         for (Bound b : bounds) {
             if (b.isAnInstantiationFor(v)) {
                 return true;
@@ -479,7 +493,7 @@ public class BoundSet {
         return false;
     }
 
-    private Instantiation getInstantiationFor(InferenceVariable v) {
+    public Instantiation getInstantiationFor(InferenceVariable v) {
         for (Bound b : bounds) {
             if (b.isAnInstantiationFor(v)) {
                 return b.isAnInstantiation().get();
@@ -488,10 +502,12 @@ public class BoundSet {
         throw new IllegalArgumentException();
     }
 
-    private boolean thereIsSomeJSuchThatβequalAlphaJ(Set<InferenceVariable> alphas, InferenceVariable beta) {
+    public boolean thereIsSomeJSuchThatβequalAlphaJ(Set<InferenceVariable> alphas, InferenceVariable beta) {
         for (InferenceVariable alphaJ : alphas) {
             for (Bound b : bounds) {
+              System.out.println("Branch 0");
                 if (b instanceof SameAsBound) {
+                  System.out.println("Branch 1");
                     SameAsBound sameAsBound = (SameAsBound)b;
                     if (sameAsBound.getS().equals(alphaJ) && sameAsBound.getT().equals(beta)) {
                         return true;
@@ -499,13 +515,14 @@ public class BoundSet {
                     if (sameAsBound.getT().equals(alphaJ) && sameAsBound.getS().equals(beta)) {
                         return true;
                     }
+                    System.out.println("Branch 2");
                 }
             }
         }
         return false;
     }
 
-    private <T> List<Set<T>> buildAllSubsetsOfSize(Set<T> allElements, int desiredSize) {
+    public <T> List<Set<T>> buildAllSubsetsOfSize(Set<T> allElements, int desiredSize) {
         if (desiredSize == allElements.size()) {
             return Arrays.asList(allElements);
         } else {
@@ -518,7 +535,7 @@ public class BoundSet {
         }
     }
 
-    private <T> Set<T> allButOne(Set<T> elements, T element) {
+    public <T> Set<T> allButOne(Set<T> elements, T element) {
         Set<T> set = new HashSet<T>(elements);
         set.remove(element);
         return set;
@@ -527,7 +544,7 @@ public class BoundSet {
     /**
      * there exists no non-empty proper subset of { α1, ..., αn } with this property.
      */
-    private Optional<Set<InferenceVariable>> smallestSetWithProperty(Set<InferenceVariable> uninstantiatedVariables,
+    public Optional<Set<InferenceVariable>> smallestSetWithProperty(Set<InferenceVariable> uninstantiatedVariables,
                                                                      List<VariableDependency> dependencies) {
         for (int i=1;i<=uninstantiatedVariables.size();i++) {
             for (Set<InferenceVariable> aSubSet : buildAllSubsetsOfSize(uninstantiatedVariables, i)){
@@ -544,7 +561,7 @@ public class BoundSet {
      * or there is some j such that β = αj
      * @return
      */
-    private boolean hasProperty(Set<InferenceVariable> alphas, List<VariableDependency> dependencies) {
+    public boolean hasProperty(Set<InferenceVariable> alphas, List<VariableDependency> dependencies) {
         for (InferenceVariable alphaI: alphas) {
             for (InferenceVariable beta: dependencies.stream()
                     .filter(d -> d.depending.equals(alphaI))
@@ -765,7 +782,7 @@ public class BoundSet {
         return Optional.empty();
     }
 
-    private Set<Set<InferenceVariable>> allPossibleSetsWithProperty(Set<InferenceVariable> allElements, List<VariableDependency> dependencies) {
+    public Set<Set<InferenceVariable>> allPossibleSetsWithProperty(Set<InferenceVariable> allElements, List<VariableDependency> dependencies) {
         Set<Set<InferenceVariable>> result = new HashSet<>();
         for (int i=1;i<=allElements.size();i++) {
             for (Set<InferenceVariable> aSubSet : buildAllSubsetsOfSize(allElements, i)){
@@ -777,7 +794,7 @@ public class BoundSet {
         return result;
     }
 
-    private boolean thereAreProperSubsets(Set<InferenceVariable> aSet, Set<Set<InferenceVariable>> allPossibleSets) {
+    public boolean thereAreProperSubsets(Set<InferenceVariable> aSet, Set<Set<InferenceVariable>> allPossibleSets) {
         for (Set<InferenceVariable> anotherSet : allPossibleSets) {
             if (!anotherSet.equals(aSet)) {
                 if (isTheFirstAProperSubsetOfTheSecond(anotherSet, aSet)) {
@@ -788,11 +805,11 @@ public class BoundSet {
         return false;
     }
 
-    private boolean isTheFirstAProperSubsetOfTheSecond(Set<InferenceVariable> subset, Set<InferenceVariable> originalSet) {
+    public boolean isTheFirstAProperSubsetOfTheSecond(Set<InferenceVariable> subset, Set<InferenceVariable> originalSet) {
         return originalSet.containsAll(subset) && originalSet.size() > subset.size();
     }
 
-    private Set<Set<InferenceVariable>> allSetsWithProperty(Set<InferenceVariable> allElements, List<VariableDependency> dependencies) {
+    public Set<Set<InferenceVariable>> allSetsWithProperty(Set<InferenceVariable> allElements, List<VariableDependency> dependencies) {
         Set<Set<InferenceVariable>> allPossibleSets = allPossibleSetsWithProperty(allElements, dependencies);
         Set<Set<InferenceVariable>> selected = new HashSet<>();
         for (Set<InferenceVariable> aSet : allPossibleSets) {
@@ -803,11 +820,11 @@ public class BoundSet {
         return selected;
     }
 
-    private boolean properUpperBoundsAreAtMostExceptionThrowableAndObject(InferenceVariable inferenceVariable) {
+    public boolean properUpperBoundsAreAtMostExceptionThrowableAndObject(InferenceVariable inferenceVariable) {
         throw new UnsupportedOperationException();
     }
 
-    private boolean appearInLeftPartOfCapture(InferenceVariable inferenceVariable) {
+    public boolean appearInLeftPartOfCapture(InferenceVariable inferenceVariable) {
         for (Bound b : bounds) {
             if (b instanceof CapturesBound) {
                 CapturesBound capturesBound = (CapturesBound)b;
