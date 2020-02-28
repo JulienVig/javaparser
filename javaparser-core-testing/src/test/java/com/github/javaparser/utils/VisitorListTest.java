@@ -51,17 +51,29 @@ class VisitorListTest {
 
     @Test
     void visitorAddAllAtIndex() {
-        List<CompilationUnit> list = new ArrayList<>();
-        list.add(parse("class X{}"));
-        list.add(parse("class Y{}"));
+        List<CompilationUnit> list1 = new ArrayList<>();
+        list1.add(parse("class X1{}"));
+        list1.add(parse("class Y1{}"));
+        List<CompilationUnit> list2 = new ArrayList<>();
+        list2.add(parse("class X2{}"));
+        list2.add(parse("class Y2{}"));
         VisitorList<CompilationUnit> vList = new VisitorList<>(new ObjectIdentityHashCodeVisitor(),
                 new ObjectIdentityEqualsVisitor());
         vList.add(parse("class A{}"));
         vList.add(parse("class B{}"));
-        vList.addAll(2, list);
+        vList.addAll(2, list1);
         vList.add(parse("class C{}"));
-        for (int i = 0; i < list.size(); i++)
-            assertEquals(list.get(i), vList.get(2 + i));
+        for (int i = 0; i < list1.size(); i++)
+            assertEquals(list1.get(i), vList.get(2 + i));
+
+        vList.addAll(2, list2);
+        for (int i = 0; i < list2.size(); i++)
+            assertEquals(list2.get(i), vList.get(2 + i));
+
+        List<CompilationUnit> emptyList = new ArrayList<>();
+        assertEquals(false, vList.addAll(0, emptyList));
+
+
     }
 
     @Test
@@ -82,6 +94,9 @@ class VisitorListTest {
                 new ObjectIdentityEqualsVisitor());
         vList.addAll(list);
         assertTrue(vList.size() == 2 && vList.containsAll(list));
+
+        list.add(parse("class E{}"));
+        assertEquals(false, vList.containsAll(list));
     }
 
     @Test
@@ -112,11 +127,13 @@ class VisitorListTest {
         CompilationUnit x2 = parse("class X{}");
         list.add(x2);
         Iterator<CompilationUnit> itr = list.listIterator(2);
+        assertEquals(true, itr.hasNext());
         assertEquals(x1, itr.next());
         itr.remove();
         assertEquals(3, list.size());
         assertEquals(x2, itr.next());
         itr.remove();
+        assertEquals(false, itr.hasNext());
         assertEquals(2, list.size());
     }
 
@@ -181,6 +198,52 @@ class VisitorListTest {
         vList.addAll(list);
         for (CompilationUnit u : vList.toArray(new CompilationUnit[2]))
             assertTrue(vList.contains(u));
+    }
+
+    @Test
+    void visitorListAddAtIndex(){
+        VisitorList<CompilationUnit> list = new VisitorList<>(new ObjectIdentityHashCodeVisitor(),
+                new ObjectIdentityEqualsVisitor());
+        list.add(parse("class X{}"));
+        list.add(parse("class X{}"));
+        CompilationUnit indexUnit = parse("class B{}");
+        list.add(1, parse("class B{}"));
+        assertEquals(list.get(1), indexUnit);
+    }
+
+    @Test
+    void visitorListIndexOf(){
+        VisitorList<CompilationUnit> list = new VisitorList<>(new ObjectIdentityHashCodeVisitor(),
+                new ObjectIdentityEqualsVisitor());
+        CompilationUnit indexUnit = parse("class X{}");
+        assertEquals(-1, list.indexOf(indexUnit));
+        list.add(indexUnit);
+        list.add(indexUnit);
+        assertEquals(0, list.indexOf(indexUnit));
+        list.add(0, parse("class B{}"));
+        assertEquals(1, list.indexOf(indexUnit));
+    }
+
+    @Test
+    void visitorListLastIndexOf(){
+        VisitorList<CompilationUnit> list = new VisitorList<>(new ObjectIdentityHashCodeVisitor(),
+                new ObjectIdentityEqualsVisitor());
+        CompilationUnit indexUnit = parse("class X{}");
+        assertEquals(-1, list.lastIndexOf(indexUnit));
+        list.add(indexUnit);
+        list.add(indexUnit);
+        assertEquals(1, list.lastIndexOf(indexUnit));
+        list.add(indexUnit);
+        assertEquals(2, list.lastIndexOf(indexUnit));
+    }
+
+    @Test
+    void visitorListIsEmpty(){
+        VisitorList<CompilationUnit> list = new VisitorList<>(new ObjectIdentityHashCodeVisitor(),
+                new ObjectIdentityEqualsVisitor());
+        assertEquals(true, list.isEmpty());
+        list.add(parse("class X{}"));
+        assertEquals(false, list.isEmpty());
     }
 
 }
