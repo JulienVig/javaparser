@@ -1,0 +1,10 @@
+class Class1 {
+
+    void method1() {
+	GenericClass<int> A;
+  	A = new GenericClass<int>;
+    }
+
+}
+
+class GenericClass<T>{}
